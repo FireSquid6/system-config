@@ -21,6 +21,8 @@
   hardware.pulseaudio.enable = true;
   hardware.pulseaudio.support32Bit = true;
 
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
   services.xserver = {
     enable = true;
 
