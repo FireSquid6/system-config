@@ -138,6 +138,8 @@
     gh
     direnv
     starship
+    flameshot
+    simplescreenrecorder
   ];
 
   fonts.packages = with pkgs; [
