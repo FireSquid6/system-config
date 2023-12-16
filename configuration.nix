@@ -101,11 +101,11 @@
     description = "firesquid";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
+      neofetch
       discord
       slack
-      godot_4
-      neofetch
       cinnamon.nemo
+      godot_4
     ];
   };
 
