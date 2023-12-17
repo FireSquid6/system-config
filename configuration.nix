@@ -105,10 +105,15 @@
       slack
       cinnamon.nemo
       godot_4
+
       libresprite
       inkscape
       krita
       vlc
+
+      tetrio-desktop
+      steam
+      prismlauncher
     ];
   };
 
