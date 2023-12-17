@@ -105,6 +105,9 @@
       slack
       cinnamon.nemo
       godot_4
+      libresprite
+      inkscape
+      krita
     ];
   };
 
