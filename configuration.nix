@@ -108,6 +108,7 @@
       libresprite
       inkscape
       krita
+      vlc
     ];
   };
 
