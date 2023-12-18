@@ -152,6 +152,7 @@
     flameshot
     simplescreenrecorder
     gnome-icon-theme
+    papirus-icon-theme
   ];
 
   fonts.packages = with pkgs; [
