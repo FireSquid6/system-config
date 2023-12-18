@@ -135,6 +135,7 @@
     firefox
     git
     syncthing
+    dunst
     playerctl
     neovim
     rofi
@@ -142,6 +143,7 @@
     unzip
     screen
     lxappearance
+    feh
     lazygit
     nitrogen
     gh
@@ -149,6 +151,7 @@
     starship
     flameshot
     simplescreenrecorder
+    gnome-icon-theme
   ];
 
   fonts.packages = with pkgs; [
