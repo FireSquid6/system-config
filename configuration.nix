@@ -151,7 +151,7 @@
     starship
     flameshot
     simplescreenrecorder
-    gnome-icon-theme
+    gnome-icon-them
   ];
 
   fonts.packages = with pkgs; [
