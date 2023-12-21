@@ -21,6 +21,15 @@
   xdg.portal.config.common.default = "gtk";
   xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
 
+  xdg.mime.defaultApplications = {
+    "text/html" = "firefox.desktop";
+    "x-scheme-handler/http" = "firefox.desktop";
+    "x-scheme-handler/https" = "firefox.desktop";
+    "x-scheme-handler/about" = "firefox.desktop";
+    "x-scheme-handler/unknown" = "firefox.desktop";
+  };
+  xdg.mime.enable = true;
+
   sound.enable = true;
   nixpkgs.config.pulseaudio = true;
   hardware.pulseaudio.enable = true;
