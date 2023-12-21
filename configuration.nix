@@ -16,6 +16,11 @@
 
   services.picom.enable = true;
 
+  services.flatpak.enable = true;
+  xdg.portal.enable = true;
+  xdg.portal.config.common.default = "gtk";
+  xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+
   sound.enable = true;
   nixpkgs.config.pulseaudio = true;
   hardware.pulseaudio.enable = true;
@@ -115,6 +120,8 @@
 
       vscode
       neovide
+
+      chromium
     ];
   };
 
