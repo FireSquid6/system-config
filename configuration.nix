@@ -39,7 +39,7 @@
       extraPackages = with pkgs; [
         dmenu
         i3status
-        i3lock
+        i3lock-fancy-rapid
         i3blocks
       ];
     };
@@ -102,7 +102,6 @@
     packages = with pkgs; [
       neofetch
       discord
-      slack
       cinnamon.nemo
       godot_4
 
@@ -111,9 +110,11 @@
       krita
       vlc
 
-      tetrio-desktop
       steam
       prismlauncher
+
+      vscode
+      neovide
     ];
   };
 
@@ -153,6 +154,8 @@
     simplescreenrecorder
     gnome-icon-theme
     papirus-icon-theme
+    htop
+    ripgrep
   ];
 
   fonts.packages = with pkgs; [
