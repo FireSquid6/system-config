@@ -156,6 +156,7 @@
     git
     dunst
     xclip
+    luakit
     playerctl
     neovim
     rofi

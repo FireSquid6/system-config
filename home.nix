@@ -57,8 +57,9 @@
     # Files I need:
     # - .bashrc
     # - .vimrc
-    # - kitty/neovim/rofi/i3 configs
-    # starship.toml
+    # - kitty/rofi/i3 configs
+    # - starship.toml
+    # - scripts
   };
 
   # Home Manager can also manage your environment variables through
