@@ -60,6 +60,12 @@
     # - kitty/rofi/i3 configs
     # - starship.toml
     # - scripts
+    ".config/i3/config".source = dotfiles/i3;
+    ".config/kitty/kitty.conf".source = dotfiles/kitty.conf;
+    ".vimrc".source = dotfiles/vimrc;
+    ".bashrc".source = dotfiles/bashrc;
+    ".config/starship.toml".source = dotfiles/starship.toml;
+    ".config/rofi/config.rasi".source = dotfiles/rofi.rasi;
   };
 
   # Home Manager can also manage your environment variables through
