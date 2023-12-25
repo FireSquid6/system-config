@@ -110,6 +110,7 @@
     description = "firesquid";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
+      font-manager
       neofetch
       discord
       cinnamon.nemo
@@ -153,7 +154,6 @@
     wget
     firefox
     git
-    syncthing
     dunst
     playerctl
     neovim
@@ -180,7 +180,7 @@
   fonts.packages = with pkgs; [
     fira-code
     noto-fonts
-    (nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" ]; })
+    (nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" "Hasklig" "JetBrainsMono" "GeistMono" ]; })
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

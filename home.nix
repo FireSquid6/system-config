@@ -54,6 +54,11 @@
     #   org.gradle.console=verbose
     #   org.gradle.daemon.idletimeout=3600000
     # '';
+    # Files I need:
+    # - .bashrc
+    # - .vimrc
+    # - kitty/neovim/rofi/i3 configs
+    # starship.toml
   };
 
   # Home Manager can also manage your environment variables through
