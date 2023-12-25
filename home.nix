@@ -79,6 +79,7 @@
     EDITOR = "nvim";
     BROWSER = "firefox";
     TERMINAL = "kitty";
+    VISUAL = "nvim";
   };
 
   # Let Home Manager install and manage itself.

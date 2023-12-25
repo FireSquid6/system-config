@@ -27,7 +27,7 @@
     "x-scheme-handler/https" = "firefox.desktop";
     "x-scheme-handler/about" = "firefox.desktop";
     "x-scheme-handler/unknown" = "firefox.desktop";
-    "text/plain" = "nvim.desktop";
+    "text/plain" = "neovide.desktop";
   };
   xdg.mime.enable = true;
 
