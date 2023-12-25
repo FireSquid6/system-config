@@ -155,6 +155,7 @@
     firefox
     git
     dunst
+    xclip
     playerctl
     neovim
     rofi
