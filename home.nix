@@ -66,6 +66,8 @@
     ".bashrc".source = dotfiles/bashrc;
     ".config/starship.toml".source = dotfiles/starship.toml;
     ".config/rofi/config.rasi".source = dotfiles/rofi.rasi;
+    ".config/dunst/dunstrc".source = dotfiles/dunstrc;
+    ".config/lazygit/config.yml".source = dotfiles/lazygit.yml;
   };
 
   # Home Manager can also manage your environment variables through
