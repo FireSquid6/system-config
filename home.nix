@@ -54,20 +54,14 @@
     #   org.gradle.console=verbose
     #   org.gradle.daemon.idletimeout=3600000
     # '';
-    # Files I need:
-    # - .bashrc
-    # - .vimrc
-    # - kitty/rofi/i3 configs
-    # - starship.toml
-    # - scripts
-    ".config/i3/config".source = dotfiles/i3;
-    ".config/kitty/kitty.conf".source = dotfiles/kitty.conf;
-    ".vimrc".source = dotfiles/vimrc;
-    ".bashrc".source = dotfiles/bashrc;
-    ".config/starship.toml".source = dotfiles/starship.toml;
-    ".config/rofi/config.rasi".source = dotfiles/rofi.rasi;
-    ".config/dunst/dunstrc".source = dotfiles/dunstrc;
-    ".config/lazygit/config.yml".source = dotfiles/lazygit.yml;
+    # ".config/i3/config".source = dotfiles/i3;
+    # ".config/kitty/kitty.conf".source = dotfiles/kitty.conf;
+    # ".vimrc".source = dotfiles/vimrc;
+    # ".bashrc".source = dotfiles/bashrc;
+    # ".config/starship.toml".source = dotfiles/starship.toml;
+    # ".config/rofi/config.rasi".source = dotfiles/rofi.rasi;
+    # ".config/dunst/dunstrc".source = dotfiles/dunstrc;
+    # ".config/lazygit/config.yml".source = dotfiles/lazygit.yml;
   };
 
   # Home Manager can also manage your environment variables through
