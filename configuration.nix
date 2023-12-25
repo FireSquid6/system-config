@@ -40,10 +40,6 @@
   services.xserver = {
     enable = true;
 
-    desktopManager = {
-      xterm.enable = false;
-    };
-
     displayManager = {
       defaultSession = "none+i3";
     };
@@ -141,6 +137,12 @@
     };
   };
 
+  qt = {
+    enable = true;
+    platformTheme = "gnome";
+    style = "adwaita-dark";
+  };
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
@@ -172,6 +174,7 @@
     papirus-icon-theme
     htop
     ripgrep
+    dropbox
   ];
 
   fonts.packages = with pkgs; [
