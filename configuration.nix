@@ -107,6 +107,13 @@
     xkbVariant = "";
   };
 
+
+  programs.steam = {
+    enable = true;
+    remotePlay.openFirewall = true;
+    dedicatedServer.openFirewall = true;
+  };
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.firesquid = {
     isNormalUser = true;
@@ -124,7 +131,6 @@
       krita
       vlc
 
-      steam
       prismlauncher
 
       vscode
