@@ -15,6 +15,8 @@
   environment.pathsToLink = [ "/libexec" ];
 
   services.picom.enable = true;
+  services.passSecretService.enable = true; # not as cool as it sounds
+  services.gnome.gnome-keyring.enable = true;
 
   services.flatpak.enable = true;
   xdg.portal.enable = true;
