@@ -131,6 +131,9 @@
       neovide
 
       chromium
+
+      maestral
+      maestral-gui
     ];
   };
 
