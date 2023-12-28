@@ -3,10 +3,9 @@ font pango: FiraCode Nerd Font 12
 
 # Borders
 # Also removes all title bars
-for_window [class="^.*"] border pixel 3
-default_border pixel 3
-default_floating_border pixel 3
-
+for_window [class="^.*"] border pixel 4
+default_border pixel 4
+default_floating_border pixel 4
 
 
 # Set colours various window states
