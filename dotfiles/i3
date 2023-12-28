@@ -53,7 +53,8 @@ set $mod Mod4
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
-exec_always --no-startup-id $HOME/scripts/startup.sh
+exec --no-startup-id polybar -r --config=$HOME/.config/polybar/config.ini
+exec_always --no-startup-id /etc/nixos/scripts/startup.sh
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -90,7 +91,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+x exec --no-startup-id rofi -show drun
 bindsym $mod+Tab exec --no-startup-id rofi -show window
 bindsym $mod+Shift+f exec --no-startup-id rofi -show filebrowser
-bindsym $mod+p exec --no-startup-id /home/firesquid/scripts/rofigen /home/firesquid/scripts/powermenu.sh
+bindsym $mod+p exec --no-startup-id /etc/nixos/scripts/rofigen /etc/nixos/scripts/powermenu.sh
 
 # There also is i3-dmenu-desktop which only displays applications shipping a
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
@@ -154,7 +155,7 @@ for_window [class="discord"] move container to workspace $ws2
 assign [class="Slack"] $ws2
 
 exec --no-startup-id i3-msg workspace $ws1; exec firefox https://wakatime.com/dashboard https://mail.google.com https://github.com/ https://music.youtube.com
-exec --no-startup-id i3-msg workspace $ws1; exec kitty /home/firesquid/scripts/nb
+exec --no-startup-id i3-msg workspace $ws1; exec kitty /etc/nixos/scripts/nb
 exec --no-startup-id discord
 exec --no-startup-id slack
 
@@ -226,25 +227,25 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-        position top
-        font pango: FiraCode Nerd Font 12
-        tray_output none
-        separator_symbol "|      |"
-
-        padding 4px 16px 12px 12px
-
-        status_command i3status 
-
-        colors {
-                separator #a9b1d6
-                background #1a1b26
-                statusline #a9b1d6
-
-                focused_workspace  #1a1b26 #1a1b26 #f7768e
-                active_workspace   #1a1b26 #1a1b26 #f7768e
-                inactive_workspace #1a1b26 #1a1b26 #a9b1d6
-                urgent_workspace   #1a1b26 #1a1b26 #e0af68
-        }
-        
-}
+# bar {
+#         position top
+#         font pango: FiraCode Nerd Font 12
+#         tray_output none
+#         separator_symbol "|      |"
+#
+#         padding 4px 16px 12px 12px
+#
+#         status_command i3status 
+#
+#         colors {
+#                 separator #a9b1d6
+#                 background #1a1b26
+#                 statusline #a9b1d6
+#
+#                 focused_workspace  #1a1b26 #1a1b26 #f7768e
+#                 active_workspace   #1a1b26 #1a1b26 #f7768e
+#                 inactive_workspace #1a1b26 #1a1b26 #a9b1d6
+#                 urgent_workspace   #1a1b26 #1a1b26 #e0af68
+#         }
+#         
+# }
