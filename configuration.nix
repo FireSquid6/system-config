@@ -14,6 +14,12 @@
 
   environment.pathsToLink = [ "/libexec" ];
 
+  virtualisation.docker.enable = true;
+  virtualisation.docker.rootless = {
+    enable = true;
+    setSocketVariable = true;
+  };
+
   services.passSecretService.enable = true; # not as cool as it sounds
   services.gnome.gnome-keyring.enable = true;
 
@@ -124,7 +130,7 @@
   users.users.firesquid = {
     isNormalUser = true;
     description = "firesquid";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
     packages = with pkgs; [
       font-manager
       neofetch
