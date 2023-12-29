@@ -25,7 +25,7 @@
   services.gnome.gnome-keyring.enable = true;
 
   services.logind = {
-    lidSwitch = "ignore";
+    lidSwitch = "suspend";
     lidSwitchDocked = "ignore";
     lidSwitchExternalPower = "ignore";
     powerKey = "poweroff";
@@ -152,6 +152,8 @@
 
       maestral
       maestral-gui
+
+      betterlockscreen
     ];
   };
 

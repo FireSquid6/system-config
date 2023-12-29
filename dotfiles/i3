@@ -194,7 +194,7 @@ bindsym $mod+Shift+5 move container to workspace $ws5; workspace $ws5
 bindsym $mod+Shift+6 move container to workspace $ws6; workspace $ws6
 
 bindsym $mod+shift+s exec flameshot gui
-
+bindsym $mod+Shift+e exec /etc/nixos/scripts/lock.sh
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
