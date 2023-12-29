@@ -12,5 +12,3 @@ cp /etc/nixos/dotfiles/rofi.rasi ~/.config/rofi/config.rasi
 cp /etc/nixos/dotfiles/starship.toml ~/.config/starship.toml
 cp /etc/nixos/dotfiles/polybar.ini ~/.config/polybar/config.ini
 cp /etc/nixos/dotfiles/vimrc ~/.vimrc
-
-i3-msg restart

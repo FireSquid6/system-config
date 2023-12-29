@@ -54,6 +54,7 @@ set $mod Mod4
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id polybar -r --config=$HOME/.config/polybar/config.ini
+exec --no-startup-id picom --experimental-backend
 exec_always --no-startup-id /etc/nixos/scripts/startup.sh
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
