@@ -24,15 +24,10 @@
   services.passSecretService.enable = true; # not as cool as it sounds
   services.gnome.gnome-keyring.enable = true;
 
-  # programs.xss-lock = {
-  #   enable = true;
-  #   lockerCommand = "/etc/nixos/scripts/lock.sh";
-  # };
-
   services.logind = {
     lidSwitch = "suspend";
-    lidSwitchDocked = "ignore";
-    lidSwitchExternalPower = "ignore";
+    lidSwitchDocked = "suspend";
+    lidSwitchExternalPower = "suspend";
     powerKey = "poweroff";
   };
 
