@@ -58,7 +58,10 @@
 
     displayManager = {
       defaultSession = "none+i3";
+      sddm.enable = true;
     };
+
+    desktopManager.plasma5.enable = true;
 
     windowManager.i3 = {
       enable = true;
@@ -70,6 +73,17 @@
       ];
     };
   };
+
+  environment.plasma5.excludePackages = with pkgs.libsForQt5; [
+    elisa
+    gwenview
+    okular
+    oxygen
+    khelpcenter
+    konsole
+    plasma-browser-integration
+    print-manager
+  ];
 
   # Bootloader.
   boot.initrd.kernelModules = [ "i915" ];
