@@ -192,7 +192,7 @@
     lxappearance
     feh
     lazygit
-    nitrogen
+    brightnessctl
     gh
     direnv
     xss-lock

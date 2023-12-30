@@ -24,13 +24,13 @@ default_floating_border pixel 4
 # child_border: The border around the view itself.
 # The default colors are:
 # class	        border	background	text    indicator	child_border			
-# background	n/a	    #ffffff     n/a	    n/a	        n/a
-# focused	    #4c7899	#285577	    #ffffff	#2e9ef4	    #285577
-# focused_inactive	#333333	#5f676a	#ffffff	#484e50	    #5f676a
-# unfocused	    #333333	#222222	    #888888	#292d2e	    #222222
-# urgent	    #2f343a	#900000	    #ffffff	#900000	    #900000
-# placeholder	#000000	#0c0c0c	    #ffffff	#000000 	#0c0c0c
-client.focused           #9aa5ce #364A82 #c0caf5 #9aa5ce   #9aa5ce
+# background	n/a	    #c0caf5     n/a	    n/a	        n/a
+# focused	    #7aa2f7	#bb9af7	    #c0caf5	#7dcfff	    #7aa2f7
+# focused_inactive	#484e50	#283457	#c0caf5	#484e50	    #283457
+# unfocused	    #15161e	#292d2e	    #a9b1d6	#292d2e	    #15161e
+# urgent	    #2f343a	#f7768e	    #c0caf5 	#f7768e	    #f7768e
+# placeholder	#15161e	#16161e	    #c0caf5	#15161e 	#16161e
+client.focused           #9aa5ce #283457 #c0caf5 #9aa5ce   #9aa5ce
 client.focused_inactive  #16161d #16161d #c0caf5 #16161d   #16161d
 client.unfocused         #16161d #16161d #c0caf5 #16161d   #16161d
 
@@ -123,19 +123,14 @@ bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
-# split in horizontal orientation
-bindsym $mod+b split h
-
-# split in vertical orientation
-bindsym $mod+v split v
-
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+bindsym $mod+v split h
+bindsym $mod+b split v
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -146,6 +141,11 @@ bindsym $mod+space focus mode_toggle
 # focus the parent container
 bindsym $mod+a focus parent
 
+# scratchpad
+bindsym $mod+equal scratchpad show 
+bindsym $mod+Shift+equal scratchpad show; floating toggle
+bindsym $mod+minus move scratchpad 
+
 # focus the child container
 #bindsym $mod+d focus child
 
@@ -154,21 +154,23 @@ bindsym $mod+a focus parent
 
 
 for_window [class="discord"] move container to workspace $ws2
+for_window [class="chromium"] move container to workspace $ws2
 assign [class="Slack"] $ws2
 
-exec --no-startup-id i3-msg workspace $ws1; exec firefox https://wakatime.com/dashboard https://mail.google.com https://github.com/ https://music.youtube.com
+exec --no-startup-id i3-msg workspace $ws1; exec firefox https://wakatime.com/dashboard https://mail.google.com https://github.com/ 
 exec --no-startup-id i3-msg workspace $ws1; exec kitty /etc/nixos/scripts/nb
 exec --no-startup-id discord
-exec --no-startup-id slack
+exec --no-startup-id chromium https://app.slack.com/client/
+exec --no-startup-id i3-msg workplace $ws3; exec kitty ~/source
 
 bindsym $mod+shift+Ctrl+f exec --no-startup-id firefox
 
 # switch to workspace
-set $ws1 
+set $ws1 󰠮
 set $ws2 󰭹
 set $ws3 
-set $ws4 
-set $ws5 
+set $ws4 󰣆
+set $ws5 
 set $ws6 
 
 bindsym $mod+1 workspace $ws1
@@ -196,7 +198,6 @@ bindsym $mod+Shift+6 move container to workspace $ws6; workspace $ws6
 
 bindsym $mod+shift+s exec flameshot gui
 bindsym $mod+Shift+e exec /etc/nixos/scripts/lock.sh
-bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
 
