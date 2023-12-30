@@ -149,7 +149,6 @@
       font-manager
       neofetch
       discord
-      cinnamon.nemo
       godot_4
 
       libresprite
