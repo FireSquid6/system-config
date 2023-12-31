@@ -68,8 +68,8 @@
       extraPackages = with pkgs; [
         dmenu
         i3status
-        i3lock-fancy-rapid
         i3blocks
+        i3lock-color
       ];
     };
   };
@@ -220,6 +220,7 @@
     docker
     picom-jonaburg
     polybar
+    libsForQt5.sddm-kcm
   ];
 
   fonts.packages = with pkgs; [
