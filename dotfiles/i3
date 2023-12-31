@@ -152,8 +152,8 @@ bindsym $mod+Shift+equal scratchpad show; floating toggle
 bindsym $mod+minus move scratchpad 
 
 bindsym $mod+$alt+f [class="firefox"] scratchpad show
-bindsym $mod+$alt+n [title="^.*Dropbox/notes.*$"] scratchpad show
 bindsym $mod+$alt+y [title="^.*YouTube Music.*$"] scratchpad show
+bindsym $mod+$alt+t [class="kitty"] scratchpad show
 
 # focus the child container
 #bindsym $mod+d focus child
@@ -163,22 +163,24 @@ bindsym $mod+$alt+y [title="^.*YouTube Music.*$"] scratchpad show
 
 
 for_window [class="discord"] move container to workspace $ws2
-assign [class="Slack"] $ws2
-assign [class="chromium"] $ws2
+for_window [title="^.*Slack - Chromium.*$"] move window to workplace $ws2
+for_window [class="scratchpad"] move window to scratchpad
+for_window [title="^.*YouTube Music.*$"] move window to scratchpad
 
 exec --no-startup-id i3-msg workspace $ws1; exec firefox https://wakatime.com/dashboard https://mail.google.com https://github.com/ 
-exec --no-startup-id i3-msg workspace $ws1; exec kitty /etc/nixos/scripts/nb
+exec --no-startup-id kitty --class=scratchpad ~/Dropbox/notes
 exec --no-startup-id discord
-exec --no-startup-id i3-msg workspace $ws2; chromium https://app.slack.com/client/
-exec --no-startup-id i3-msg workspace $ws3; exec kitty ~/source
+exec --no-startup-id chromium https://app.slack.com/client/
+exec --no-startup-id i3-msg workspace $ws1; exec kitty ~/source
+# exec --no-startup-id youtube-music
 
 bindsym $mod+shift+Ctrl+f exec --no-startup-id firefox
 
 # switch to workspace
-set $ws1 󰠮
+set $ws1 
 set $ws2 󰭹
-set $ws3 
-set $ws4 󰣆
+set $ws3 󰣆
+set $ws4 󰃣
 set $ws5 
 set $ws6 
 
