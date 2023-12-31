@@ -51,6 +51,10 @@
   hardware.pulseaudio.enable = true;
   hardware.pulseaudio.support32Bit = true;
 
+  nixpkgs.config.permittedInsecurePackages = [
+    "electron-25.9.0"
+  ];
+
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   services.xserver = {
@@ -167,6 +171,7 @@
       maestral-gui
 
       betterlockscreen
+      youtube-music
     ];
   };
 

@@ -45,6 +45,7 @@ gaps outer 8px
 smart_gaps inverse_outer
 
 set $mod Mod4
+set $alt Mod1
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -149,6 +150,10 @@ bindsym $mod+a focus parent
 bindsym $mod+equal scratchpad show 
 bindsym $mod+Shift+equal scratchpad show; floating toggle
 bindsym $mod+minus move scratchpad 
+
+bindsym $mod+$alt+f [class="firefox"] scratchpad show
+bindsym $mod+$alt+n [title="^.*Dropbox/notes.*$"] scratchpad show
+bindsym $mod+$alt+y [title="^.*YouTube Music.*$"] scratchpad show
 
 # focus the child container
 #bindsym $mod+d focus child
