@@ -1,5 +1,5 @@
 #!/bin/sh
 
-setxkbmap -option caps:swapescape
+setxkbmap -option caps:escape
 feh --bg-fill /home/firesquid/wallpapers/wallpaper.png
 maestral start
