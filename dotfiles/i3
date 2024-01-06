@@ -175,6 +175,7 @@ exec --no-startup-id kitty --class=scratchpad ~/Dropbox/notes
 exec --no-startup-id discord
 exec --no-startup-id chromium https://app.slack.com/client/
 exec --no-startup-id i3-msg workspace $ws1; exec kitty ~/source
+exec --no-startup-id obsidian
 # exec --no-startup-id youtube-music
 
 bindsym $mod+shift+Ctrl+f exec --no-startup-id firefox
