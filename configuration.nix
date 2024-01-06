@@ -180,6 +180,7 @@
       youtube-music
 
       tmux
+      obsidian
     ];
   };
 
