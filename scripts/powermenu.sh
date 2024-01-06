@@ -12,5 +12,7 @@ menu=(
     [⏻  Shutdown]="shutdown -h now"
     [󰃢  Organize]="/etc/nixos/scripts/negtd"
     [󰍃  Logout]="i3-msg exit"
+    [󰌙  Disconnect]="/etc/nixos/scripts/disconnect.sh"
+    [󰌘  Connect]="/etc/nixos/scripts/connect.sh"
 )
 menu_nrows=${#menu[@]}
