@@ -171,6 +171,8 @@
 
       chromium
 
+      rofimoji
+
       maestral
       maestral-gui
 
