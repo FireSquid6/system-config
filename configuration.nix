@@ -178,6 +178,8 @@
 
       betterlockscreen
       youtube-music
+
+      tmux
     ];
   };
 

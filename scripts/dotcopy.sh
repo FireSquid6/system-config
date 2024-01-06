@@ -13,3 +13,5 @@ cp /etc/nixos/dotfiles/starship.toml ~/.config/starship.toml
 cp /etc/nixos/dotfiles/polybar.ini ~/.config/polybar/config.ini
 cp /etc/nixos/dotfiles/vimrc ~/.vimrc
 cp /etc/nixos/dotfiles/betterlockscreenrc ~/.config/betterlockscreen/betterlockscreenrc
+cp /etc/nixos/dotfiles/tmux.conf ~/.tmux.conf
+cp /etc/nixos/dotfiles/profile ~/.profile
