@@ -154,6 +154,7 @@ bindsym $mod+minus move scratchpad
 bindsym $mod+$alt+f [class="firefox"] scratchpad show
 bindsym $mod+$alt+y [title="^.*YouTube Music.*$"] scratchpad show
 bindsym $mod+$alt+t [class="scratchpad"] scratchpad show
+bindsym $mod+$alt+n [class="obsidian"] scratchpad show
 
 # focus the child container
 #bindsym $mod+d focus child
@@ -166,6 +167,7 @@ for_window [class="discord"] move container to workspace $ws2
 for_window [title="^.*Slack - Chromium.*$"] move window to workplace $ws2
 for_window [class="scratchpad"] move window to scratchpad
 for_window [title="^.*YouTube Music.*$"] move window to scratchpad
+for_window [class="obsidian"] move window to scratchpad
 for_window [class="Chromium-browser"] move window to workspace $ws2
 
 exec --no-startup-id i3-msg workspace $ws1; exec firefox https://wakatime.com/dashboard https://mail.google.com https://github.com/ 
