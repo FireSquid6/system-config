@@ -171,7 +171,7 @@ for_window [class="obsidian"] move window to scratchpad
 for_window [class="Chromium-browser"] move window to workspace $ws2
 
 exec --no-startup-id i3-msg workspace $ws1; exec firefox https://wakatime.com/dashboard https://mail.google.com https://github.com/ 
-exec --no-startup-id kitty --class=scratchpad ~/Dropbox/notes
+exec --no-startup-id kitty --class=scratchpad 
 exec --no-startup-id discord
 exec --no-startup-id chromium https://app.slack.com/client/
 exec --no-startup-id i3-msg workspace $ws1; exec kitty ~/source
