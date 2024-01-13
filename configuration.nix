@@ -105,7 +105,8 @@
       enable = true;
       device = "nodev";
       efiSupport = true;
-    };
+      useOSProber = true;
+   };
   };
 
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
