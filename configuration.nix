@@ -106,7 +106,7 @@
       device = "nodev";
       efiSupport = true;
       useOSProber = true;
-   };
+    };
   };
 
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -159,6 +159,8 @@
       neofetch
       discord
       godot_4
+
+      lapce
 
       libresprite
       inkscape
