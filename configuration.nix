@@ -161,6 +161,7 @@
       godot_4
 
       lapce
+      asciinema
 
       libresprite
       inkscape
