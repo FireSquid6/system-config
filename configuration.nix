@@ -240,6 +240,15 @@
     picom-jonaburg
     polybar
     libsForQt5.sddm-kcm
+
+    # python stuff
+    python3
+    python311Packages.pip
+    python311Packages.python-dotenv
+    python311Packages.requests
+    python311Packages.pynvim
+    python311Packages.prompt-toolkit
+    python311Packages.tiktoken
   ];
 
   fonts.packages = with pkgs; [
