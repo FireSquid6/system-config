@@ -172,6 +172,7 @@
       vlc
 
       prismlauncher
+      guvcview
 
       vscode
       neovide
