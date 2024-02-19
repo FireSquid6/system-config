@@ -3,3 +3,4 @@ export PATH="$PATH:/etc/nixos/scripts"
 
 eval "$(starship init bash)"
 eval "$(direnv hook bash)"
+eval "$(zoxide init bash)"

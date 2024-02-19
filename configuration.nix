@@ -243,6 +243,7 @@
     picom-jonaburg
     polybar
     libsForQt5.sddm-kcm
+    zoxide
 
     # python stuff
     python3
