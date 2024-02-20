@@ -181,9 +181,6 @@
 
       rofimoji
 
-      maestral
-      maestral-gui
-
       betterlockscreen
       youtube-music
 
