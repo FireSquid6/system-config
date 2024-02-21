@@ -242,6 +242,7 @@
     polybar
     libsForQt5.sddm-kcm
     zoxide
+    libnotify
 
     # python stuff
     python3

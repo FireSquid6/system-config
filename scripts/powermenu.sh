@@ -10,8 +10,8 @@ menu=(
     [  Lock]="/etc/nixos/scripts/lock.sh"
     [󰒲  Suspend]="systemctl suspend"
     [⏻  Shutdown]="shutdown -h now"
-    [󰃢  Organize]="/etc/nixos/scripts/negtd"
     [󰍃  Logout]="i3-msg exit"
+    [  Wifi Settings]="/etc/nixos/scripts/wifi-menu.sh"
     [󰌙  Disconnect]="/etc/nixos/scripts/disconnect.sh"
     [󰌘  Connect]="/etc/nixos/scripts/connect.sh"
 )
