@@ -244,6 +244,8 @@
     zoxide
     libnotify
 
+    zoom-us
+
     # python stuff
     python3
     python311Packages.pip
