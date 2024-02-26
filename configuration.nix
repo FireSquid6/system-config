@@ -159,33 +159,7 @@
     extraGroups = [ "networkmanager" "wheel" "docker" ];
     packages = with pkgs; [
       font-manager
-      neofetch
-      discord
-      godot_4
 
-      lapce
-      asciinema
-
-      libresprite
-      inkscape
-      krita
-      vlc
-
-      prismlauncher
-      guvcview
-
-      vscode
-      neovide
-
-      chromium
-
-      rofimoji
-
-      betterlockscreen
-      youtube-music
-
-      tmux
-      obsidian
     ];
   };
 
@@ -213,9 +187,7 @@
     firefox
     git
     tailscale
-    glib
     xclip
-    luakit
     playerctl
     neovim
     rofi
@@ -238,14 +210,10 @@
     ripgrep
     dropbox
     docker
-    dunst
     picom-jonaburg
     polybar
     libsForQt5.sddm-kcm
     zoxide
-    libnotify
-
-    zoom-us
 
     # python stuff
     python3

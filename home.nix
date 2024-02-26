@@ -20,7 +20,36 @@
   home.packages = [
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
-    # pkgs.hello
+    pkgs.hello
+    pkgs.zoom-us
+
+    pkgs.neofetch
+    pkgs.discord
+    pkgs.godot_4
+
+    pkgs.lapce
+    pkgs.asciinema
+
+    pkgs.libresprite
+    pkgs.inkscape
+    pkgs.krita
+    pkgs.vlc
+
+    pkgs.prismlauncher
+    pkgs.guvcview
+
+    pkgs.vscode
+    pkgs.neovide
+
+    pkgs.chromium
+
+    pkgs.rofimoji
+
+    pkgs.betterlockscreen
+    pkgs.youtube-music
+
+    pkgs.tmux
+    pkgs.obsidian
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
     # # parentheses. Maybe you want to install Nerd Fonts with a limited number of
