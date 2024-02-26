@@ -213,7 +213,7 @@
     firefox
     git
     tailscale
-    dunst
+    glib
     xclip
     luakit
     playerctl
@@ -238,6 +238,7 @@
     ripgrep
     dropbox
     docker
+    dunst
     picom-jonaburg
     polybar
     libsForQt5.sddm-kcm
@@ -254,6 +255,8 @@
     python311Packages.pynvim
     python311Packages.prompt-toolkit
     python311Packages.tiktoken
+
+    home-manager
   ];
 
   fonts.packages = with pkgs; [
