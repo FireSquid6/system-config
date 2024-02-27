@@ -1,3 +1,3 @@
 #!/bin/sh
 
-sudo nixos-rebuild switch --flake path:///etc/nixos#default --show-trace
+sudo nixos-rebuild switch --flake path:///etc/nixos#default 
