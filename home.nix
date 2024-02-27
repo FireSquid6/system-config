@@ -28,7 +28,6 @@
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     pkgs.hello
-    pkgs.zoom-us
 
     pkgs.libnotify
 
@@ -59,6 +58,7 @@
 
     pkgs.tmux
     pkgs.obsidian
+    pkgs.dunst
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
     # # parentheses. Maybe you want to install Nerd Fonts with a limited number of
@@ -73,28 +73,28 @@
     # '')
   ];
 
-  config.services.dunst = {
-    enable = true;
-
-    settings = {
-      global = {
-        follow = "keyboard";
-        markup = "full";
-        dmenu = "${pkgs.rofi}/bin/rofi -dmenu -p dunst:";
-      };
-
-      urgency_low.timeout = 5;
-      urgency_normal.timeout = 10;
-      urgency_critical.timeout = 15;
-
-      shortcuts = {
-        context = "mod1+period";
-        close = "mod1+space";
-        close_all = "mod1+shift+space";
-        history = "mod1+grave";
-      };
-    };
-  };
+  # config.services.dunst = {
+  #   enable = true;
+  #
+  #   settings = {
+  #     global = {
+  #       follow = "keyboard";
+  #       markup = "full";
+  #       dmenu = "${pkgs.rofi}/bin/rofi -dmenu -p dunst:";
+  #     };
+  #
+  #     urgency_low.timeout = 5;
+  #     urgency_normal.timeout = 10;
+  #     urgency_critical.timeout = 15;
+  #
+  #     shortcuts = {
+  #       context = "mod1+period";
+  #       close = "mod1+space";
+  #       close_all = "mod1+shift+space";
+  #       history = "mod1+grave";
+  #     };
+  #   };
+  # };
 
   programs.git = {
     enable = true;

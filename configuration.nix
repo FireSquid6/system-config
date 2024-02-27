@@ -17,6 +17,9 @@
 
   services.tailscale.enable = true;
 
+  # hardware.bluetooth.enable = true;
+  # hardware.bluetooth.powerOnBoot = true;
+
   virtualisation.docker.enable = true;
   virtualisation.docker.rootless = {
     enable = true;
