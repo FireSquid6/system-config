@@ -31,6 +31,7 @@
 
     pkgs.libnotify
 
+    pkgs.bluez5
     pkgs.neofetch
     pkgs.discord
     pkgs.godot_4
