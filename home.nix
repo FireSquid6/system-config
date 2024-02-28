@@ -27,13 +27,14 @@
   home.packages = [
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
-    pkgs.hello
 
     pkgs.libnotify
 
     pkgs.neofetch
     pkgs.discord
     pkgs.godot_4
+
+    pkgs._2048-in-terminal
 
     pkgs.lapce
     pkgs.asciinema

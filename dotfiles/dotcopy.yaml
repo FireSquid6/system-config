@@ -1,0 +1,3 @@
+- template: tmux.conf
+  slotfile: ""
+  location: /home/firesquid/.tmux.conf
