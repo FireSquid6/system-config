@@ -44,6 +44,8 @@
     pkgs.krita
     pkgs.vlc
 
+    pkgs.thunderbird
+    pkgs.libsForQt5.kmail
     pkgs.prismlauncher
     pkgs.guvcview
 
