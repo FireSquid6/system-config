@@ -14,5 +14,6 @@ menu=(
     [6. 󰍃  Logout]="i3-msg exit"
     [7. 󰌙  Disconnect]="/etc/nixos/scripts/disconnect.sh"
     [8. 󰌘  Connect]="/etc/nixos/scripts/connect.sh"
+    [9. 󰙰  Rebuild Dotfiles]="/etc/nixos/scripts/dotcopy.sh"
 )
 menu_nrows=${#menu[@]}

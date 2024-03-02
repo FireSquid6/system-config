@@ -170,13 +170,15 @@ for_window [class="scratchpad"] move window to scratchpad
 for_window [title="^.*YouTube Music.*$"] move window to scratchpad
 for_window [class="obsidian"] move window to scratchpad
 for_window [class="Chromium-browser"] move window to workspace $ws2
+for_window [class="thunderbird"] move window to workspace $ws3
 
-exec --no-startup-id i3-msg workspace $ws1; exec firefox https://wakatime.com/dashboard https://mail.google.com https://github.com/ 
+exec --no-startup-id i3-msg workspace $ws1; exec firefox https://wakatime.com/dashboard https://github.com/ 
 exec --no-startup-id kitty --class=scratchpad 
 exec --no-startup-id discord
 exec --no-startup-id chromium https://app.slack.com/client/
 exec --no-startup-id i3-msg workspace $ws1; exec kitty ~/source
 exec --no-startup-id obsidian
+exec --no-startup-id thunderbird
 # exec --no-startup-id youtube-music
 
 bindsym $mod+shift+Ctrl+f exec --no-startup-id firefox
@@ -184,9 +186,9 @@ bindsym $mod+shift+Ctrl+f exec --no-startup-id firefox
 # switch to workspace
 set $ws1 
 set $ws2 󰭹
-set $ws3 󰣆
-set $ws4 󰃣
-set $ws5 
+set $ws3 
+set $ws4 󱃵
+set $ws5 󱃷
 set $ws6 
 
 bindsym $mod+1 workspace $ws1
