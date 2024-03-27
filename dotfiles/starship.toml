@@ -34,9 +34,9 @@ format = '[\($state( $progress_current of $progress_total)\)]($style) '
 
 [git_status]
 conflicted = "⚔️ "
-ahead = "🏎️ 💨 ×${count}"
+ahead = "🏎️  ×${count}"
 behind = "🐢 ×${count}"
-diverged = "🔱 🏎️ 💨 ×${ahead_count} 🐢 ×${behind_count}"
+diverged = "🔱 🏎️ ×${ahead_count} 🐢 ×${behind_count}"
 untracked = "🛤️  ×${count}"
 stashed = "📦 "
 modified = "📝 ×${count}"
@@ -93,6 +93,3 @@ impure_msg = ""
 pure_msg = ""
 unknown_msg = ""
 disabled = false
-
-[nodejs]
-format = "via [🤖 $version](bold green) "
