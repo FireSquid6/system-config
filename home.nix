@@ -42,6 +42,7 @@
     pkgs.asciinema
 
     pkgs.libresprite
+    pkgs.wuzz
     pkgs.inkscape
     pkgs.krita
     pkgs.vlc
