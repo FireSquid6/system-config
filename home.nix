@@ -19,6 +19,7 @@
   # environment.
 
   nixpkgs.config.allowUnfree = true;
+  nixpkgs.config.allowUnsupportedSystem = true;
 
   nixpkgs.config.permittedInsecurePackages = [
     "electron-25.9.0"
@@ -53,6 +54,7 @@
 
     pkgs.vscode
     pkgs.neovide
+    pkgs.warp-terminal
 
     pkgs.chromium
 
