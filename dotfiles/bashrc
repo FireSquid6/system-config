@@ -5,3 +5,6 @@ export PATH="$PATH:/etc/nixos/bins"
 eval "$(starship init bash)"
 eval "$(direnv hook bash)"
 eval "$(zoxide init bash)"
+
+alias e='NVIM_APPNAME=astro-nvim nvim'
+alias en='NVIM_APPNAME=ink-nvim nvim'
