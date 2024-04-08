@@ -69,6 +69,11 @@
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
+  programs.hyprland = {
+    enable = true;
+    xwayland.enable = true;
+  };
+
   hardware.keyboard.zsa.enable = true;
 
   services.xserver = {
@@ -148,8 +153,8 @@
 
   # Configure keymap in X11
   services.xserver = {
-    layout = "us";
-    xkbVariant = "";
+    xkb.layout = "us";
+    xkb.variant = "";
   };
 
 
@@ -189,6 +194,11 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    (waybar.overrideAttrs (oldAttrs: {
+        mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ];
+      })
+    )
+
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     wget
     firefox
@@ -197,7 +207,8 @@
     xclip
     playerctl
     neovim
-    rofi
+    swww
+    rofi-wayland
     kitty
     unzip
     screen
@@ -209,6 +220,7 @@
     direnv
     xss-lock
     starship
+    waybar
     flameshot
     simplescreenrecorder
     gnome-icon-theme
@@ -217,10 +229,11 @@
     ripgrep
     dropbox
     docker
-    picom-jonaburg
+    picom
     polybar
     libsForQt5.sddm-kcm
     zoxide
+    libnotify
 
     # python stuff
     python3

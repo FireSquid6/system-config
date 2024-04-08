@@ -95,9 +95,8 @@ bindsym $mod+Return exec kitty
 bindsym $mod+Shift+q kill
 
 # A more modern dmenu replacement is rofi:
-bindsym $mod+x exec --no-startup-id rofi -show drun
-bindsym $mod+Tab exec --no-startup-id rofi -show window
-bindsym $mod+Shift+f exec --no-startup-id rofi -show filebrowser
+bindsym $mod+x exec --no-startup-id rofi -modi drun -show drun
+bindsym $mod+Tab exec --no-startup-id rofi -show -modi window -show window
 bindsym $mod+p exec --no-startup-id /etc/nixos/scripts/rofigen /etc/nixos/scripts/powermenu.sh
 bindsym $mod+e exec --no-startup-id rofimoji
 
