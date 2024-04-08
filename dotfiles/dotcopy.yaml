@@ -40,3 +40,12 @@
 - template: vimrc
   slotfile: ""
   location: /home/firesquid/.vimrc
+- template: waybar.jsonc
+  slotfile: ""
+  location: /home/firesquid/waybar/config.jsonc
+- template: waybar.css
+  slotfile: ""
+  location: /home/firesquid/waybar/style.css
+- template: hyprland.conf
+  slotfile: ""
+  location: /home/firesquid/hyprland/hyprland.conf
