@@ -1,7 +1,10 @@
-# My Nixos Config
+# System Configuration
+This is the main system configuration for all of my machines! I use:
+- nixos
+- i3wm (when on x11)
+- hyprland (when on wayland)
+- neovim
 
-This is my nixos config! It lives in `/etc/nixos` on all of my personal machines. Additionally, it has:
-- `scripts` - some useful scripts i have that are always in the path
-- `dotfiles` - all of my dotfiles, organized with [dotcopy](https://dotcopy.firesquid.co)
+It's always a work in progress. Much of the scripts should be more declarative. 
 
-I do not use this for servers. It is primarily for desktop use on personal machines.
+This repo gets cloned to `/etc/nixos` on my new machines.
