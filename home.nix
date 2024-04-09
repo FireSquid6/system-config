@@ -59,6 +59,8 @@
     pkgs.chromium
 
     pkgs.rofimoji
+    pkgs.swappy
+    pkgs.grim
 
     pkgs.betterlockscreen
     pkgs.youtube-music
