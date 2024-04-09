@@ -2,7 +2,7 @@
 
 
 swww init &
-swww img ~/wallpapers/math.png &
+swww img ~/wallpapers/wallpaper.png &
 
 /etc/nixos/scripts/waybar.sh &
 
