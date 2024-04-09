@@ -3,14 +3,17 @@
   "position": "top",
   "height": 40,
   "modules-left": ["hyprland/workspaces", "hyprland/window"],
-  "modules-right": ["tray", "pulseaudio", "cpu", "memory", "battery", "network", "clock"],
+  "modules-right": ["tray", "battery", "pulseaudio", "cpu", "memory", "network",  "clock"],
   "hyprland/workspaces": {
     "disable-scroll": true,
     "all-outputs": false,
     "disable-markup": false,
     "format": "{icon}",
     "format-icons": {
-      "default": ""
+      "default": " 󰣆 ",
+      "1": "  ",
+      "2": " 󰠮 ",
+      "3": " 󰭹 "
     }
   },
   "clock": {
@@ -50,8 +53,8 @@
     "max-length": 50
   }, 
   "pulseaudio": {
-    "format": "{volume} {icon}",
-    "format-bluetooth": "{volume}% {icon}",
+    "format": "{icon} {volume}%",
+    "format-bluetooth": "{icon} {volume}%",
     "format-muted": "",
     "format-icons": {
       "headphone": " ",
