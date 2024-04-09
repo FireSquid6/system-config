@@ -40,42 +40,34 @@ window#waybar {
   color: #bb9af7;
   background: none;
 }
+
 #tray,
-#mode,
 #battery,
 #temperature,
 #cpu,
 #memory,
 #network,
 #pulseaudio,
-#idle_inhibitor,
-#sway-language,
-#backlight,
 #clock
 {
-  padding: 8px
+  padding: 8px;
 }
 
-#network {
-  background-color: #a9b1d6;
-  color: #1f2335;
-}
 
+#battery,
+#temperature,
+#cpu,
 #memory,
-#cpu {
-  background-color:  #737aa2;
-  color: #1f2335;
-}
-
-#pulseaudio {
-  background-color: #24283b ;
-}
-
-
-#clock {
+#network,
+#pulseaudio,
+#clock
+{
   background-color: #c0caf5;
   color: #1f2335;
+  margin: 4px;
+  border-radius: 4px;
 }
+
 #battery.warning {
   color: #ff9e64
 }
