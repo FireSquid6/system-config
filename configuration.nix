@@ -246,6 +246,7 @@
     python311Packages.tiktoken
 
     home-manager
+    hyprlock
   ];
 
   fonts.packages = with pkgs; [
