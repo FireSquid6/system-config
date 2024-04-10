@@ -49,3 +49,6 @@
 - template: hyprland.conf
   slotfile: ""
   location: /home/firesquid/.config/hypr/hyprland.conf
+- template: hyprlock.conf
+  slotfile: ""
+  location: /home/firesquid/.config/hypr/hyprlock.conf
