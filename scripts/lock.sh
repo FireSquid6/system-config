@@ -1,6 +1,6 @@
 #!/bin/sh
 playerctl pause
-betterlockscreen --lock
+hyprlock
 
 # BLANK='#00000000'
 # CLEAR='#ffffff22'
