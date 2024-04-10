@@ -56,7 +56,7 @@ set $alt Mod1
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id polybar -r --config=$HOME/.config/polybar/config.ini
 exec --no-startup-id picom --experimental-backend
-exec_always --no-startup-id /etc/nixos/scripts/startup.sh
+exec_always --no-startup-id /etc/nixos/scripts/i3-startup.sh
 exec_always --no-startup-id xss-lock -- /etc/nixos/scripts/lock.sh
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
