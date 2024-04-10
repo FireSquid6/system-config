@@ -14,7 +14,7 @@
   slotfile: "" # this should have a slotfile
   location: /home/firesquid/.config/i3/config
 - template: kitty.conf
-  slotfile: ""
+  slotfile: kitty.swap.conf
   location: /home/firesquid/.config/kitty/kitty.conf
 - template: lazygit.yml
   slotfile: ""
