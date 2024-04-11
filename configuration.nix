@@ -223,6 +223,7 @@
     starship
     waybar
     flameshot
+    watershot
     simplescreenrecorder
     gnome-icon-theme
     papirus-icon-theme

@@ -1,6 +1,7 @@
-{ config, pkgs, ... }:
+{ inputs, config, pkgs, ... }:
 
 {
+  imports = [ inputs.ags.homeManagerModules.default ];
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home.username = "firesquid";
@@ -24,6 +25,16 @@
   nixpkgs.config.permittedInsecurePackages = [
     "electron-25.9.0"
   ];
+
+  programs.ags = {
+    enable = true;
+    configDir = null;
+    extraPackages = with pkgs; [
+      gtksourceview
+      webkitgtk
+      accountsservice
+    ];
+  };
 
   home.packages = [
     # # Adds the 'hello' command to your environment. It prints a friendly
