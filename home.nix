@@ -66,6 +66,7 @@
     pkgs.vscode
     pkgs.neovide
     pkgs.warp-terminal
+    pkgs.nheko
 
     pkgs.chromium
 
