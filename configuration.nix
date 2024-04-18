@@ -207,6 +207,7 @@
     tailscale
     xclip
     playerctl
+    fish
     neovim
     swww
     rofi-wayland
