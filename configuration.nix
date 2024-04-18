@@ -43,6 +43,8 @@
     powerKey = "poweroff";
   };
 
+  programs.fish.enable = true;
+
   services.flatpak.enable = true;
   xdg.portal.enable = true;
   xdg.portal.config.common.default = "gtk";
@@ -167,6 +169,7 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.firesquid = {
     isNormalUser = true;
+    shell = pkgs.fish;
     description = "firesquid";
     extraGroups = [ "networkmanager" "wheel" "docker" ];
     packages = with pkgs; [

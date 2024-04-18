@@ -52,3 +52,6 @@
 - template: hyprlock.conf
   slotfile: ""
   location: /home/firesquid/.config/hypr/hyprlock.conf
+- template: config.fish
+  slotfile: ""
+  location: /home/firesquid/.config/fish/config.fish
