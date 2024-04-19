@@ -44,6 +44,7 @@
   };
 
   programs.fish.enable = true;
+  programs.nix-ld.enable = true;
 
   services.flatpak.enable = true;
   xdg.portal.enable = true;
