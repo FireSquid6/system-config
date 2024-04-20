@@ -213,6 +213,7 @@
     playerctl
     fish
     neovim
+    universal-ctags
     swww
     rofi-wayland
     kitty
