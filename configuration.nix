@@ -252,6 +252,9 @@
     python311Packages.prompt-toolkit
     python311Packages.tiktoken
 
+    alacritty
+
+    nodejs_20
     home-manager
     hyprlock
   ];
