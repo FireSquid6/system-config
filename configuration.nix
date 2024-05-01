@@ -53,6 +53,9 @@
 
   xdg.mime.defaultApplications = {
     "text/html" = "firefox.desktop";
+    "image/gif" = "firefox.desktop";
+    "image/png" = "firefox.desktop";
+    "image/jpeg" = "firefox.desktop";
     "x-scheme-handler/http" = "firefox.desktop";
     "x-scheme-handler/https" = "firefox.desktop";
     "x-scheme-handler/about" = "firefox.desktop";
@@ -213,12 +216,10 @@
     playerctl
     fish
     neovim
-    universal-ctags
     swww
     rofi-wayland
     kitty
     unzip
-    screen
     lxappearance
     feh
     lazygit
@@ -235,24 +236,15 @@
     papirus-icon-theme
     htop
     ripgrep
-    dropbox
     docker
     picom
     polybar
     libsForQt5.sddm-kcm
-    zoxide
     libnotify
 
     # python stuff
     python3
     python311Packages.pip
-    python311Packages.python-dotenv
-    python311Packages.requests
-    python311Packages.pynvim
-    python311Packages.prompt-toolkit
-    python311Packages.tiktoken
-
-    alacritty
 
     nodejs_20
     home-manager
