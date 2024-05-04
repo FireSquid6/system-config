@@ -65,6 +65,7 @@
     pkgs.rofimoji
     pkgs.swappy
     pkgs.grim
+    pkgs.lazydocker
 
     pkgs.betterlockscreen
     pkgs.youtube-music
