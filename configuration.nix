@@ -229,7 +229,6 @@
     starship
     waybar
     flameshot
-    watershot
     simplescreenrecorder
     gnome-icon-theme
     papirus-icon-theme
@@ -248,6 +247,10 @@
     nodejs_20
     home-manager
     hyprlock
+    hyprcursor
+    hyprshot
+
+    wl-clipboard
   ];
 
   fonts.packages = with pkgs; [
