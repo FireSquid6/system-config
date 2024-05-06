@@ -69,15 +69,15 @@ window#waybar {
 }
 
 #battery.warning {
-  color: #ff9e64
+  background-color: #ff9e64
 }
 
 #battery.critical {
-  color: #c53b53;
+  background-color: #c53b53 
 }
 
 #battery.charging {
-  color: #c3e88d
+  background-color: #c3e88d
 }
 
 @keyframes blink {
