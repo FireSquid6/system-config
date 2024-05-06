@@ -216,41 +216,22 @@
     fish
     neovim
     swww
-    rofi-wayland
-    kitty
     unzip
-    lxappearance
     feh
-    lazygit
     brightnessctl
     gh
     direnv
     xss-lock
-    starship
-    waybar
-    flameshot
-    simplescreenrecorder
-    gnome-icon-theme
-    papirus-icon-theme
     htop
     ripgrep
     docker
-    picom
-    polybar
-    libsForQt5.sddm-kcm
     libnotify
-
-    # python stuff
-    python3
-    python311Packages.pip
-
-    nodejs_20
     home-manager
+    wl-clipboard
+
     hyprlock
     hyprcursor
     hyprshot
-
-    wl-clipboard
   ];
 
   fonts.packages = with pkgs; [

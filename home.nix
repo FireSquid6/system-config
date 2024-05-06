@@ -30,61 +30,57 @@
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
 
-    pkgs.libnotify
-
-    pkgs.bluez5
+    # TERMINAL APPS
     pkgs.neofetch
-    pkgs.discord
-    pkgs.godot_4
-
     pkgs._2048-in-terminal
-
-    pkgs.lapce
     pkgs.asciinema
+    pkgs.tmux
 
-    pkgs.libresprite
-    pkgs.wuzz
-    pkgs.inkscape
-    pkgs.krita
-    pkgs.vlc
-
-    pkgs.thunderbird
-    pkgs.freecad
-    pkgs.libsForQt5.kmail
-    pkgs.prismlauncher
-    pkgs.guvcview
-
+    # DEVELOPMENT
+    pkgs.lapce
+    pkgs.godot_4
     pkgs.vscode
     pkgs.neovide
     pkgs.lazydocker
-    pkgs.warp-terminal
-    pkgs.nheko
+    pkgs.starship
+    pkgs.kitty
+    pkgs.lazygit
 
+    pkgs.nodejs_20
+    pkgs.python3
+    pkgs.python311Packages.pip
+
+    # APPLICATIONS
+    pkgs.discord
     pkgs.chromium
-
-    pkgs.rofimoji
-    pkgs.swappy
-    pkgs.grim
-    pkgs.lazydocker
-
-    pkgs.betterlockscreen
+    pkgs.libresprite
+    pkgs.inkscape
+    pkgs.krita
+    pkgs.vlc
+    pkgs.thunderbird
+    pkgs.freecad
+    pkgs.guvcview
     pkgs.youtube-music
-
-    pkgs.tmux
     pkgs.obsidian
-    pkgs.dunst
-    # # It is sometimes useful to fine-tune packages, for example, by applying
-    # # overrides. You can do that directly here, just don't forget the
-    # # parentheses. Maybe you want to install Nerd Fonts with a limited number of
-    # # fonts?
-    # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
 
-    # # You can also create simple shell scripts directly inside your
-    # # configuration. For example, this adds a command 'my-hello' to your
-    # # environment:
-    # (pkgs.writeShellScriptBin "my-hello" ''
-    #   echo "Hello, ${config.home.username}!"
-    # '')
+    # DESKTOP
+    pkgs.dunst
+    pkgs.betterlockscreen
+    pkgs.waybar
+    pkgs.rofi-wayland
+    pkgs.picom
+    pkgs.polybar
+    pkgs.libsForQt5.sddm-kcm
+    pkgs.gnome-icon-theme
+    pkgs.papirus-icon-theme
+    pkgs.bluez5
+    pkgs.rofimoji
+
+    # SCREENSHOTS/RECORDING
+    pkgs.grim
+    pkgs.wuzz
+    pkgs.flameshot
+    pkgs.simplescreenrecorder
   ];
 
 
