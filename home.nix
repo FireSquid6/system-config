@@ -25,6 +25,24 @@
     "electron-25.9.0"
   ];
 
+  # gtk
+  gtk.enable = true;
+  gtk.cursorTheme.package = pkgs.google-cursor;
+  gtk.cursorTheme.name = "Black";
+
+  gtk.theme.package = pkgs.adw-gtk3;
+  gtk.theme.name = "adw-gtk";
+  
+  gtk.iconTheme.package = pkgs.papirus-icon-theme;
+  gtk.iconTheme.name = "Papirus-Dark";
+
+  # qt
+  qt.enable = true;
+  qt.platformTheme = "gtk";
+  qt.style.name = "adwaita-dark";
+
+  qt.style.package = pkgs.adwaita-qt;
+
 
   home.packages = [
     # # Adds the 'hello' command to your environment. It prints a friendly
@@ -44,6 +62,7 @@
     pkgs.lazydocker
     pkgs.starship
     pkgs.kitty
+    pkgs.alacritty
     pkgs.lazygit
 
     pkgs.nodejs_20
