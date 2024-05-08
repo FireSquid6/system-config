@@ -28,3 +28,6 @@ bold = { family = "JetBrainsMono NF", style = "Bold"}
 italic = { family = "JetBrainsMono NF", style = "Italic"}
 bold_italic = { family = "JetBrainsMono NF", style = "Bold Italic"}
 size = 10.0
+
+[shell]
+program = "tmux"
