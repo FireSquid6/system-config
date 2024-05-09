@@ -22,4 +22,5 @@ $CREATE_SCRIPT $DOTFILES_PATH/waybar.css ~/.config/waybar/style.css
 $CREATE_SCRIPT $DOTFILES_PATH/hyprland.conf ~/.config/hypr/hyprland.conf
 $CREATE_SCRIPT $DOTFILES_PATH/hyprlock.conf ~/.config/hypr/hyprlock.conf
 $CREATE_SCRIPT $DOTFILES_PATH/config.fish ~/.config/fish/config.fish
-
+$CREATE_SCRIPT $DOTFILES_PATH/eww.yuck ~/.config/eww/eww.yuck
+$CREATE_SCRIPT $DOTFILES_PATH/eww.scss ~/.config/eww/eww.scss

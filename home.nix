@@ -94,13 +94,19 @@
     pkgs.papirus-icon-theme
     pkgs.bluez5
     pkgs.rofimoji
+    pkgs.eww
 
     # SCREENSHOTS/RECORDING
     pkgs.grim
     pkgs.wuzz
     pkgs.flameshot
     pkgs.simplescreenrecorder
+
+    # OTHER
+    pkgs.waydroid
   ];
+
+  home.file = {};
 
 
   programs.git = {
