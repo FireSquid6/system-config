@@ -32,7 +32,7 @@
 
   gtk.theme.package = pkgs.adw-gtk3;
   gtk.theme.name = "adw-gtk";
-  
+
   gtk.iconTheme.package = pkgs.papirus-icon-theme;
   gtk.iconTheme.name = "Papirus-Dark";
 
@@ -106,7 +106,28 @@
     pkgs.waydroid
   ];
 
-  home.file = {};
+  home.file = {
+    ".vimrc".source = "./dotfiles/vimrc"
+    ".bashrc".source = "./dotfiles/bashrc"
+    ".tmux.conf".source = "./dotfiles/tmux.conf"
+    ".config/betterlockscreen/betterlockscreenrc".source = "./dotfiles/betterlockscreenrc"
+    ".config/dunst/dunstrc".source = "./dotfiles/dunstrc"
+    ".config/i3/config".source = "./dotfiles/i3"
+    ".config/kitty/kitty.conf".source = "./dotfiles/kitty.conf"
+    ".config/lazygit/config.yml".source = "./dotfiles/lazygit.yml"
+    ".config/picom/picom.conf".source = "./dotfiles/picom.conf"
+    ".config/polybar/config.ini".source = "./dotfiles/polybar.ini"
+    ".profile".source = "./dotfiles/profile"
+    ".config/rofi/config.rasi".source = "./dotfiles/rofi.rasi"
+    ".config/starship.toml".source = "./dotfiles/starship.toml"
+    ".config/waybar/config.jsonc".source = "./dotfiles/waybar.jsonc"
+    ".config/waybar/style.css".source = "./dotfiles/waybar.css"
+    ".config/hypr/hyprland.conf".source = "./dotfiles/hyprland.conf"
+    ".config/hypr/hyprlock.conf".source = "./dotfiles/hyprlock.conf"
+    ".config/fish/config.fish".source = "./dotfiles/config.fish"
+    ".config/eww/eww.yuck".source = "./dotfiles/eww.yuck"
+    ".config/eww/eww.scss".source = "./dotfiles/eww.scss"
+  };
 
 
   programs.git = {
