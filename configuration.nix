@@ -227,7 +227,6 @@
     ripgrep
     docker
     libnotify
-    home-manager
     wl-clipboard
 
     hyprlock
