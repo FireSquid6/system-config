@@ -17,13 +17,13 @@
     pkgs = nixpkgs.legacyPackages.${system};
   in
   {
-    homeConfigurations.firesquid = home-manager.lib.homeManagerConfiguration {
-      pkgs = import nixpkgs { inherit system; };
-
-      extraSpecialArgs = { inherit inputs; };
-
-      modules = [ ./homeConfigurations/firesquid.nix ];
-    };
+    # homeConfigurations.firesquid = home-manager.lib.homeManagerConfiguration {
+    #   pkgs = import nixpkgs { inherit system; };
+    #
+    #   extraSpecialArgs = { inherit inputs; };
+    #
+    #   modules = [ ./homeConfigurations/firesquid.nix ];
+    # };
 
     nixosConfigurations.kotoko = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs; };

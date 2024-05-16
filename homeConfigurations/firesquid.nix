@@ -38,7 +38,7 @@
 
   # qt
   qt.enable = true;
-  qt.platformTheme.name = "gtk";
+  qt.platformTheme = "gtk";
   qt.style.name = "adwaita-dark";
 
   qt.style.package = pkgs.adwaita-qt;

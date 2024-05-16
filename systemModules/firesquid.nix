@@ -14,10 +14,10 @@
 
   users.extraGroups.vboxusers.members = [ "firesquid" ];
 
-  # home-manager = {
-  #   extraSpecialArgs = { inherit inputs; };
-  #   users = {
-  #     "firesquid" = import ../home.nix;
-  #   };
-  # };
+  home-manager = {
+    extraSpecialArgs = { inherit inputs; };
+    users = {
+      "firesquid" = import ../homeConfigurations/firesquid.nix;
+    };
+  };
 }
