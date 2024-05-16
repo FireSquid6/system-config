@@ -43,69 +43,6 @@
 
   qt.style.package = pkgs.adwaita-qt;
 
-
-  home.packages = [
-    # # Adds the 'hello' command to your environment. It prints a friendly
-    # # "Hello, world!" when run.
-
-    # TERMINAL APPS
-    pkgs.neofetch
-    pkgs._2048-in-terminal
-    pkgs.asciinema
-    pkgs.tmux
-
-    # DEVELOPMENT
-    pkgs.lapce
-    pkgs.godot_4
-    pkgs.vscode
-    pkgs.neovide
-    pkgs.lazydocker
-    pkgs.starship
-    pkgs.kitty
-    pkgs.alacritty
-    pkgs.lazygit
-
-    pkgs.nodejs_20
-    pkgs.python3
-    pkgs.python311Packages.pip
-
-    # APPLICATIONS
-    pkgs.discord
-    pkgs.chromium
-    pkgs.libresprite
-    pkgs.inkscape
-    pkgs.krita
-    pkgs.vlc
-    pkgs.thunderbird
-    pkgs.freecad
-    pkgs.guvcview
-    pkgs.youtube-music
-    pkgs.obsidian
-
-    # DESKTOP
-    pkgs.dunst
-    pkgs.betterlockscreen
-    pkgs.waybar
-    pkgs.rofi-wayland
-    pkgs.picom
-    pkgs.polybar
-    pkgs.libsForQt5.sddm-kcm
-    pkgs.gnome-icon-theme
-    pkgs.papirus-icon-theme
-    pkgs.bluez5
-    pkgs.rofimoji
-    pkgs.eww
-
-    # SCREENSHOTS/RECORDING
-    pkgs.grim
-    pkgs.wuzz
-    pkgs.flameshot
-    pkgs.simplescreenrecorder
-
-    # OTHER
-    pkgs.waydroid
-  ];
-
   home.file = {
     ".vimrc".source = ./dotfiles/vimrc;
     ".bashrc".source = ./dotfiles/bashrc;

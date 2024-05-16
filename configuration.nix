@@ -7,10 +7,12 @@
 {
   imports =
     [
-      # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./local-configuration.nix
       inputs.home-manager.nixosModules.default
+      ./modules/desktop.nix
+      ./modules/firesquid.nix
+      ./modules/games.nix
     ];
 
   environment.pathsToLink = [ "/libexec" ];
@@ -21,7 +23,7 @@
   # hardware.bluetooth.powerOnBoot = true;
 
   virtualisation.docker.enable = true;
-  virtualisation.waydroid.enable = true;
+
   virtualisation.docker.rootless = {
     enable = true;
     setSocketVariable = true;
@@ -47,72 +49,11 @@
   programs.fish.enable = true;
   programs.nix-ld.enable = true;
 
-  xdg.portal.enable = true;
-  xdg.portal.config.common.default = "gtk";
-  xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
-
-  xdg.mime.defaultApplications = {
-    "text/html" = "firefox.desktop";
-    "image/gif" = "firefox.desktop";
-    "image/png" = "firefox.desktop";
-    "image/jpeg" = "firefox.desktop";
-    "x-scheme-handler/http" = "firefox.desktop";
-    "x-scheme-handler/https" = "firefox.desktop";
-    "x-scheme-handler/about" = "firefox.desktop";
-    "x-scheme-handler/unknown" = "firefox.desktop";
-    "text/plain" = "neovide.desktop";
-  };
-  xdg.mime.enable = true;
-
-  sound.enable = true;
-  nixpkgs.config.pulseaudio = true;
-  hardware.pulseaudio.enable = true;
-  hardware.pulseaudio.support32Bit = true;
-
   nixpkgs.config.permittedInsecurePackages = [
     "electron-25.9.0"
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
-
-  programs.hyprland = {
-    enable = true;
-    xwayland.enable = true;
-  };
-
-  hardware.keyboard.zsa.enable = true;
-
-  services.xserver = {
-    enable = true;
-
-    displayManager = {
-      defaultSession = "none+i3";
-      sddm.enable = true;
-    };
-
-    desktopManager.plasma5.enable = true;
-
-    windowManager.i3 = {
-      enable = true;
-      extraPackages = with pkgs; [
-        dmenu
-        i3status
-        i3blocks
-        i3lock-color
-      ];
-    };
-  };
-
-  environment.plasma5.excludePackages = with pkgs.libsForQt5; [
-    elisa
-    gwenview
-    okular
-    oxygen
-    khelpcenter
-    konsole
-    plasma-browser-integration
-    print-manager
-  ];
 
   # Bootloader.
   boot.initrd.kernelModules = [ "i915" ];
@@ -129,12 +70,6 @@
       useOSProber = true;
     };
   };
-
-  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-
-  # Configure network proxy if necessary
-  # networking.proxy.default = "http://user:password@proxy:port/";
-  # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 
   # Enable networking
   networking.networkmanager.enable = true;
@@ -157,88 +92,30 @@
     LC_TIME = "en_US.UTF-8";
   };
 
-  # Configure keymap in X11
-  services.xserver = {
-    xkb.layout = "us";
-    xkb.variant = "";
-  };
-
-
-  programs.steam = {
-    enable = true;
-    remotePlay.openFirewall = true;
-    dedicatedServer.openFirewall = true;
-  };
-
-  # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.firesquid = {
-    isNormalUser = true;
-    shell = pkgs.fish;
-    description = "firesquid";
-    extraGroups = [ "networkmanager" "wheel" "docker" ];
-    packages = with pkgs; [
-      font-manager
-
-    ];
-  };
-
-  home-manager = {
-    extraSpecialArgs = { inherit inputs; };
-    users = {
-      "firesquid" = import ./home.nix;
-    };
-  };
-
-  qt = {
-    enable = true;
-    platformTheme = "gnome";
-    style = "adwaita-dark";
-  };
-
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    (waybar.overrideAttrs (oldAttrs: {
-        mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ];
-      })
-    )
-
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     wget
     firefox
     killall
     git
     tailscale
-    xclip
-    playerctl
     fish
     neovim
     swww
     unzip
-    feh
-    brightnessctl
     gh
     direnv
-    xss-lock
     htop
     ripgrep
     docker
-    libnotify
-    wl-clipboard
-
-    hyprlock
-    hyprcursor
-    hyprshot
+    home-manager
   ];
 
-  fonts.packages = with pkgs; [
-    fira-code
-    noto-fonts
-    (nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" "Hasklig" "JetBrainsMono" "GeistMono" ]; })
-  ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
