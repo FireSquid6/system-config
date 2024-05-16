@@ -38,5 +38,20 @@
         inputs.home-manager.nixosModules.default
       ];
     };
+
+    nixosConfigurations.horikita = nixpkgs.lib.nixosSystem {
+      specialArgs = { inherit inputs; };
+      modules = [
+        ./hosts/horikita/hardware-configuration.nix
+        ./hosts/horikita/configuration.nix
+        ./sytemModules/bluetooth.nix
+        ./systemModules/std.nix
+        ./systemModules/firesquid.nix
+        ./systemModules/desktop.nix
+        ./systemModules/games.nix
+
+        inputs.home-manager.nixosModules.default
+      ];
+    };
   };
 }
