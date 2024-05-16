@@ -64,6 +64,7 @@
     ".config/fish/config.fish".source = ../dotfiles/config.fish;
     ".config/eww/eww.yuck".source = ../dotfiles/eww.yuck;
     ".config/eww/eww.scss".source = ../dotfiles/eww.scss;
+    ".config/alacritty/alacritty.toml".source = ../dotfiles/alacritty.toml;
   };
 
 
