@@ -15,7 +15,7 @@
   home-manager = {
     extraSpecialArgs = { inherit inputs; };
     users = {
-      "firesquid" = import ./home.nix;
+      "firesquid" = import ../home.nix;
     };
   };
 }
