@@ -23,6 +23,8 @@
   hardware.pulseaudio.enable = true;
   hardware.pulseaudio.support32Bit = true;
 
+  virtualisation.virtualbox.host.enable = true;
+
   qt = {
     enable = true;
     platformTheme = "gnome";

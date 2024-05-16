@@ -14,7 +14,7 @@
     setSocketVariable = true;
   };
 
-  virtualisation.virtualbox.host.enable = true;
+
 
   services.passSecretService.enable = true; # not as cool as it sounds
   services.gnome.gnome-keyring.enable = true;
