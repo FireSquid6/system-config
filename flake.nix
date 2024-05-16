@@ -44,7 +44,7 @@
       modules = [
         ./hosts/horikita/hardware-configuration.nix
         ./hosts/horikita/configuration.nix
-        ./sytemModules/bluetooth.nix
+        ./systemModules/bluetooth.nix
         ./systemModules/std.nix
         ./systemModules/firesquid.nix
         ./systemModules/desktop.nix
