@@ -12,6 +12,8 @@
     ];
   };
 
+  users.extraGroups.vboxusers.members = [ "firesquid" ];
+
   # home-manager = {
   #   extraSpecialArgs = { inherit inputs; };
   #   users = {
