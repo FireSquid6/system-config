@@ -67,13 +67,6 @@
     ".config/alacritty/alacritty.toml".source = ../dotfiles/alacritty.toml;
   };
 
-
-  programs.git = {
-    enable = true;
-    userName = "firesquid6";
-    userEmail = "jdeiss06@gmail.com";
-  };
-
   home.sessionVariables = {
     EDITOR = "nvim";
     BROWSER = "firefox";
