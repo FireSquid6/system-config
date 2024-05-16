@@ -55,7 +55,7 @@
         ./hosts/rpi/hardware-configuration.nix
         ./hosts/rpi/configuration.nix
         ./systemModules/std.nix
-        ./systemModules/server-boot.nix
+        ./systemModules/rpi-boot.nix
         ./systemModules/firesquid.nix
         ./systemModules/server-desktop.nix
 
