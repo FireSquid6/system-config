@@ -46,5 +46,14 @@
         inputs.home-manager.nixosModules.default
       ];
     };
+
+    nixosConfigurations.rpi = nixpkgs.lib.nixosSystem {
+      specialArgs = { inherit inputs; };
+      modules = [
+        ./hosts/rpi
+        ./systemModules/std.nix
+        ./systemModules/firesquid.nix
+      ]
+    }
   };
 }
