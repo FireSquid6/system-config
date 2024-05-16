@@ -1,6 +1,11 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
-HOSTNAME=$(hostname)
-echo "Rebuilding configuration for $HOSTNAME"
+CONFIGURATION=$1
+if [ -z $1 ] 
+then 
+  echo "No configuration specified, using hostname"
+  CONFIGURATION=$(hostname)
+fi
 
-sudo nixos-rebuild switch --flake path:///etc/nixos/#$HOSTNAME
+echo "Rebuilding configuration for $CONFIGURATION"
+sudo nixos-rebuild switch --flake path:///etc/nixos/#$CONFIGURATION
