@@ -9,7 +9,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    ags.url = "github:Aylur/ags";
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs:
@@ -18,17 +17,32 @@
     pkgs = nixpkgs.legacyPackages.${system};
   in
   {
-    homeConfigurations.firesquid = home-manager.lib.homeManagerConfiguration {
-      pkgs = import nixpkgs { inherit system; };
-
-      extraSpecialArgs = { inherit inputs; };
-
-      modules = [ /etc/nixos/home.nix ];
-    };
-    nixosConfigurations.default = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.kotoko = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs; };
       modules = [
-        ./configuration.nix
+        ./hosts/kotoko/hardware-configuration.nix
+        ./hosts/kotoko/configuration.nix
+        ./systemModules/std.nix
+        ./systemModules/firesquid.nix
+        ./systemModules/desktop.nix
+        ./systemModules/games.nix
+
+        inputs.home-manager.nixosModules.default
+      ];
+    };
+
+    nixosConfigurations.horikita = nixpkgs.lib.nixosSystem {
+      specialArgs = { inherit inputs; };
+      modules = [
+        ./hosts/horikita/hardware-configuration.nix
+        ./hosts/horikita/configuration.nix
+        ./systemModules/bluetooth.nix
+        ./systemModules/lid.nix
+        ./systemModules/std.nix
+        ./systemModules/firesquid.nix
+        ./systemModules/desktop.nix
+        ./systemModules/games.nix
+
         inputs.home-manager.nixosModules.default
       ];
     };
