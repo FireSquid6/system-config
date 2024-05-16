@@ -2,10 +2,10 @@
 
 {
   imports = [
-    systemModules/std.nix
-    systemModules/firesquid.nix
-    systemModules/desktop.nix
-    systemModules/games.nix
+    ../../systemModules/std.nix
+    ../../systemModules/firesquid.nix
+    ../../systemModules/desktop.nix
+    ../../systemModules/games.nix
   ];
 
   networking.hostName = "kotoko";

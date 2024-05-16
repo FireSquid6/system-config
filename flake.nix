@@ -9,7 +9,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    ags.url = "github:Aylur/ags";
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs:
@@ -28,13 +27,8 @@
     nixosConfigurations.default = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs; };
       modules = [
-        ../systemModules/std.nix
-        ../systemModules/firesquid.nix
-        ../systemModules/desktop.nix
-        ../systemModules/games.nix
-
-        ./hardware-configuration.nix
-        ./local-configuration.nix
+        ./hosts/kotoko/hardware-configuration.nix
+        ./hosts/kotoko/configuration.nix
 
         inputs.home-manager.nixosModules.default
       ];
