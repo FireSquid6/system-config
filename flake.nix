@@ -62,5 +62,19 @@
         inputs.home-manager.nixosModules.default
       ];
     };
+
+    nixosConfigurations.megumin = nixpkgs.lib.nixosSystem {
+      specialArgs = { inherit inputs; };
+      modules = [
+        ./hosts/megumin/hardware-configuration.nix
+        ./hosts/megumin/configuration.nix
+        ./systemModules/std.nix
+        ./systemModules/boot.nix
+        ./systemModules/firesquid.nix
+        ./systemModules/desktop.nix
+
+        inputs.home-manager.nixosModules.default
+      ];
+    };
   };
 }
