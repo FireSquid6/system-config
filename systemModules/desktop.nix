@@ -42,7 +42,6 @@
     enable = true;
 
     displayManager = {
-      defaultSession = "none+i3";
       sddm.enable = true;
     };
 
