@@ -1,3 +1,5 @@
 #!/bin/sh
 
-sudo nixos-rebuild switch --flake path:///etc/nixos/#default
+HOSTNAME=$(hostname)
+
+sudo nixos-rebuild switch --flake path:///etc/nixos/#$HOSTNAME

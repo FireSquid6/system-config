@@ -24,11 +24,16 @@
 
       modules = [ ./homeConfigurations/firesquid.nix ];
     };
-    nixosConfigurations.default = nixpkgs.lib.nixosSystem {
+
+    nixosConfigurations.kotoko = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs; };
       modules = [
         ./hosts/kotoko/hardware-configuration.nix
         ./hosts/kotoko/configuration.nix
+        ./systemModules/std.nix
+        ./systemModules/firesquid.nix
+        ./systemModules/desktop.nix
+        ./systemModules/games.nix
 
         inputs.home-manager.nixosModules.default
       ];
