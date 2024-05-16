@@ -24,6 +24,7 @@
         ./hosts/kotoko/configuration.nix
         ./systemModules/std.nix
         ./systemModules/firesquid.nix
+        ./systemModules/boot.nix
         ./systemModules/desktop.nix
         ./systemModules/games.nix
 
@@ -39,6 +40,7 @@
         ./systemModules/bluetooth.nix
         ./systemModules/lid.nix
         ./systemModules/std.nix
+        ./systemModules/boot.nix
         ./systemModules/firesquid.nix
         ./systemModules/desktop.nix
         ./systemModules/games.nix
@@ -53,6 +55,7 @@
         ./hosts/rpi/hardware-configuration.nix
         ./hosts/rpi/configuration.nix
         ./systemModules/std.nix
+        ./systemModules/server-boot.nix
         ./systemModules/firesquid.nix
         ./systemModules/server-desktop.nix
 

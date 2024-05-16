@@ -14,8 +14,6 @@
     setSocketVariable = true;
   };
 
-
-
   services.passSecretService.enable = true; # not as cool as it sounds
   services.gnome.gnome-keyring.enable = true;
 
@@ -27,22 +25,6 @@
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
-
-  # Bootloader.
-  boot.initrd.kernelModules = [ "i915" ];
-  boot.kernelPackages = pkgs.linuxPackages_latest;
-
-  boot.loader = {
-    efi = {
-      canTouchEfiVariables = true;
-    };
-    grub = {
-      enable = true;
-      device = "nodev";
-      efiSupport = true;
-      useOSProber = true;
-    };
-  };
 
   # Enable networking
   networking.networkmanager.enable = true;
