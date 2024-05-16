@@ -4,8 +4,8 @@
 {
   services.xserver = {
     enable = true;
-    xkb.layout = "us";
-    xkb.varient = "";
+    # xkb.layout = "us";
+    # xkb.varient = "";
   };
 
 
