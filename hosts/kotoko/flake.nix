@@ -23,12 +23,19 @@
 
       extraSpecialArgs = { inherit inputs; };
 
-      modules = [ /etc/nixos/home.nix ];
+      modules = [ ./homeConfigurations/firesquid.nix ];
     };
     nixosConfigurations.default = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs; };
       modules = [
-        ./configuration.nix
+        ../systemModules/std.nix
+        ../systemModules/firesquid.nix
+        ../systemModules/desktop.nix
+        ../systemModules/games.nix
+
+        ./hardware-configuration.nix
+        ./local-configuration.nix
+
         inputs.home-manager.nixosModules.default
       ];
     };

@@ -12,10 +12,10 @@
     ];
   };
 
-  home-manager = {
-    extraSpecialArgs = { inherit inputs; };
-    users = {
-      "firesquid" = import ../home.nix;
-    };
-  };
+  # home-manager = {
+  #   extraSpecialArgs = { inherit inputs; };
+  #   users = {
+  #     "firesquid" = import ../home.nix;
+  #   };
+  # };
 }

@@ -5,16 +5,6 @@
 { config, pkgs, callPackage, inputs, ... }:
 
 {
-  imports =
-    [
-      ./hardware-configuration.nix
-      ./local-configuration.nix
-      inputs.home-manager.nixosModules.default
-      ./systemModules/desktop.nix
-      ./systemModules/firesquid.nix
-      ./systemModules/games.nix
-    ];
-
   environment.pathsToLink = [ "/libexec" ];
 
   services.tailscale.enable = true;
