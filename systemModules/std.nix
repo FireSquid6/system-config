@@ -19,8 +19,6 @@
   services.passSecretService.enable = true; # not as cool as it sounds
   services.gnome.gnome-keyring.enable = true;
 
-
-
   programs.fish.enable = true;
   programs.nix-ld.enable = true;
 
