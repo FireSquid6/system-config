@@ -50,10 +50,14 @@
     nixosConfigurations.rpi = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs; };
       modules = [
-        ./hosts/rpi
+        ./hosts/rpi/hardware-configuration.nix
+        ./hosts/rpi/configuration.nix
         ./systemModules/std.nix
         ./systemModules/firesquid.nix
-      ]
-    }
+        ./systemModules/server-desktop.nix
+
+        inputs.home-manager.nixosModules.default
+      ];
+    };
   };
 }
