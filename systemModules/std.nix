@@ -88,7 +88,6 @@
     htop
     ripgrep
     docker
-    home-manager
   ];
 
 
