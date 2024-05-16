@@ -71,7 +71,7 @@
         ./systemModules/std.nix
         ./systemModules/boot.nix
         ./systemModules/firesquid.nix
-        ./systemModules/desktop.nix
+        ./systemModules/server-desktop.nix
 
         inputs.home-manager.nixosModules.default
       ];
