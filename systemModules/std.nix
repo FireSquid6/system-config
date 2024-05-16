@@ -59,6 +59,7 @@
     killall
     git
     tailscale
+    starship
     fish
     neovim
     swww

@@ -12,5 +12,6 @@
   environment.systemPackages = with pkgs; [
     _2048-in-terminal
     waydroid
+    gnome.atomix
   ];
 }
