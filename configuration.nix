@@ -10,9 +10,9 @@
       ./hardware-configuration.nix
       ./local-configuration.nix
       inputs.home-manager.nixosModules.default
-      ./modules/desktop.nix
-      ./modules/firesquid.nix
-      ./modules/games.nix
+      ./systemModules/desktop.nix
+      ./systemModules/firesquid.nix
+      ./systemModules/games.nix
     ];
 
   environment.pathsToLink = [ "/libexec" ];
