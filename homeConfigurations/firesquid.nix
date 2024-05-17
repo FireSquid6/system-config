@@ -65,6 +65,10 @@
     ".config/eww/eww.yuck".source = ../dotfiles/eww.yuck;
     ".config/eww/eww.scss".source = ../dotfiles/eww.scss;
     ".config/alacritty/alacritty.toml".source = ../dotfiles/alacritty.toml;
+    ".config/ink-nvim" = {
+      source = ../ink-nvim;
+      recursive = true;
+    };
   };
 
   home.sessionVariables = {
