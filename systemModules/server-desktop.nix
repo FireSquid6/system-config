@@ -6,12 +6,18 @@
     enable = true;
     # xkb.layout = "us";
     # xkb.varient = "";
+
+    windowManager.i3 = {
+      enable = true;
+      extraPackages = with pkgs; [
+        dmenu
+        i3status
+        i3blocks
+        i3lock-color
+      ];
+    };
   };
 
-  services.xserver.windowManager.xmonad = {
-    enable = true;
-    enableContribAndExtras = true;
-  }
 
   environment.systemPackages = with pkgs; [
     alacritty
