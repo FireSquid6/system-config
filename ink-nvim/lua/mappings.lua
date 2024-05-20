@@ -113,7 +113,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
 			name = "LSP",
 			a = { vim.lsp.buf.code_action, "Code Action", opts },
 			n = { vim.lsp.buf.rename, "Rename", opts },
-			f = { vim.lsp.buf.formatting, "Format", opts },
+			f = { "<cmd>lua vim.lsp.buf.format()<cr>", "Format", opts },
 
 			h = { vim.lsp.buf.hover, "Hover", opts },
 			d = { "<cmd>lua vim.diagnostic.open_float()<cr>", "Line Diagnostics", opts },
@@ -125,6 +125,5 @@ local augroup = vim.api.nvim_create_augroup
 local autocmd = vim.api.nvim_create_autocmd
 augroup("__formatter__", { clear = true })
 autocmd("BufWritePost", {
-	group = "__formatter__",
-	command = ":FormatWrite",
+	command = ":lua vim.lsp.buf.format()",
 })
