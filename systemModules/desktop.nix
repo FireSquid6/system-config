@@ -3,7 +3,6 @@
 {
   xdg.portal.enable = true;
   xdg.portal.config.common.default = "gtk";
-  xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
 
   xdg.mime.defaultApplications = {
     "text/html" = "firefox.desktop";
@@ -42,10 +41,10 @@
     enable = true;
 
     displayManager = {
-      sddm.enable = true;
+      gdm.enable = true;
     };
 
-    desktopManager.plasma5.enable = true;
+    desktopManager.gnome.enable = true;
 
     windowManager.i3 = {
       enable = true;
@@ -125,6 +124,8 @@
     wuzz
     flameshot
     simplescreenrecorder
+
+    networkmanagerapplet
   ];
 
   environment.plasma5.excludePackages = with pkgs.libsForQt5; [

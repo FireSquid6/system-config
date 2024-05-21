@@ -121,9 +121,12 @@ vim.api.nvim_create_autocmd("LspAttach", {
 	end,
 })
 
-local augroup = vim.api.nvim_create_augroup
-local autocmd = vim.api.nvim_create_autocmd
-augroup("__formatter__", { clear = true })
-autocmd("BufWritePost", {
-	command = ":lua vim.lsp.buf.format()",
-})
+-- FORMAT ON SAVE
+-- I turned this off because it was annoying
+--
+-- local augroup = vim.api.nvim_create_augroup
+-- local autocmd = vim.api.nvim_create_autocmd
+-- augroup("__formatter__", { clear = true })
+-- autocmd("BufWritePost", {
+-- 	command = ":lua vim.lsp.buf.format()",
+-- })
