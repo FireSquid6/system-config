@@ -71,9 +71,13 @@
     xss-lock
     libnotify
     wl-clipboard
+
     hyprlock
     hyprcursor
     hyprshot
+    hyprpaper
+    hypridle
+    xdg-desktop-portal-hyprland
 
     discord
     chromium

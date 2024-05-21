@@ -61,6 +61,8 @@
     ".config/waybar/style.css".source = ../dotfiles/waybar.css;
     ".config/hypr/hyprland.conf".source = ../dotfiles/hyprland.conf;
     ".config/hypr/hyprlock.conf".source = ../dotfiles/hyprlock.conf;
+    ".config/hypr/hypridle.conf".source = ../dotfiles/hypridle.conf;
+    ".config/hypr/hyprpaper.conf".source = ../dotfiles/hyprpaper.conf;
     ".config/fish/config.fish".source = ../dotfiles/config.fish;
     ".config/eww/eww.yuck".source = ../dotfiles/eww.yuck;
     ".config/eww/eww.scss".source = ../dotfiles/eww.scss;

@@ -62,7 +62,6 @@
     starship
     fish
     neovim
-    swww
     unzip
     gh
     direnv
