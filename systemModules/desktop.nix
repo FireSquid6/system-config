@@ -126,6 +126,7 @@
     simplescreenrecorder
 
     networkmanagerapplet
+    blueberry
   ];
 
   environment.plasma5.excludePackages = with pkgs.libsForQt5; [
