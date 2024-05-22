@@ -10,5 +10,6 @@ vim.opt.termguicolors = true
 vim.opt.ignorecase = true
 
 vim.opt.cmdheight = 0
+vim.opt.linebreak = true
 
 vim.api.nvim_set_option("clipboard", "unnamed")
