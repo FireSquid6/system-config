@@ -48,6 +48,7 @@ wk.register({
 	w = { "<cmd>wa<cr>", "Write Files" },
 	q = { "<cmd>q<cr>", "Quit Files" },
 	c = { "<cmd>bdelete<cr>", "Close Buffer" },
+  d = { require("dapui").toggle(), "Toggle Debugger"}
 	[";"] = { "<cmd>TermSelect<cr>", "Select Terminal" },
 	t = {
 		name = "Terminal",
