@@ -62,6 +62,7 @@
     starship
     fish
     neovim
+    zip
     unzip
     gh
     direnv
