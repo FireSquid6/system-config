@@ -80,23 +80,6 @@ require("lazy").setup({
 		end,
 	},
 	{
-		"mfussenegger/nvim-dap",
-	},
-  {
-    "leoluz/nvim-dap-go",
-    config = function()
-      require("dap-go").setup()
-    end,
-  },
-	{
-		"nvim-neotest/nvim-nio",
-	},
-	{ 
-    "rcarriga/nvim-dap-ui", dependencies = { "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio" } },
-    config = function()
-      require("dapui").setup()
-    end,
-	{
 		"nvim-treesitter/nvim-treesitter",
 		build = ":TSUpdate",
 		config = function()
