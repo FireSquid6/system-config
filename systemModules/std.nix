@@ -63,6 +63,7 @@
     fish
     neovim
     zip
+    fastfetch
     unzip
     gh
     direnv

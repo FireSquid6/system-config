@@ -94,7 +94,6 @@
     vscode
     tmux
     asciinema
-    neofetch
     neovide
     lazydocker
     starship
