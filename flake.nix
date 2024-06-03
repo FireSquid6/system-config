@@ -24,6 +24,7 @@
         ./systemModules/std.nix
         ./systemModules/firesquid.nix
         ./systemModules/boot.nix
+        ./systemModules/nix-ld.nix
         ./systemModules/desktop.nix
         ./systemModules/games.nix
 
@@ -41,6 +42,7 @@
         ./systemModules/std.nix
         ./systemModules/boot.nix
         ./systemModules/firesquid.nix
+        ./systemModules/nix-ld.nix
         ./systemModules/desktop.nix
         ./systemModules/games.nix
 

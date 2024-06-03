@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, callPackage, inputs, ... }:
+{ config, pkgs, callPackage, inputs, self, ... }:
 
 {
   environment.pathsToLink = [ "/libexec" ];
@@ -18,7 +18,6 @@
   services.gnome.gnome-keyring.enable = true;
 
   programs.fish.enable = true;
-  programs.nix-ld.enable = true;
 
   nixpkgs.config.permittedInsecurePackages = [
     "electron-25.9.0"
