@@ -1,5 +1,4 @@
 local wk = require("which-key")
-local harpoon = require("harpoon")
 local conf = require("telescope.config").values
 
 vim.keymap.set({ "i", "n" }, "<esc>", "<cmd>noh<cr><esc>")
@@ -7,24 +6,6 @@ vim.keymap.set({ "i", "n" }, "<C-h>", "<C-w>h")
 vim.keymap.set({ "i", "n" }, "<C-j>", "<C-w>j")
 vim.keymap.set({ "i", "n" }, "<C-k>", "<C-w>k")
 vim.keymap.set({ "i", "n" }, "<C-l>", "<C-w>l")
-
-local function toggle_telescope(harpoon_files)
-	local file_paths = {}
-	for _, item in ipairs(harpoon_files.items) do
-		table.insert(file_paths, item.value)
-	end
-
-	require("telescope.pickers")
-		.new({}, {
-			prompt_title = "Harpoon",
-			finder = require("telescope.finders").new_table({
-				results = file_paths,
-			}),
-			previewer = conf.file_previewer({}),
-			sorter = conf.generic_sorter({}),
-		})
-		:find()
-end
 
 wk.register({
 	f = {
@@ -56,31 +37,9 @@ wk.register({
 		["3"] = { "<cmd>3ToggleTerm direction=horizontal size=20<cr>", "Bottom Terminal 3" },
 		f = { "<cmd>4ToggleTerm direction=float size=20<cr>", "Floating Terminal" },
 	},
-	s = {
-		name = "Harpoon",
-		u = {
-			function()
-				toggle_telescope(harpoon:list())
-			end,
-			"Harpoon",
-		},
-		a = {
-			function()
-				harpoon:list():add()
-			end,
-			"Add to Harpoon",
-		},
-	},
-
+  b = {"<cmd>bprevious<cr>", "Back"},
 	g = { "<cmd>LazyGit<cr>", "LazyGit" },
 }, { prefix = "<leader>" })
-
-vim.keymap.set("n", "<C-S-P>", function()
-	harpoon:list():prev()
-end)
-vim.keymap.set("n", "<C-S-N>", function()
-	harpoon:list():next()
-end)
 
 vim.keymap.set("t", "<C-n>", "<C-\\><C-n>")
 vim.keymap.set("t", "<C-h>", "<C-\\><C-n><C-w>h")
