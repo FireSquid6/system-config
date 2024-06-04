@@ -126,6 +126,8 @@
 
     networkmanagerapplet
     blueberry
+
+    pavucontrol
   ];
 
   environment.plasma5.excludePackages = with pkgs.libsForQt5; [
