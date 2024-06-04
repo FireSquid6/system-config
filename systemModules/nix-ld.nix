@@ -33,7 +33,11 @@
     libxkbcommon
     libxml2
     mesa
+    SDL2
+    SDL2_ttf
+    SDL2_image
     nspr
+    libGLU
     nss
     openssl
     pango
