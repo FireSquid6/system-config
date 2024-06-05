@@ -58,6 +58,7 @@
     killall
     git
     tailscale
+    docker-compose
     starship
     fish
     neovim
