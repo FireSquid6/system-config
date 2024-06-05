@@ -65,6 +65,7 @@
     fastfetch
     unzip
     gh
+    fh
     direnv
     htop
     ripgrep

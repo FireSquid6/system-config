@@ -26,7 +26,6 @@
         ./systemModules/boot.nix
         ./systemModules/nix-ld.nix
         ./systemModules/desktop.nix
-        ./systemModules/games.nix
 
         inputs.home-manager.nixosModules.default
       ];
@@ -44,7 +43,6 @@
         ./systemModules/firesquid.nix
         ./systemModules/nix-ld.nix
         ./systemModules/desktop.nix
-        ./systemModules/games.nix
 
         inputs.home-manager.nixosModules.default
       ];
