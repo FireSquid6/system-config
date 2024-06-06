@@ -307,4 +307,11 @@ require("lazy").setup({
 	{
 		"elkowar/yuck.vim",
 	},
+  {
+    "mfussenegger/nvim-dap",
+  },
+  {
+    "rcarriga/nvim-dap-ui",
+
+  },
 })
