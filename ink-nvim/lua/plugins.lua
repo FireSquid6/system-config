@@ -312,6 +312,17 @@ require("lazy").setup({
   },
   {
     "rcarriga/nvim-dap-ui",
-
+    config = function()
+      require("dapui").setup()
+    end,
+  },
+  {
+    "nvim-neotest/nvim-nio",
+  },
+  {
+    "leoluz/nvim-dap-go",
+    config = function()
+      require("dap-go").setup()
+    end,
   },
 })

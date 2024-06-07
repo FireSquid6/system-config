@@ -30,6 +30,12 @@ wk.register({
 	q = { "<cmd>q<cr>", "Quit Files" },
 	c = { "<cmd>bdelete<cr>", "Close Buffer" },
 	[";"] = { "<cmd>TermSelect<cr>", "Select Terminal" },
+  d = {
+    name = "Debugger",
+    u = { "<cmd>lua require('dapui').toggle()<cr>", "Toggle UI" },
+    b = { "<cmd>lua require('dap').toggle_breakpoint()<cr>", "Toggle Breakpoint" },
+    s = { "<cmd>lua require('dap').continue()<cr>", "Continue" },
+  },
 	t = {
 		name = "Terminal",
 		["1"] = { "<cmd>1ToggleTerm direction=horizontal size=20<cr>", "Bottom Terminal 1" },
