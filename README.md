@@ -5,6 +5,8 @@ This is the main system configuration for all of my machines! I use:
 - hyprland (when on wayland)
 - neovim
 
-It's always a work in progress. Much of the scripts should be more declarative. 
-
-This repo gets cloned to `/etc/nixos` on my new machines.
+The core flake.nix has many different configurations. I started a trend of naming machines after anime girls when I was 14, and have continued that tradition.
+kotoko - main desktop
+horikita - laptop
+megumin - homelab
+rpi - raspberry pi

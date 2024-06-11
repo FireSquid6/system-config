@@ -16,7 +16,7 @@ wk.register({
 		c = { "<cmd>Telescope commands<cr>", "Search Commands" },
 
 		l = { "<cmd>Telescope lsp_document_symbols<cr>", "Search LSP Symbols" },
-		s = { "<cmd>Telescope lsp_workspace_symbols<cr>", "Search LSP Workspace Symbols" },
+		s = { "<cmd>Telescope lsp_dynamic_workspace_symbols<cr>", "Search LSP Workspace Symbols" },
 		o = { "<cmd>Telescope lsp_outgoing_calls<cr>", "Search Outgoing Calls" },
 		i = { "<cmd>Telescope lsp_incoming_calls<cr>", "Search Incoming Calls" },
 
