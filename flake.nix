@@ -23,6 +23,7 @@
         ./hosts/kotoko/configuration.nix
         ./systemModules/std.nix
         ./systemModules/firesquid.nix
+        ./systemModules/virtualization.nix
         ./systemModules/boot.nix
         ./systemModules/nix-ld.nix
         ./systemModules/desktop.nix
@@ -38,6 +39,7 @@
         ./hosts/horikita/configuration.nix
         ./systemModules/bluetooth.nix
         ./systemModules/lid.nix
+        ./systemModules/virtualization.nix
         ./systemModules/std.nix
         ./systemModules/boot.nix
         ./systemModules/firesquid.nix
@@ -57,6 +59,7 @@
         ./systemModules/rpi-boot.nix
         ./systemModules/firesquid.nix
         ./systemModules/server-desktop.nix
+        ./systemModules/virtualization.nix
 
         inputs.home-manager.nixosModules.default
       ];
@@ -68,6 +71,7 @@
         ./hosts/megumin/hardware-configuration.nix
         ./hosts/megumin/configuration.nix
         ./systemModules/std.nix
+        ./systemModules/virtualization.nix
         ./systemModules/boot.nix
         ./systemModules/firesquid.nix
         ./systemModules/server-desktop.nix

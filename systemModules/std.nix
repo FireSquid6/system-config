@@ -7,13 +7,6 @@
 {
   environment.pathsToLink = [ "/libexec" ];
 
-  virtualisation.docker.enable = true;
-
-  virtualisation.docker.rootless = {
-    enable = true;
-    setSocketVariable = true;
-  };
-
   services.passSecretService.enable = true; # not as cool as it sounds
   services.gnome.gnome-keyring.enable = true;
 
@@ -53,12 +46,12 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+    cloc
     wget
     firefox
     killall
     git
     tailscale
-    docker-compose
     starship
     fish
     neovim
@@ -70,7 +63,6 @@
     direnv
     htop
     ripgrep
-    docker
   ];
 
   hardware.opengl.enable = true;
