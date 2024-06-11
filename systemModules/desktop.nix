@@ -115,7 +115,7 @@
     libsForQt5.sddm-kcm
     bluez5
     rofimoji
-    eww
+    ags
 
     gnome-icon-theme
     papirus-icon-theme
