@@ -79,5 +79,17 @@
         inputs.home-manager.nixosModules.default
       ];
     };
+
+    nixosConfigurations.liveIso = nixpkgs.lib.nixosSystem {
+      specialArgs = { inherit inputs; };
+      modules = [
+        ./hosts/liveIso/configuration.nix
+        ./systemModules/std.nix
+        ./systemModules/firesquid.nix
+        ./systemModules/server-desktop.nix
+
+        inputs.home-manager.nixosModules.default
+      ];
+    };
   };
 }

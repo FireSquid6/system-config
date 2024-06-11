@@ -42,7 +42,7 @@ wk.register({
 		["2"] = { "<cmd>2ToggleTerm direction=horizontal size=20<cr>", "Bottom Terminal 2" },
 		["3"] = { "<cmd>3ToggleTerm direction=horizontal size=20<cr>", "Bottom Terminal 3" },
 		f = { "<cmd>4ToggleTerm direction=float size=20<cr>", "Floating Terminal" },
-    v = { "<cmd>5ToggleTerm direction=vertical size=20<cr>", "Right Terminal" },
+    v = { "<cmd>5ToggleTerm direction=vertical size=60<cr>", "Right Terminal" },
 	},
   b = {"<cmd>bprevious<cr>", "Back"},
 	g = { "<cmd>LazyGit<cr>", "LazyGit" },
