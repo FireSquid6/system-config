@@ -106,7 +106,6 @@
     python3
     python311Packages.pip
 
-    dunst
     betterlockscreen
     waybar
     rofi-wayland
@@ -116,6 +115,7 @@
     bluez5
     rofimoji
     ags
+    dunst
 
     gnome-icon-theme
     papirus-icon-theme
