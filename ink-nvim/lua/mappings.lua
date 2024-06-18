@@ -30,6 +30,15 @@ wk.register({
 	q = { "<cmd>q<cr>", "Quit Files" },
 	c = { "<cmd>bdelete<cr>", "Close Buffer" },
 	[";"] = { "<cmd>TermSelect<cr>", "Select Terminal" },
+  u = {
+    name = "UI",
+    t = {
+      name = "Colorscheme",
+      d = { "<cmd>colorscheme tokyonight-day<cr>", "Day Theme" },
+      n = { "<cmd>colorscheme tokyonight-night<cr>", "Night Theme" },
+      s = { "<cmd>colorscheme tokyonight-storm<cr>", "Storm Theme" },
+    },
+  },
   d = {
     name = "Debugger",
     u = { "<cmd>lua require('dapui').toggle()<cr>", "Toggle UI" },

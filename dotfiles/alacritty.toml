@@ -30,4 +30,4 @@ bold_italic = { family = "JetBrainsMono NF", style = "Bold Italic"}
 size = 10.0
 
 [shell]
-program = "tmux"
+program = "fish"
