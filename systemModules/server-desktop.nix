@@ -23,7 +23,6 @@
     alacritty
     xterm
     firefox
-    tmux
     lazygit
     lazydocker
 

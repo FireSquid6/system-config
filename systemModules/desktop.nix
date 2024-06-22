@@ -41,7 +41,7 @@
     enable = true;
 
     displayManager = {
-      defaultSession = "hyprland"; 
+      defaultSession = "hyprland";
       gdm.enable = true;
     };
 
@@ -93,7 +93,6 @@
 
     godot_4
     vscode
-    tmux
     asciinema
     neovide
     lazydocker
