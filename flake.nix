@@ -76,7 +76,6 @@
         ./systemModules/virtualization.nix
         ./systemModules/boot.nix
         ./systemModules/firesquid.nix
-        ./systemModules/server-desktop.nix
 
         inputs.home-manager.nixosModules.default
       ];
