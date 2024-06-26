@@ -11,5 +11,6 @@
   environment.systemPackages = with pkgs; [
     _2048-in-terminal
     gnome.atomix
+    prismlauncher
   ];
 }
