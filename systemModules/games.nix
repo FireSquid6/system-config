@@ -12,5 +12,10 @@
     _2048-in-terminal
     gnome.atomix
     prismlauncher
+
+    # needed for minecraft
+    zulu
+    zulu17
+    zulu8
   ];
 }

@@ -29,6 +29,7 @@
         ./systemModules/boot.nix
         ./systemModules/nix-ld.nix
         ./systemModules/desktop.nix
+        ./systemModules/games.nix
 
         inputs.home-manager.nixosModules.default
       ];
@@ -42,6 +43,7 @@
         ./systemModules/bluetooth.nix
         ./systemModules/lid.nix
         ./systemModules/virtualization.nix
+        ./systemModules/games.nix
         ./systemModules/std.nix
         ./systemModules/boot.nix
         ./systemModules/firesquid.nix
