@@ -131,16 +131,6 @@ require("lazy").setup({
 		event = "InsertEnter",
 	},
 	{
-		"andweeb/presence.nvim",
-		event = "InsertEnter",
-		config = function()
-			require("presence").setup({
-				auto_update = true,
-				neovim_image_text = "Using astro nvim",
-			})
-		end,
-	},
-	{
 		"zbirenbaum/copilot.lua",
 		cmd = "Copilot",
 		event = "InsertEnter",
@@ -273,13 +263,6 @@ require("lazy").setup({
 		"f-person/git-blame.nvim",
 	},
 	{
-		"stevearc/oil.nvim",
-		opts = {},
-		config = function()
-			require("oil").setup()
-		end,
-	},
-	{
 		"firesquid6/nvim-yati",
 		config = function()
 			require("nvim-treesitter.configs").setup({
@@ -304,25 +287,4 @@ require("lazy").setup({
 			})
 		end,
 	},
-	{
-		"elkowar/yuck.vim",
-	},
-  {
-    "mfussenegger/nvim-dap",
-  },
-  {
-    "rcarriga/nvim-dap-ui",
-    config = function()
-      require("dapui").setup()
-    end,
-  },
-  {
-    "nvim-neotest/nvim-nio",
-  },
-  {
-    "leoluz/nvim-dap-go",
-    config = function()
-      require("dap-go").setup()
-    end,
-  },
 })
