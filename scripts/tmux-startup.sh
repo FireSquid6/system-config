@@ -3,7 +3,7 @@
 if tmux info &> /dev/null; then 
   echo "tmux already running. Exiting."
   exit 1
-else
+fi
 
 # workbench contains just a basic session I use for programming projects
 tmux new-session -d -c ~/source -t workbench
