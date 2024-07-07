@@ -66,7 +66,7 @@
     ripgrep
   ];
 
-  hardware.opengl.enable = true;
+  hardware.graphics.enable = true;
 
 
   # Some programs need SUID wrappers, can be configured further or are

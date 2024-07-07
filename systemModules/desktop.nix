@@ -37,13 +37,13 @@
 
   hardware.keyboard.zsa.enable = true;
 
+  services.displayManager = {
+    defaultSession = "hyprland";
+    gdm.enable = true;
+  }
+
   services.xserver = {
     enable = true;
-
-    displayManager = {
-      defaultSession = "hyprland";
-      gdm.enable = true;
-    };
 
     desktopManager.gnome.enable = true;
 
