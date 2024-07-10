@@ -5,10 +5,9 @@
     isNormalUser = true;
     shell = pkgs.fish;
     description = "firesquid";
-    extraGroups = [ "networkmanager" "wheel" "docker" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" "dialout" ];
     packages = with pkgs; [
       font-manager
-
     ];
   };
 

@@ -132,6 +132,8 @@
     blueberry
 
     pavucontrol
+    arduino
+    arduino-ide
   ];
 
   environment.plasma5.excludePackages = with pkgs.libsForQt5; [
