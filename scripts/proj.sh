@@ -1,13 +1,6 @@
 #!/usr/bin/env bash
 
-echo "STUFF:"
-echo $@
-echo $0
-echo $1
-echo "END STUFF"
-
 PROJECT=$1
-echo $PROJECT
 
 if [ -z "$PROJECT" ]; then
     echo "Usage: proj.sh <project>"
@@ -16,8 +9,10 @@ fi
 
 # check if the project exists
 if [ ! -d ~/source/$PROJECT ]; then
+    echo "Creating project directory"
     mkdir ~/source/$PROJECT
 fi
 
 # create a new tmux session for the project
+echo "Opening ~/source/$PROJECT"
 tmux new-window -t workbench -n $PROJECT -c ~/source/$PROJECT
