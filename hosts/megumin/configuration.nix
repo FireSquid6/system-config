@@ -4,5 +4,5 @@
   networking.hostName = "megumin";
   networking.firewall = {
     enable = false;
-  }
+  };
 }
