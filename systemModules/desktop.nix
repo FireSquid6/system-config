@@ -117,7 +117,6 @@
     libsForQt5.sddm-kcm
     bluez5
     rofimoji
-    ags
     dunst
 
     gnome-icon-theme

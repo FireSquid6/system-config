@@ -1,7 +1,7 @@
 { inputs, config, pkgs, ... }:
 
 {
-  imports = [ inputs.ags.homeManagerModules.default ];
+  imports = [ ];
 
   home.username = "firesquid";
   home.homeDirectory = "/home/firesquid";
@@ -42,15 +42,6 @@
   qt.style.name = "adwaita-dark";
 
   qt.style.package = pkgs.adwaita-qt;
-
-  programs.ags = {
-    configDir = ../ags;
-    extraPackages = with pkgs; [
-      gtksourceview
-      webkitgtk
-      accountsservice
-    ];
-  };
 
   home.file = {
     ".vimrc".source = ../dotfiles/vimrc;
