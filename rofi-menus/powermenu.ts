@@ -1,5 +1,5 @@
 #!/usr/bin/env bun
-import { getMenu, runSilent, type MenuItem } from "."
+import { spawnMenu, runSilent, type MenuItem } from "."
 
 const options: Map<string, string> = new Map([
   ["  Lock", "/etc/nixos/scripts/lock.sh"],
@@ -21,4 +21,4 @@ for (const [name, command] of options) {
   })
 }
 
-await getMenu(menus)
+await spawnMenu(menus)

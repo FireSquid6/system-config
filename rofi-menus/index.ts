@@ -28,7 +28,7 @@ export function getContext(menu: MenuItem[]): Context {
   }
 }
 
-export async function getMenu(menu: MenuItem[]): Promise<string> {
+export async function spawnMenu(menu: MenuItem[]): Promise<string> {
   const ctx = getContext(menu)
 
   if (ctx.giveList) {
