@@ -23,6 +23,7 @@ window#waybar {
 #workspaces button {
   padding: 8px;
   border: none;
+  outline: none;
   color: #565f89;
   min-width: 33px;
 }
@@ -37,8 +38,9 @@ window#waybar {
 }
 
 #workspaces button:hover {
-  color: #bb9af7;
   background: none;
+  border: none;
+  outline: none;
 }
 
 #tray,
