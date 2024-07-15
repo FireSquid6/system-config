@@ -133,6 +133,7 @@
     pavucontrol
     arduino
     arduino-ide
+    bun
   ];
 
   environment.plasma5.excludePackages = with pkgs.libsForQt5; [
