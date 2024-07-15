@@ -25,13 +25,25 @@ window#waybar {
   border: none;
   outline: none;
   color: #565f89;
+  box-shadow: none;
+  text-shadow: none;
   min-width: 33px;
+}
+
+#workspaces button label {
+  border: none;
+  outline: none;
+  text-shadow: none;
+  box-shadow: none;
+}
+
+#workspaces button label:hover {
+  box-shadow: none;
 }
 
 #workspaces button.visible {
   color: #ffc777;
 }
-
 
 #workspaces button.urgent {
   color: #565f89;
