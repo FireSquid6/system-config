@@ -103,7 +103,6 @@
     starship
     kitty
     alacritty
-    lazygit
 
     nodejs_20
     python3

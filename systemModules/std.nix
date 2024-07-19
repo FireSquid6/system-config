@@ -59,6 +59,7 @@
     neovim
     zip
     fastfetch
+    lazygit
     unzip
     gh
     fh
