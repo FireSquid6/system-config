@@ -69,6 +69,7 @@
     )
 
     xclip
+    xclicker
     playerctl
     brightnessctl
     feh
