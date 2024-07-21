@@ -112,6 +112,7 @@
     betterlockscreen
     waybar
     rofi-wayland
+    waypipe
     picom
     polybar
     libsForQt5.sddm-kcm
