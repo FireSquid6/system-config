@@ -85,7 +85,9 @@
 
     nixosConfigurations.liveIso = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs; };
+      system = "x86_64-linux";
       modules = [
+        (nixpkgs + "/nixos/modules/installer/cd-dvd/installation-cd-minimal.nix")
         ./hosts/liveIso/configuration.nix
         ./systemModules/std.nix
         ./systemModules/firesquid.nix
