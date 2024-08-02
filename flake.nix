@@ -94,5 +94,7 @@
         inputs.home-manager.nixosModules.default
       ];
     };
+
+    # INSERT NEW SYSTEM HERE
   };
 }
