@@ -13,6 +13,7 @@
     docker
     docker-compose
     multipass
+    qemu
   ];
   
 }
