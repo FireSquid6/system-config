@@ -6,6 +6,7 @@
   ];
 
   home-manager = {
+    backupFileExtension = "backup";
     extraSpecialArgs = { inherit inputs; };
     users = {
       "firesquid" = import ../homeConfigurations/firesquid.nix;
