@@ -102,8 +102,7 @@
       modules = [
         ./hosts/vps/hardware-configuration.nix
         ./hosts/vps/configuration.nix
-	./hosts/vps/networking.nix
-	./hosts/vps/extra.nix
+        ./hosts/vps/networking.nix
         ./systemModules/std.nix
         ./systemModules/firesquid.nix
         ./systemModules/virtualization.nix
