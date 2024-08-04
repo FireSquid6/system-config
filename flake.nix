@@ -97,6 +97,20 @@
       ];
     };
 
+    nixosConfigurations.vps = nixpkgs.lib.nixosSystem {
+      specialArgs = { inherit inputs; };
+      modules = [
+        ./hosts/vps/hardware-configuration.nix
+        ./hosts/vps/configuration.nix
+	./hosts/vps/networking.nix
+	./hosts/vps/extra.nix
+        ./systemModules/std.nix
+        ./systemModules/firesquid.nix
+        ./systemModules/virtualization.nix
+
+        inputs.home-manager.nixosModules.default
+      ];
+    };
     # INSERT NEW SYSTEM HERE
   };
 }
