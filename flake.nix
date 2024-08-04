@@ -106,6 +106,7 @@
         ./systemModules/std.nix
         ./systemModules/virtualization.nix
         ./systemModules/firesquid-headless.nix
+        ./systemModules/nginx.nix
 
         inputs.home-manager.nixosModules.default
       ];
