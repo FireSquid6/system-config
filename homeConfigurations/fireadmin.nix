@@ -3,6 +3,5 @@
 {
   imports = [
     ../homeModules/common.nix
-    ../homeModules/desktop.nix
   ];
 }

@@ -104,8 +104,8 @@
         ./hosts/vps/configuration.nix
         ./hosts/vps/networking.nix
         ./systemModules/std.nix
-        ./systemModules/firesquid.nix
         ./systemModules/virtualization.nix
+        ./systemModules/firesquid-headless.nix
 
         inputs.home-manager.nixosModules.default
       ];
