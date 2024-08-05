@@ -1,6 +1,11 @@
 { inputs, config, pkgs, ...}:
 
 {
+  security.acme = {
+    acceptTerms = true;
+    defaults.email = "jdeiss06@gmail.com";
+  };
+
   services.nginx = {
     enable = true;
     recommendedProxySettings = true;
