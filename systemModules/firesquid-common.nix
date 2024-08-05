@@ -11,7 +11,6 @@
     ];
 
     openssh.authorizedKeys.keys = [
-    # ''ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKX7MwrgTvm39feeVagcHO2Sza3sIvtc3mPll89Rf/04 firesquid@kotoko'' 
     ''ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIP9G5ezGqMsC9TDs460Tga+Gfx2NBoMWMI3kjM1ER6BH firesquid@kotoko''
     ''ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIZkWe/FtUHUFNGMB91BWcDZA5GxiqlvYcYHK8cogtm5 firesquid@horikita''
     ];
