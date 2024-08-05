@@ -49,6 +49,14 @@ function init_envrc() {
     echo ".envrc" >> .gitignore
   fi
 
+  if grep -Fxq ".direnv" .gitignore
+  then
+    echo ".direnvalready in .gitignore"
+  else
+    echo ".direnv not in .gitignore. Adding it."
+    echo ".direnv" >> .gitignore
+  fi
+
   direnv allow 
 }
 
