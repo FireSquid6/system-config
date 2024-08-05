@@ -24,5 +24,5 @@
     };
   };
 
-  networking.firewall.allowedTCPPorts = [ 80 433 ];
+  networking.firewall.enabled = false;
 }
