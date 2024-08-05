@@ -24,5 +24,5 @@
     };
   };
 
-  networking.firewall.enabled = false;
+  networking.firewall.enable = false;
 }
