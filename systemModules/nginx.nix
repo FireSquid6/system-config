@@ -1,9 +1,26 @@
 { inputs, config, pkgs, ...}:
 
 {
-  environment.systemPackages = with pkgs; [
-    nginx
-  ];
+  services.nginx = {
+    enable = true;
+    recommendedProxySettings = true;
+    recommendedTlsSettings = true;
+    virtualHosts."vps.jdeiss.com" = {
+      enableACME = true;
+      forceSSL = true;
+      locations."/" = {
+        proxyPass = "http://localhost:3000";
+        proxyWebsockets = true;
+        extraConfig = ''
+          proxy_pass_header Authorization;
+          proxy_ssl_server_name on;
+        ''
+        
+      };
+    };
+  };
 
-  networking.firewall.allowedTCPPorts = [ 80 443 ];
+  # scary! I can't figure out how else to open ports though
+  # for whatever reason allowedTCPPorts doesn't work
+  networking.firewall.enable = false;
 }
