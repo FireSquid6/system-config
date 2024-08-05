@@ -14,8 +14,7 @@
         extraConfig = ''
           proxy_pass_header Authorization;
           proxy_ssl_server_name on;
-        ''
-        
+        '';
       };
     };
   };
