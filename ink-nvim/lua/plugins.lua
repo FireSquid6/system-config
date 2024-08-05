@@ -127,10 +127,6 @@ require("lazy").setup({
 		event = "InsertEnter",
 	},
 	{
-		"wakatime/vim-wakatime",
-		event = "InsertEnter",
-	},
-	{
 		"zbirenbaum/copilot.lua",
 		cmd = "Copilot",
 		event = "InsertEnter",
