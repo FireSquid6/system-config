@@ -24,7 +24,5 @@
     };
   };
 
-  # scary! I can't figure out how else to open ports though
-  # for whatever reason allowedTCPPorts doesn't work
-  networking.firewall.enable = false;
+  networking.firewall.allowedTCPPorts = [ 80 433 ];
 }
