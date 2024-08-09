@@ -22,6 +22,7 @@ wk.register({
 
 		r = { "<cmd> Telescope registers<cr>", "Search Registers" },
 		m = { "<cmd> Telescope marks<cr>", "Search Marks" },
+    e = { "<cmd> Telescope diagnostics<cr>", "Search Diagnostics" },
 
 		["/"] = { "<cmd>Telescope current_buffer_fuzzy_find<cr>", "Search Current Buffer" },
 	},
