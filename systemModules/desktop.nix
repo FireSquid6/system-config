@@ -97,7 +97,7 @@
     obsidian
 
     godot_4
-    vscode
+    vscodium
     asciinema
     neovide
     lazydocker
