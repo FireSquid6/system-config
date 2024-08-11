@@ -62,6 +62,12 @@
     VISUAL = "nvim";
   };
 
+  programs.git = {
+    enable = true;
+    userEmail = "jdeiss06@gmail.com";
+    userName = "firesquid";
+  };
+
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 }
