@@ -19,3 +19,7 @@ tmux rename-window -t monitor:1 htop
 tmux send-keys -t monitor:htop htop Enter
 tmux new-window -t monitor -n scratchpad
 tmux select-window -t monitor:htop
+
+# home is a basic session for personal stuff
+tmux new-session -d -c ~ -t home
+tmux rename-window -t home:1 scratch
