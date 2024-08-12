@@ -288,5 +288,8 @@ require("lazy").setup({
     config = function()
       require("nvim-ts-autotag").setup()
     end,
+  },
+  {
+    'echasnovski/mini.nvim',
   }
 })
