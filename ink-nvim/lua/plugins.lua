@@ -233,15 +233,15 @@ require("lazy").setup({
 		},
 		lazy = false,
 	},
-	{
-		"nvim-neo-tree/neo-tree.nvim",
-		branch = "v3.x",
-		dependencies = {
-			"nvim-lua/plenary.nvim",
-			"nvim-tree/nvim-web-devicons",
-			"MunifTanjim/nui.nvim",
-		},
-	},
+	-- {
+	-- 	"nvim-neo-tree/neo-tree.nvim",
+	-- 	branch = "v3.x",
+	-- 	dependencies = {
+	-- 		"nvim-lua/plenary.nvim",
+	-- 		"nvim-tree/nvim-web-devicons",
+	-- 		"MunifTanjim/nui.nvim",
+	-- 	},
+	-- },
 	{
 		"nvimtools/none-ls.nvim",
 		config = function()
@@ -289,7 +289,17 @@ require("lazy").setup({
       require("nvim-ts-autotag").setup()
     end,
   },
+  -- {
+  --   'echasnovski/mini.files',
+  --   config = function()
+  --     require("mini.files").setup()
+  --   end,
+  --   version = "*",
+  -- },
   {
-    'echasnovski/mini.nvim',
-  }
+    "stevearc/oil.nvim",
+    config = function()
+      require("oil").setup()
+    end,
+  },
 })

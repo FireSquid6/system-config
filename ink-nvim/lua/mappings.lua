@@ -26,7 +26,7 @@ wk.register({
 
 		["/"] = { "<cmd>Telescope current_buffer_fuzzy_find<cr>", "Search Current Buffer" },
 	},
-	e = { "<cmd>Neotree action=focus position=float<cr>", "File Explorer" },
+	e = { "<cmd>Oil<cr>", "File Explorer" },
 	w = { "<cmd>wa<cr>", "Write Files" },
 	q = { "<cmd>q<cr>", "Quit Files" },
 	c = { "<cmd>bdelete<cr>", "Close Buffer" },
