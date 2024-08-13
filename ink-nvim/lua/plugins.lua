@@ -264,7 +264,7 @@ require("lazy").setup({
 			require("nvim-treesitter.configs").setup({
 				yati = {
 					enable = true,
-					disable = { "gdscript", "go", "lua" },
+					disable = { "gdscript", "go", "lua", "json" },
 					-- Whether to enable lazy mode (recommend to enable this if bad indent happens frequently)
 					default_lazy = true,
 
@@ -301,5 +301,11 @@ require("lazy").setup({
     config = function()
       require("oil").setup()
     end,
+  },
+  {
+    "chentoast/marks.nvim",
+    config = function()
+      require("marks").setup()
+    end
   },
 })
