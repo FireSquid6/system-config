@@ -16,6 +16,8 @@ lspconfig.elixirls.setup({
   cmd = { "elixir-ls" },
 })
 
+lspconfig.marksman.setup({})
+
 local cmp = require("cmp")
 cmp.setup({
 	snippet = {
@@ -65,6 +67,12 @@ cmp.setup.cmdline({ "/", "?" }, {
 	sources = {
 		{ name = "buffer" },
 	},
+})
+
+cmp.setup.filetype("markdown", {
+  sources = cmp.config.sources({
+    { name = "nvim_lsp" },
+  }),
 })
 
 -- Use cmdline & path source for ':' (if you enabled `native_menu`, this won't work anymore).

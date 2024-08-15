@@ -23,3 +23,10 @@ require("lsp")
 vim.cmd 'colorscheme tokyonight-night'
 
 
+-- autocommand for enabling spell on markdwon files
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "markdown",
+  callback = function()
+    vim.opt_local.spell = true
+  end,
+})
