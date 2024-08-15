@@ -289,13 +289,6 @@ require("lazy").setup({
 			require("nvim-ts-autotag").setup()
 		end,
 	},
-	-- {
-	--   'echasnovski/mini.files',
-	--   config = function()
-	--     require("mini.files").setup()
-	--   end,
-	--   version = "*",
-	-- },
 	{
 		"stevearc/oil.nvim",
 		config = function()
