@@ -283,29 +283,29 @@ require("lazy").setup({
 			})
 		end,
 	},
-  {
-    "windwp/nvim-ts-autotag",
-    config = function()
-      require("nvim-ts-autotag").setup()
-    end,
-  },
-  -- {
-  --   'echasnovski/mini.files',
-  --   config = function()
-  --     require("mini.files").setup()
-  --   end,
-  --   version = "*",
-  -- },
-  {
-    "stevearc/oil.nvim",
-    config = function()
-      require("oil").setup()
-    end,
-  },
-  {
-    "chentoast/marks.nvim",
-    config = function()
-      require("marks").setup()
-    end
-  },
+	{
+		"windwp/nvim-ts-autotag",
+		config = function()
+			require("nvim-ts-autotag").setup()
+		end,
+	},
+	-- {
+	--   'echasnovski/mini.files',
+	--   config = function()
+	--     require("mini.files").setup()
+	--   end,
+	--   version = "*",
+	-- },
+	{
+		"stevearc/oil.nvim",
+		config = function()
+			require("oil").setup()
+		end,
+	},
+	{
+		"chentoast/marks.nvim",
+		config = function()
+			require("marks").setup()
+		end,
+	},
 })
