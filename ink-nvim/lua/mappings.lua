@@ -56,6 +56,7 @@ wk.register({
 	},
   b = {"<cmd>bprevious<cr>", "Back"},
 	g = { "<cmd>LazyGit<cr>", "LazyGit" },
+  s = { "<cmd>Telescope spell_suggest<cr>", "Spell Suggest" }e
 }, { prefix = "<leader>" })
 
 vim.keymap.set("t", "<C-n>", "<C-\\><C-n>")
