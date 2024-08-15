@@ -6,5 +6,6 @@ mkShell {
     python3
     libgcc
     lua
+    lua-language-server
   ];
 }

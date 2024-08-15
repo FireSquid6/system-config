@@ -17,6 +17,7 @@ lspconfig.elixirls.setup({
 })
 
 lspconfig.marksman.setup({})
+lspconfig.lua_ls.setup({})
 
 local cmp = require("cmp")
 cmp.setup({
