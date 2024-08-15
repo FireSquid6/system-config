@@ -57,8 +57,11 @@ function init_envrc() {
     echo ".direnv" >> .gitignore
   fi
 
-  direnv allow 
+
 }
 
 copy_file
 init_envrc
+git add .
+
+direnv allow 
