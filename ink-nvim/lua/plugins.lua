@@ -314,4 +314,10 @@ require("lazy").setup({
   {
     "echasnovski/mini.icons",
   },
+  {
+    "hadronized/hop.nvim",
+    config = function()
+      require("hop").setup()
+    end,
+  },
 })
