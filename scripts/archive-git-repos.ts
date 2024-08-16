@@ -70,6 +70,7 @@ async function getAllRepos(username: string): Promise<Repo[]> {
       const repository = repositories[i]
       console.log("Found:", repository.name)
       if (repository.fork) {
+        console.log("repository is a fork, skipping")
         continue;
       }
       repos.push({
