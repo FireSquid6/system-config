@@ -26,6 +26,7 @@
         ./systemModules/std.nix
         ./systemModules/firesquid.nix
         ./systemModules/virtualization.nix
+        ./systemModules/school.nix
         ./systemModules/boot.nix
         ./systemModules/nix-ld.nix
         ./systemModules/desktop.nix
@@ -42,6 +43,7 @@
         ./hosts/horikita/configuration.nix
         ./systemModules/bluetooth.nix
         ./systemModules/lid.nix
+        ./systemModules/school.nix
         ./systemModules/virtualization.nix
         ./systemModules/games.nix
         ./systemModules/std.nix
