@@ -11,10 +11,8 @@ wk.add({
   { "<leader>h",   "<cmd>HopWord<cr>",                                  desc = "Hop" },
   { "<leader>b",   "<cmd>bprevious<cr>",                                desc = "Back" },
   { "<leader>c",   "<cmd>bdelete<cr>",                                  desc = "Close Buffer" },
-  { "<leader>d",   group = "Debugger" },
+  { "<leader>l",   group = "LSP" },
   { "<leader>db",  "<cmd>lua require('dap').toggle_breakpoint()<cr>",   desc = "Toggle Breakpoint" },
-  { "<leader>ds",  "<cmd>lua require('dap').continue()<cr>",            desc = "Continue" },
-  { "<leader>du",  "<cmd>lua require('dapui').toggle()<cr>",            desc = "Toggle UI" },
   { "<leader>e",   "<cmd>Oil<cr>",                                      desc = "File Explorer" },
   { "<leader>f",   group = "Find" },
   { "<leader>f/",  "<cmd>Telescope current_buffer_fuzzy_find<cr>",      desc = "Search Current Buffer" },
@@ -44,6 +42,7 @@ wk.add({
   { "<leader>utn", "<cmd>colorscheme tokyonight-night<cr>",             desc = "Night Theme" },
   { "<leader>uts", "<cmd>colorscheme tokyonight-storm<cr>",             desc = "Storm Theme" },
   { "<leader>w",   "<cmd>wa<cr>",                                       desc = "Write Files" },
+  { "<leader>li",  "<cmd>LspInfo<cr>",                                  desc = "Lsp Info" },
 })
 
 -- wk.register({

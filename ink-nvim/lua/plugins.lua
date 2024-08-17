@@ -264,10 +264,9 @@ require("lazy").setup({
 			require("nvim-treesitter.configs").setup({
 				yati = {
 					enable = true,
-					disable = { "gdscript", "go", "lua", "json" },
+					disable = { "gdscript", "go", "lua", "json", "cpp", },
 					-- Whether to enable lazy mode (recommend to enable this if bad indent happens frequently)
 					default_lazy = true,
-
 					-- Determine the fallback method used when we cannot calculate indent by tree-sitter
 					--   "auto": fallback to vim auto indent
 					--   "asis": use current indent as-is
