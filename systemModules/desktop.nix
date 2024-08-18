@@ -116,7 +116,6 @@
     picom
     polybar
     libsForQt5.sddm-kcm
-    bluez5
     rofimoji
     dunst
 
@@ -129,7 +128,6 @@
     simplescreenrecorder
 
     networkmanagerapplet
-    blueberry
 
     pavucontrol
     arduino
