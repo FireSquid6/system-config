@@ -13,6 +13,7 @@
         flyctl
         typescript
         libgcc
+        # htmx-lsp
       ];
     };
   };
