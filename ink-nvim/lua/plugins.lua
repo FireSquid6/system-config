@@ -33,14 +33,6 @@ require("lazy").setup({
 	},
 
 	"neovim/nvim-lspconfig",
-	{
-		"williamboman/mason.nvim",
-		init = function()
-			require("mason").setup()
-		end,
-	},
-
-	"williamboman/mason-lspconfig.nvim",
 	"mfussenegger/nvim-lint",
 
 	{
