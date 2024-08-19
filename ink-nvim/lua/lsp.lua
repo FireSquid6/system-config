@@ -19,6 +19,8 @@ lspconfig.elixirls.setup({
 lspconfig.marksman.setup({})
 lspconfig.lua_ls.setup({})
 lspconfig.sourcekit.setup({})
+lspconfig.arduino_language_server.setup({})
+lspconfig.bashls.setup({})
 
 local cmp = require("cmp")
 cmp.setup({

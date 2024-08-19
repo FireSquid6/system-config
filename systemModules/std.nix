@@ -66,6 +66,8 @@
     direnv
     htop
     ripgrep
+
+    bash-language-server
   ];
 
   hardware.graphics.enable = true;
