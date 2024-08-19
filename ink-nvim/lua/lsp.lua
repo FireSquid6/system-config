@@ -23,7 +23,7 @@ lspconfig.clangd.setup({})
 lspconfig.arduino_language_server.setup({})
 lspconfig.bashls.setup({})
 lspconfig.htmx.setup({})  -- htmx-lsp in nixpkgs
-lspconfig.markdown_oxide.setup({})
+lspconfig.marksman.setup({})
 lspconfig.statix.setup({})
 lspconfig.tailwindcss.setup({
   filetypes = { "html", "css", "typescriptreact" },
