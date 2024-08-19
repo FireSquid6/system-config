@@ -68,6 +68,7 @@
     ripgrep
 
     bash-language-server
+    statix
   ];
 
   hardware.graphics.enable = true;

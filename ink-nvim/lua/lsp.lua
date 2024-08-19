@@ -16,13 +16,16 @@ lspconfig.elixirls.setup({
   cmd = { "elixir-ls" },
 })
 
-lspconfig.marksman.setup({})
+-- lspconfig.marksman.setup({})
 lspconfig.lua_ls.setup({})
 -- lspconfig.sourcekit.setup({})
 lspconfig.clangd.setup({})
 lspconfig.arduino_language_server.setup({})
 lspconfig.bashls.setup({})
 lspconfig.htmx.setup({})  -- htmx-lsp in nixpkgs
+lspconfig.markdown_oxide.setup({})
+lspconfig.statix.setup({})
+lspconfig.tailwindcss.setup({})
 
 local cmp = require("cmp")
 cmp.setup({

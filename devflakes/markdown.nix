@@ -8,14 +8,7 @@
   in { 
     devShells.x86_64-linux.default = pkgs.mkShell {
       buildInputs = with pkgs; [
-        bun
-        nodejs_20
-        flyctl
-        typescript
-        libgcc
-        # htmx-lsp
-        # tailwindcss
-        # tailwindcss-language-server
+        markdown-oxide
       ];
     };
   };
