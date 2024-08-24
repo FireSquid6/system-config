@@ -13,13 +13,13 @@ function copy_file() {
 
   # the name file should exist
   FILEPATH="/etc/nixos/dev$(echo $TYPE)s/$NAME.nix"
-  if [ ! -f $FILEPATH ]; then
+  if [ ! -f "$FILEPATH" ]; then
     echo "File $FILEPATH does not exist"
     return 1
   fi
 
   # copy the file to the current directory
-  cp $FILEPATH ./$TYPE.nix
+  cp "$FILEPATH" ./"$TYPE".nix
   echo "Copied $FILEPATH to ./$TYPE.nix"
 }
 
@@ -27,6 +27,11 @@ function copy_file() {
 
 
 function init_envrc() {
+  # check if in a git repository
+  if [ ! -d .git ]; then
+    git init
+  fi
+
   if test -f ./flake.nix; then
     echo "Found a flake.nix. Using nix flake for the .envrc"
     touch .envrc
