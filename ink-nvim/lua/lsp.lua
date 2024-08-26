@@ -16,10 +16,10 @@ lspconfig.elixirls.setup({
   cmd = { "elixir-ls" },
 })
 
--- lspconfig.marksman.setup({})
 lspconfig.lua_ls.setup({})
--- lspconfig.sourcekit.setup({})
-lspconfig.ccls.setup({})
+lspconfig.ccls.setup({
+  root_dir = util.root_pattern(".ccls", ".git", "main.cpp", "flake.nix")
+})
 lspconfig.arduino_language_server.setup({})
 lspconfig.bashls.setup({})
 lspconfig.htmx.setup({})  -- htmx-lsp in nixpkgs
