@@ -15,7 +15,7 @@
         bear
         libgcc
         llvmPackages_17.libcxxClang
-        sourcekit-lsp
+        ccls
       ];
     };
   };
