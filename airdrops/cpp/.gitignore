@@ -1,5 +1,6 @@
 .envrc
 .direnv
+.ccls-cache
 
 # Prerequisites
 *.d
