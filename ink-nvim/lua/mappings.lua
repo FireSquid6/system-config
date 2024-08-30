@@ -12,7 +12,6 @@ wk.add({
   { "<leader>b",   "<cmd>bprevious<cr>",                                desc = "Back" },
   { "<leader>c",   "<cmd>bdelete<cr>",                                  desc = "Close Buffer" },
   { "<leader>l",   group = "LSP" },
-  { "<leader>db",  "<cmd>lua require('dap').toggle_breakpoint()<cr>",   desc = "Toggle Breakpoint" },
   { "<leader>e",   "<cmd>Oil<cr>",                                      desc = "File Explorer" },
   { "<leader>f",   group = "Find" },
   { "<leader>f/",  "<cmd>Telescope current_buffer_fuzzy_find<cr>",      desc = "Search Current Buffer" },
