@@ -53,6 +53,7 @@
       source = ../ink-nvim;
       recursive = true;
     };
+    ".gitconfig".source = ../dotfiles/gitconfig;
   };
 
   home.sessionVariables = {
