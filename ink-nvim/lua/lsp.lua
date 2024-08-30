@@ -22,7 +22,6 @@ lspconfig.ccls.setup({
 })
 lspconfig.arduino_language_server.setup({})
 lspconfig.bashls.setup({})
-lspconfig.htmx.setup({})  -- htmx-lsp in nixpkgs
 lspconfig.marksman.setup({})
 lspconfig.statix.setup({})
 lspconfig.tailwindcss.setup({
