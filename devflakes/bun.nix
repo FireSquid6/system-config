@@ -16,7 +16,6 @@
         libgcc
         tailwindcss
         tailwindcss-language-server
-        # htmx-lsp
       ];
     };
   };

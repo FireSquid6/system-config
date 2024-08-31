@@ -7,5 +7,6 @@ mkShell {
     libgcc
     lua
     lua-language-server
+    nodePackages.typescript-language-server
   ];
 }
