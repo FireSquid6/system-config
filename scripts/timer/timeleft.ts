@@ -46,7 +46,7 @@ switch (type) {
     const time = Math.floor((endTime.getTime() - Date.now()) / 1000)
     
     if (time <= 0) {
-      console.log("00:00")
+      console.log(doSeconds ? "00:00:00" : "00:00")
       break
     }
 
