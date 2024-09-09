@@ -31,8 +31,12 @@ for (const arg of args) {
   }
 
 }
-
-const timeString = fs.readFileSync(path.join(os.homedir(), ".timer"), "utf-8")
+const filepath = path.join(os.homedir(), ".timer")
+if (!fs.existsSync(filepath)) {
+  console.log("00:00")
+  process.exit(0)
+}
+const timeString = fs.readFileSync(filepath, "utf-8")
 const endTime = new Date(parseInt(timeString))
 
 switch (type) {
