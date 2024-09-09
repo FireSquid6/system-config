@@ -1,9 +1,9 @@
 {
   "layer": "top",
   "position": "top",
-  "height": 40,
+  "height": 46,
   "modules-left": ["hyprland/workspaces", "hyprland/window"],
-  "modules-right": ["tray", "battery", "pulseaudio", "network",  "clock"],
+  "modules-right": ["tray", "custom/timer", "battery", "pulseaudio", "network",  "clock"],
   "hyprland/workspaces": {
     "disable-scroll": true,
     "all-outputs": false,
