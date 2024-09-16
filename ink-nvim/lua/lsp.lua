@@ -30,6 +30,7 @@ lspconfig.tailwindcss.setup({
   root_dir = util.root_pattern("tailwind.config.js", "tailwind.config.ts", "tailwind.config.mjs"),
 })
 
+
 local cmp = require("cmp")
 cmp.setup({
 	snippet = {
