@@ -2,7 +2,6 @@
 
 
 appname="ink-nvim"
-server=false
 file=""
 
 while [[ $# -gt 0 ]]
@@ -13,10 +12,6 @@ do
       shift
       appname="$1"
       shift
-      ;;
-    -s|--server)
-      shift
-      server=true
       ;;
     -f|--file)
       shift
@@ -29,8 +24,9 @@ do
   esac
 done
 
-if [ "$server" = true ]; then
-  eval "NVIM_APPNAME=$appname" nvim --listen /tmp/godot.pipe "$file"
-else
-  eval "NVIM_APPNAME=$appname" nvim "$file"
-fi
+# get the last part of the file path
+dir=$(basename "$(pwd)")
+pipe="$HOME/.pipes/$dir/socket.pipe"
+mkdir -p "$(dirname "$pipe")"
+
+eval "NVIM_APPNAME=$appname" nvim --listen "$pipe" "$file"
