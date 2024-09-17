@@ -13,6 +13,5 @@ if status is-interactive
   direnv hook fish | source
 
 
-  alias ea='NVIM_APPNAME=astro-nvim nvim'
-  alias e='NVIM_APPNAME=ink-nvim nvim'
+  alias e='develop.sh'
 end
