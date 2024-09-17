@@ -14,4 +14,5 @@ if status is-interactive
 
 
   alias e='develop.sh'
+  alias ge='develop.sh -l'
 end

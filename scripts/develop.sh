@@ -2,6 +2,7 @@
 
 appname="ink-nvim"
 file=""
+listen=false
 
 while [[ $# -gt 0 ]]
 do
@@ -17,6 +18,10 @@ do
       file="$1"
       shift
       ;;
+    -l|--listen)
+      shift
+      listen=true
+      ;;
     *)
       shift
       ;;
@@ -28,4 +33,10 @@ dir=$(basename "$(pwd)")
 pipe="$HOME/.pipes/$dir/socket.pipe"
 mkdir -p "$(dirname "$pipe")"
 
-eval "NVIM_APPNAME=$appname" nvim --listen "$pipe" "$file"
+if [ "$listen" = true ]; then
+  eval "NVIM_APPNAME=$appname" nvim --listen "$pipe" "$file"
+  exit
+fi
+
+eval "NVIM_APPNAME=$appname" nvim "$file"
+
