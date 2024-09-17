@@ -188,6 +188,15 @@ require("lazy").setup({
       })
     end,
   },
+  {
+    "Exafunction/codeium.nvim",
+
+    config = function()
+      require("codeium").setup({
+        enable_chat = true,
+      })
+    end,
+  },
   "nvim-tree/nvim-web-devicons",
   {
     "akinsho/toggleterm.nvim",
