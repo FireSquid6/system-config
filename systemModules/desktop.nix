@@ -133,6 +133,9 @@
     arduino
     arduino-ide
     bun
+
+    xournal
+    xournalpp
   ];
 
   environment.plasma5.excludePackages = with pkgs.libsForQt5; [
