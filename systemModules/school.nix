@@ -6,5 +6,6 @@
     eclipses.eclipse-cpp
     obs-studio
     libsForQt5.okular
+    libreoffice-qt6-fresh
   ];
 }
