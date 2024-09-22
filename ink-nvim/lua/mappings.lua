@@ -1,5 +1,4 @@
 local wk = require("which-key")
-local conf = require("telescope.config").values
 
 vim.keymap.set({ "i", "n" }, "<esc>", "<cmd>noh<cr><esc>")
 vim.keymap.set({ "i", "n" }, "<C-h>", "<C-w>h")
@@ -8,7 +7,7 @@ vim.keymap.set({ "i", "n" }, "<C-k>", "<C-w>k")
 vim.keymap.set({ "i", "n" }, "<C-l>", "<C-w>l")
 wk.add({
   { "<leader>;",   "<cmd>TermSelect<cr>",                               desc = "Select Terminal" },
-  { "<leader>h",       "<cmd>HopWord<cr>",                                  desc = "Hop" },
+  { "<leader>h",   "<cmd>HopWord<cr>",                                  desc = "Hop" },
   { "<leader>b",   "<cmd>bprevious<cr>",                                desc = "Back" },
   { "<leader>c",   "<cmd>bdelete<cr>",                                  desc = "Close Buffer" },
   { "<leader>l",   group = "LSP" },
