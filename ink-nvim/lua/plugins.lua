@@ -79,6 +79,26 @@ require("lazy").setup({
               }
             end
           },
+          nix = {
+            -- nixfmt
+            function()
+              return {
+                exe = "nixfmt",
+                args = { vim.api.nvim_buf_get_name(0) },
+                stdin = true
+              }
+            end
+          },
+          rust = {
+            -- rustfmt
+            function()
+              return {
+                exe = "rustfmt",
+                args = { vim.api.nvim_buf_get_name(0) },
+                stdin = true
+              }
+            end
+          },
           -- Use the special "*" filetype for defining formatter configurations on
           -- any filetype
           ["*"] = {

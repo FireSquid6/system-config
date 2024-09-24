@@ -57,6 +57,7 @@
     starship
     fish
     neovim
+    nixfmt
     zip
     fastfetch
     lazygit
