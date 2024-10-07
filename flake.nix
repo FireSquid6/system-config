@@ -124,7 +124,7 @@
       modules = [
         ./hosts/wsl/configuration.nix
         ./systemModules/std.nix
-        ./systemModules/firesquid.nix
+        ./systemModules/firesquid-headless.nix
 
         inputs.nixos-wsl.nixosModules.default {
           wsl.enable = true;
