@@ -129,6 +129,6 @@
       ./hosts/wsl/configuration.nix
       ./systemModules/std.nix
       ./systemModules/firesquid.nix
-    ]
+    ];
   };
 }
