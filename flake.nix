@@ -119,5 +119,16 @@
       ];
     };
     # INSERT NEW SYSTEM HERE
+
+    nixosConfigurations.wsl = nixpkgs.lib.nixosSystem {
+      specialArgs = { inherit inputs; };
+      modules = [
+      nixos-wsl.nixosModules.default {
+        wsl.enable = true;
+      }
+      ./hosts/wsl/configuration.nix
+      ./systemModules/std.nix
+      ./systemModules/firesquid.nix
+    ]
   };
 }
