@@ -17,7 +17,6 @@
   };
   xdg.mime.enable = true;
 
-  sound.enable = true;
   nixpkgs.config.pulseaudio = true;
   hardware.pulseaudio.enable = true;
   hardware.pulseaudio.support32Bit = true;

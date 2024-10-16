@@ -41,7 +41,6 @@
     nss
     openssl
     pango
-    pipewire
     stdenv.cc.cc
     systemd
     vulkan-loader
