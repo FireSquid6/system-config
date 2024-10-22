@@ -17,9 +17,18 @@
   };
   xdg.mime.enable = true;
 
-  nixpkgs.config.pulseaudio = true;
-  hardware.pulseaudio.enable = true;
-  hardware.pulseaudio.support32Bit = true;
+  # old pulseaudio stuff
+  # nixpkgs.config.pulseaudio = true;
+  # hardware.pulseaudio.enable = true;
+  # hardware.pulseaudio.support32Bit = true;
+
+  security.rtkit.enable = true;
+  services.pipewire = {
+    enable = true;
+    alsa.enable = true;
+    alsa.support32Bit = true;
+    pulse.enable = true;
+  };
 
   virtualisation.virtualbox.host.enable = true;
 
