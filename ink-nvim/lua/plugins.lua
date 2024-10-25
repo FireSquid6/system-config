@@ -223,14 +223,14 @@ require("lazy").setup({
     version = "*",
     config = true,
   },
-  {
-    "startup-nvim/startup.nvim",
-    config = function()
-      require("startup").setup({
-        theme = "evil",
-      })
-    end,
-  },
+  -- {
+  --   "startup-nvim/startup.nvim",
+  --   config = function()
+  --     require("startup").setup({
+  --       theme = "evil",
+  --     })
+  --   end,
+  -- },
   {
     "nvim-lualine/lualine.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
