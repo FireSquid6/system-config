@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 appname="ink-nvim"
-file=""
+file="."
 listen=false
 
 while [[ $# -gt 0 ]]
