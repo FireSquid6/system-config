@@ -86,7 +86,6 @@
     wl-clipboard
 
     hyprlock
-    hyprcursor
     hyprshot
     hyprpaper
     hypridle
@@ -144,6 +143,8 @@
 
     xournal
     xournalpp
+
+    pamixer
   ];
 
   environment.plasma5.excludePackages = with pkgs.libsForQt5; [
