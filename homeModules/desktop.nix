@@ -3,9 +3,6 @@
 {
   # gtk
   gtk.enable = true;
-  gtk.cursorTheme.package = pkgs.google-cursor;
-  gtk.cursorTheme.name = "Black";
-
   gtk.theme.package = pkgs.adw-gtk3;
   gtk.theme.name = "adw-gtk";
 
@@ -18,6 +15,9 @@
   qt.style.name = "adwaita-dark";
 
   qt.style.package = pkgs.adwaita-qt;
+
+  # cursor
+  home.file.".icons/default".source = "${pkgs.google-cursor}/share/icons/Google-Cursor";
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
