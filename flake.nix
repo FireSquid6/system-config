@@ -48,9 +48,7 @@
         ./hosts/horikita/configuration.nix
         ./systemModules/bluetooth.nix
         ./systemModules/lid.nix
-        ./systemModules/school.nix
         ./systemModules/virtualization.nix
-        ./systemModules/games.nix
         ./systemModules/std.nix
         ./systemModules/boot.nix
         ./systemModules/firesquid.nix
