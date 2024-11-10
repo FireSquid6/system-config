@@ -12,7 +12,6 @@
   environment.systemPackages = with pkgs; [
     docker
     docker-compose
-    multipass
     qemu
   ];
   
