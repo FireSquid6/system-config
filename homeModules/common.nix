@@ -54,6 +54,10 @@
       recursive = true;
     };
     ".gitconfig".source = ../dotfiles/gitconfig;
+    ".icons" = {
+      source = ../dotfiles/icons;
+      recursive = true;
+    };
   };
 
   home.sessionVariables = {

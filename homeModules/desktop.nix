@@ -16,9 +16,6 @@
 
   qt.style.package = pkgs.adwaita-qt;
 
-  # cursor
-  home.file.".icons/default".source = "${pkgs.google-cursor}/share/icons/Google-Cursor";
-
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 }
