@@ -58,6 +58,10 @@
       source = ../dotfiles/icons;
       recursive = true;
     };
+    "wallpapers" = {
+      source = ../wallpapers;
+      recursive = true;
+    };
   };
 
   home.sessionVariables = {
