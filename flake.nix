@@ -32,6 +32,7 @@
         ./systemModules/firesquid.nix
         ./systemModules/virtualization.nix
         ./systemModules/school.nix
+        ./systemModules/development.nix
         ./systemModules/boot.nix
         ./systemModules/nix-ld.nix
         ./systemModules/desktop.nix
@@ -53,6 +54,7 @@
         ./systemModules/boot.nix
         ./systemModules/firesquid.nix
         ./systemModules/games.nix
+        ./systemModules/development.nix
         ./systemModules/nix-ld.nix
         ./systemModules/desktop.nix
 
@@ -82,6 +84,7 @@
         ./hosts/megumin/configuration.nix
         ./systemModules/std.nix
         ./systemModules/virtualization.nix
+        ./systemModules/development.nix
         ./systemModules/boot.nix
         ./systemModules/firesquid.nix
 

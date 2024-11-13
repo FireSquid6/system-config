@@ -47,7 +47,6 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-    cloc
     tmux
     wget
     firefox
@@ -57,19 +56,12 @@
     starship
     fish
     neovim
-    nixfmt
     zip
     fastfetch
-    lazygit
     unzip
     gh
-    fh
-    direnv
     htop
     ripgrep
-
-    bash-language-server
-    statix
   ];
 
   hardware.graphics.enable = true;

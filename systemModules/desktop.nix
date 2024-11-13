@@ -103,18 +103,7 @@
     youtube-music
     obsidian
 
-    godot_4
-    vscodium
-    asciinema
-    neovide
-    lazydocker
-    starship
-    kitty
     alacritty
-
-    nodejs_20
-    python3
-    python311Packages.pip
 
     betterlockscreen
     waybar
@@ -135,16 +124,10 @@
     simplescreenrecorder
 
     networkmanagerapplet
-
     pavucontrol
-    arduino
-    arduino-ide
-    bun
-
-    xournal
-    xournalpp
-
     pamixer
+
+    bun
   ];
 
   environment.plasma5.excludePackages = with pkgs.libsForQt5; [
