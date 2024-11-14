@@ -92,6 +92,7 @@
     xdg-desktop-portal-hyprland
 
     discord
+    webcord-vencord
     chromium
     libresprite
     inkscape
