@@ -2,6 +2,7 @@
 
 {
   environment.systemPackages = with pkgs; [
+    gdb
     lazygit
     lazydocker
     cloc
@@ -16,8 +17,6 @@
 
     arduino
     arduino-ide
-
-    bun
 
     bash-language-server
     statix
@@ -37,5 +36,8 @@
     nodejs_20
     python3
     python311Packages.pip
+    bun
+
+
   ];
 }

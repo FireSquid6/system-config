@@ -363,4 +363,11 @@ require("lazy").setup({
       require("hop").setup()
     end,
   },
+  {
+    "karb94/neoscroll.nvim",
+    config = function()
+      require("neoscroll").setup({})
+    end,
+  },
+
 })

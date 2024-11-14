@@ -3,8 +3,8 @@
 {
   # gtk
   gtk.enable = true;
-  gtk.theme.package = pkgs.adw-gtk3;
-  gtk.theme.name = "adw-gtk";
+  gtk.theme.package = pkgs.tokyonight-gtk-theme;
+  gtk.theme.name = "tokyonight-gtk-theme";
 
   gtk.iconTheme.package = pkgs.papirus-icon-theme;
   gtk.iconTheme.name = "Papirus-Dark";
@@ -15,7 +15,4 @@
   qt.style.name = "adwaita-dark";
 
   qt.style.package = pkgs.adwaita-qt;
-
-  # Let Home Manager install and manage itself.
-  programs.home-manager.enable = true;
 }
