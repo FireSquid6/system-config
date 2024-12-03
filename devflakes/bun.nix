@@ -12,10 +12,6 @@
         nodejs_20
         flyctl
         typescript
-        nodePackages.typescript-language-server
-        libgcc
-        tailwindcss
-        tailwindcss-language-server
       ];
     };
   };
