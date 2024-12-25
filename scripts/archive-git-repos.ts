@@ -42,7 +42,6 @@ async function errorOut(error: string) {
   process.exit(1)
 }
 
-// TODO - get private repos
 // TODO - get repos from organizations
 async function getAllRepos(username: string): Promise<Repo[]> {
   console.log("Finding repos to clone...")
@@ -86,7 +85,6 @@ async function getAllRepos(username: string): Promise<Repo[]> {
 }
 
 async function cloneAndArchive(repos: Repo[]) {
-  // const repos = await getAllRepos("firesquid6")
   const datestring = new Date().toISOString().replace(/:/g, "-").replace(/\./g, "-")
 
   fs.mkdirSync(`./${datestring}`)
