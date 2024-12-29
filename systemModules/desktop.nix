@@ -128,6 +128,9 @@
     pavucontrol
     pamixer
 
+    stu
+    awscli2
+
     bun
   ];
 
