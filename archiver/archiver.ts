@@ -56,10 +56,10 @@ export async function getAllRepos(username: string, token: string): AsyncResult<
   return asome(repos);
 }
 
-export async function cloneAndArchive(repos: Repo[]): AsyncResult<string> {
+export async function cloneAndArchive(repos: Repo[], filename?: string): AsyncResult<string> {
   try {
     fs.mkdirSync("./temp", { recursive: true });
-    const datestring = new Date().toISOString().replace(/:/g, "-").replace(/\./g, "-")
+
 
     for (const repo of repos) {
       console.log("Cloning:", repo.name);
@@ -67,12 +67,15 @@ export async function cloneAndArchive(repos: Repo[]): AsyncResult<string> {
     }
 
     console.log("Zipping files...");
-    const zipFilename = `${datestring}.zip`
-    await $`zip -r ./${zipFilename} ./temp`;
+    if (filename === undefined) {
+      const datestring = new Date().toISOString().replace(/:/g, "-").replace(/\./g, "-")
+      filename = `${datestring}.zip`
+    }
+    await $`zip -r ./${filename} ./temp`;
 
     fs.rmdirSync("./temp", { recursive: true });
 
-    return asome(zipFilename);
+    return asome(filename);
   } catch (e) {
     return anone(`${e}`);
   }

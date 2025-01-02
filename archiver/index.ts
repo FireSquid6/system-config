@@ -1,4 +1,5 @@
 import { cloneAndArchive, getAllRepos } from "./archiver";
+import fs from "fs";
 
 async function ntfy(message: string, topic?: string) {
   console.log(message);
@@ -40,13 +41,14 @@ async function main() {
     process.exit(1);
   }
 
-  const [archiveRes, filename] = await cloneAndArchive(repos);
+  const [archiveRes, filename] = await cloneAndArchive(repos, "last-archive.zip");
 
   if (archiveRes === "none") {
     ntfy(`Fatal: error cloning repos: ${filename}`, topic);
     process.exit(1);
   }
 
+  fs.rmSync("temp");
   ntfy(`Success! Cloned repo to: ${filename}`, topic);
 }
 
