@@ -3,4 +3,4 @@
 cd /etc/nixos/archiver || exit
 
 
-bun run archiver.ts
+bun run index.ts
