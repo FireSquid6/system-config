@@ -1,6 +1,7 @@
 #!/usr/bin/env bun
 import fs from "fs"
 import { $ } from "bun"
+import type { AsyncResult } from "../archiver/option"
 
 const args = process.argv
 for (let i = 0; i < args.length; i++) {
@@ -84,8 +85,10 @@ async function getAllRepos(username: string): Promise<Repo[]> {
   return repos 
 }
 
-async function cloneAndArchive(repos: Repo[]) {
+async function cloneAndArchive(repos: Repo[]): AsyncResult<number> {
   const datestring = new Date().toISOString().replace(/:/g, "-").replace(/\./g, "-")
+
+  try {
 
   fs.mkdirSync(`./${datestring}`)
 
@@ -94,13 +97,17 @@ async function cloneAndArchive(repos: Repo[]) {
     await $`git clone ${repo.cloneUrl} ./${datestring}/${repo.name}`
   }
 
-  console.log("Cloning complete")
-  console.log("Zipping files...")
-  await $`zip -r ./${datestring}.zip ./${datestring}`
+  console.log("Cloning complete");
+  console.log("Zipping files...");
+  await $`zip -r ./${datestring}.zip ./${datestring}`;
   fs.rmdirSync(`./${datestring}`, { recursive: true })
 
-  const stats = fs.statSync(`./${datestring}.zip`)
-  return stats.size
+  const stats = fs.statSync(`./${datestring}.zip`);
+
+  return asome(stats.size);
+  } catch (e) {
+
+  }
 }
 
 const repos = await getAllRepos(config.username)
