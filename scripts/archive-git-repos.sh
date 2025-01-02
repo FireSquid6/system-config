@@ -1,4 +1,12 @@
 #!/usr/bin/env bash
 
 cd /etc/nixos/archiver || exit
+
+rm -rf ./temp/
+mkdir ./temp
+
 bun run index.ts
+
+DATE=$(date "+%Y-%m-%d")
+aws s3 cp ./last-archive.zip s3://firesquidpersonal/code-archives/"$DATE".zip
+rm last-archive.zip

@@ -48,7 +48,6 @@ async function main() {
     process.exit(1);
   }
 
-  fs.rmSync("temp");
   ntfy(`Success! Cloned repo to: ${filename}`, topic);
 }
 
