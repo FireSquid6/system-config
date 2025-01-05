@@ -369,5 +369,21 @@ require("lazy").setup({
       require("neoscroll").setup({})
     end,
   },
-
+  {
+    "ibhagwan/fzf-lua",
+  },
+  {
+    "frankroeder/parrot.nvim",
+    dependencies = { "ibhagwan/fzf-lua", "nvim-lua/plenary.nvim" },
+    tag = "v1.2.1",
+    config = function()
+      require("parrot").setup({
+        providers = {
+          anthropic = {
+            api_key = os.getenv("ANTHROPIC_API_KEY")
+          },
+        },
+      })
+    end,
+  },
 })

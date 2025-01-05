@@ -5,9 +5,20 @@ vim.keymap.set({ "i", "n" }, "<C-h>", "<C-w>h")
 vim.keymap.set({ "i", "n" }, "<C-j>", "<C-w>j")
 vim.keymap.set({ "i", "n" }, "<C-k>", "<C-w>k")
 vim.keymap.set({ "i", "n" }, "<C-l>", "<C-w>l")
+
 wk.add({
+  { "<leader>a",   group = "AI",                                        desc = "AI" },
+  { "<leader>ar",  "<cmd>PrtChatResponde<cr>",                          desc = "Respond" },
+  { "<leader>at",  "<cmd>PrtChatToggle<cr>",                            desc = "Toggle" },
+  { "<leader>an",  "<cmd>PrtChatNew<cr>",                               desc = "New" },
+  { "<leader>aw",  "<cmd>PrtRewrite<cr>",                               desc = "Rewrite" },
+  { "<leader>ac",  "<cmd>PrtContext<cr>",                               desc = "Edit Context" },
+  { "<leader>h",   group = "Hop",                                       desc = "Hop" },
+  { "<leader>hw",  "<cmd>HopWord<cr>",                                  desc = "Hop Word" },
+  { "<leader>hl",  "<cmd>HopLine<cr>",                                  desc = "Hop Line" },
+  { "<leader>ha",  "<cmd>HopAnywhereCurrentLine<cr>",                   desc = "Hop Anywhere" },
+  { "<leader>hv",  "<cmd>HopVertical<cr>",                              desc = "Hop Vertical" },
   { "<leader>;",   "<cmd>TermSelect<cr>",                               desc = "Select Terminal" },
-  { "<leader>h",   "<cmd>HopWord<cr>",                                  desc = "Hop" },
   { "<leader>b",   "<cmd>bprevious<cr>",                                desc = "Back" },
   { "<leader>c",   "<cmd>bdelete<cr>",                                  desc = "Close Buffer" },
   { "<leader>l",   group = "LSP" },
@@ -16,7 +27,7 @@ wk.add({
   { "<leader>f/",  "<cmd>Telescope current_buffer_fuzzy_find<cr>",      desc = "Search Current Buffer" },
   { "<leader>fb",  "<cmd>Telescope buffers<cr>",                        desc = "Find Buffers" },
   { "<leader>fc",  "<cmd>Telescope commands<cr>",                       desc = "Search Commands" },
-  { "<leader>fe",  "<cmd> Telescope diagnostics<cr>",                   desc = "Search Diagnostics" },
+  { "<leader>fe",  "<cmd>Telescope diagnostics<cr>",                    desc = "Search Diagnostics" },
   { "<leader>ff",  "<cmd>Telescope find_files<cr>",                     desc = "Find Files" },
   { "<leader>fi",  "<cmd>Telescope lsp_incoming_calls<cr>",             desc = "Search Incoming Calls" },
   { "<leader>fl",  "<cmd>Telescope lsp_document_symbols<cr>",           desc = "Search LSP Symbols" },
@@ -43,58 +54,6 @@ wk.add({
   { "<leader>li",  "<cmd>LspInfo<cr>",                                  desc = "Lsp Info" },
 })
 
--- wk.register({
---   f = {
---     name = "Find",
---     f = { "<cmd>Telescope find_files<cr>", "Find Files" },
---     w = { "<cmd>Telescope live_grep<cr>", "Find Words" },
---     b = { "<cmd>Telescope buffers<cr>", "Find Buffers" },
---     c = { "<cmd>Telescope commands<cr>", "Search Commands" },
---
---     l = { "<cmd>Telescope lsp_document_symbols<cr>", "Search LSP Symbols" },
---     s = { "<cmd>Telescope lsp_dynamic_workspace_symbols<cr>", "Search LSP Workspace Symbols" },
---     o = { "<cmd>Telescope lsp_outgoing_calls<cr>", "Search Outgoing Calls" },
---     i = { "<cmd>Telescope lsp_incoming_calls<cr>", "Search Incoming Calls" },
---
---     r = { "<cmd> Telescope registers<cr>", "Search Registers" },
---     m = { "<cmd> Telescope marks<cr>", "Search Marks" },
---     e = { "<cmd> Telescope diagnostics<cr>", "Search Diagnostics" },
---
---     ["/"] = { "<cmd>Telescope current_buffer_fuzzy_find<cr>", "Search Current Buffer" },
---   },
---   e = { "<cmd>Oil<cr>", "File Explorer" },
---   w = { "<cmd>wa<cr>", "Write Files" },
---   q = { "<cmd>q<cr>", "Quit Files" },
---   c = { "<cmd>bdelete<cr>", "Close Buffer" },
---   [";"] = { "<cmd>TermSelect<cr>", "Select Terminal" },
---   u = {
---     name = "UI",
---     t = {
---       name = "Colorscheme",
---       d = { "<cmd>colorscheme tokyonight-day<cr>", "Day Theme" },
---       n = { "<cmd>colorscheme tokyonight-night<cr>", "Night Theme" },
---       s = { "<cmd>colorscheme tokyonight-storm<cr>", "Storm Theme" },
---     },
---   },
---   d = {
---     name = "Debugger",
---     u = { "<cmd>lua require('dapui').toggle()<cr>", "Toggle UI" },
---     b = { "<cmd>lua require('dap').toggle_breakpoint()<cr>", "Toggle Breakpoint" },
---     s = { "<cmd>lua require('dap').continue()<cr>", "Continue" },
---   },
---   t = {
---     name = "Terminal",
---     ["1"] = { "<cmd>1ToggleTerm direction=horizontal size=20<cr>", "Bottom Terminal 1" },
---     ["2"] = { "<cmd>2ToggleTerm direction=horizontal size=20<cr>", "Bottom Terminal 2" },
---     ["3"] = { "<cmd>3ToggleTerm direction=horizontal size=20<cr>", "Bottom Terminal 3" },
---     f = { "<cmd>4ToggleTerm direction=float size=20<cr>", "Floating Terminal" },
---     v = { "<cmd>5ToggleTerm direction=vertical size=60<cr>", "Right Terminal" },
---   },
---   b = { "<cmd>bprevious<cr>", "Back" },
---   g = { "<cmd>LazyGit<cr>", "LazyGit" },
---   s = { "<cmd>Telescope spell_suggest<cr>", "Spell Suggest" }
--- }, { prefix = "<leader>" })
---
 vim.keymap.set("t", "<C-n>", "<C-\\><C-n>")
 vim.keymap.set("t", "<C-h>", "<C-\\><C-n><C-w>h")
 vim.keymap.set("t", "<C-j>", "<C-\\><C-n><C-w>j")

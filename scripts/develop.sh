@@ -4,6 +4,9 @@ appname="ink-nvim"
 file="."
 listen=false
 
+ANTHROPIC_API_KEY=$(cat "$HOME"/.anthropickey)
+export ANTHROPIC_API_KEY
+
 while [[ $# -gt 0 ]]
 do
   key="$1"
