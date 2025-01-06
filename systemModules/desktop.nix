@@ -155,6 +155,10 @@
   fonts.packages = with pkgs; [
     fira-code
     noto-fonts
-    (nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" "Hasklig" "JetBrainsMono" "GeistMono" ]; })
+    pkgs.nerd-fonts.fira-code
+    pkgs.nerd-fonts.droid-sans-mono
+    pkgs.nerd-fonts.hasklig
+    pkgs.nerd-fonts.jetbrains-mono
+    pkgs.nerd-fonts.geist-mono
   ];
 }
