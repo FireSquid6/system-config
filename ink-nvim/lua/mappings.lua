@@ -7,12 +7,12 @@ vim.keymap.set({ "i", "n" }, "<C-k>", "<C-w>k")
 vim.keymap.set({ "i", "n" }, "<C-l>", "<C-w>l")
 
 wk.add({
-  { "<leader>a",   group = "AI",                                        desc = "AI" },
-  { "<leader>ar",  "<cmd>PrtChatResponde<cr>",                          desc = "Respond" },
-  { "<leader>at",  "<cmd>PrtChatToggle<cr>",                            desc = "Toggle" },
-  { "<leader>an",  "<cmd>PrtChatNew<cr>",                               desc = "New" },
-  { "<leader>aw",  "<cmd>PrtRewrite<cr>",                               desc = "Rewrite" },
-  { "<leader>ac",  "<cmd>PrtContext<cr>",                               desc = "Edit Context" },
+  -- { "<leader>a",   group = "AI",                                        desc = "AI" },
+  -- { "<leader>ar",  "<cmd>PrtChatResponde<cr>",                          desc = "Respond" },
+  -- { "<leader>at",  "<cmd>PrtChatToggle<cr>",                            desc = "Toggle" },
+  -- { "<leader>an",  "<cmd>PrtChatNew<cr>",                               desc = "New" },
+  -- { "<leader>aw",  "<cmd>PrtRewrite<cr>",                               desc = "Rewrite" },
+  -- { "<leader>ac",  "<cmd>PrtContext<cr>",                               desc = "Edit Context" },
   { "<leader>h",   group = "Hop",                                       desc = "Hop" },
   { "<leader>hw",  "<cmd>HopWord<cr>",                                  desc = "Hop Word" },
   { "<leader>hl",  "<cmd>HopLine<cr>",                                  desc = "Hop Line" },
