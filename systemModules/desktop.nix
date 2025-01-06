@@ -105,6 +105,7 @@
     obsidian
 
     alacritty
+    ghostty
 
     betterlockscreen
     waybar
