@@ -73,14 +73,6 @@ vim.api.nvim_create_autocmd("LspAttach", {
     -- See `:help vim.lsp.*` for documentation on any of the below functions
     local opts = { buffer = ev.buf }
 
-    -- wk.register({
-    --   D = { vim.lsp.buf.declaration, "Go to Declaration", opts },
-    --   d = { vim.lsp.buf.definition, "Go to Definition", opts },
-    --   i = { vim.lsp.buf.implementation, "Go to Implementation", opts },
-    --   r = { vim.lsp.buf.references, "Go to References", opts },
-    --   t = { vim.lsp.buf.type_definition, "Go to Type Definition", opts },
-    -- }, { prefix = "g" })
-
     wk.add({
       { "gD", vim.lsp.buf.declaration,     desc = "Go to Declaration" },
       { "gd", vim.lsp.buf.definition,      desc = "Go to Definition" },
@@ -88,16 +80,6 @@ vim.api.nvim_create_autocmd("LspAttach", {
       { "gr", vim.lsp.buf.references,      desc = "Go to References" },
       { "gt", vim.lsp.buf.type_definition, desc = "Go to Type Definition" },
     })
-
-    -- wk.register({
-    --   name = "LSP",
-    --   a = { vim.lsp.buf.code_action, "Code Action", opts },
-    --   n = { vim.lsp.buf.rename, "Rename", opts },
-    --   f = { "<cmd>lua vim.lsp.buf.format()<cr>", "Format", opts },
-    --
-    --   h = { vim.lsp.buf.hover, "Hover", opts },
-    --   d = { "<cmd>lua vim.diagnostic.open_float()<cr>", "Line Diagnostics", opts },
-    -- }, { prefix = "<leader>l" })
 
     wk.add({
       { "<leader>l",  group = "LSP" },
