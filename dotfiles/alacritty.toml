@@ -29,5 +29,5 @@ italic = { family = "JetBrainsMono NF", style = "Italic"}
 bold_italic = { family = "JetBrainsMono NF", style = "Bold Italic"}
 size = 10.0
 
-[shell]
+[terminal.shell]
 program = "fish"
