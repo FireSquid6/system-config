@@ -1,5 +1,4 @@
 import { cloneAndArchive, getAllRepos } from "./archiver";
-import fs from "fs";
 
 async function ntfy(message: string, topic?: string) {
   console.log(message);
