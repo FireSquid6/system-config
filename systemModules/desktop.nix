@@ -133,6 +133,9 @@
     awscli2
 
     bun
+
+    syncthing
+    syncthingtray
   ];
 
   environment.plasma5.excludePackages = with pkgs.libsForQt5; [
