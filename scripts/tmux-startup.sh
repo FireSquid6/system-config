@@ -11,6 +11,7 @@ tmux new-session -A -d -c ~/source -t workbench
 # automatically put a starting project in nixos
 tmux rename-window -t workbench:1 scratch
 tmux new-window -t workbench -n nixos -c /etc/nixos
+tmux new-window -t workbench -n notes -c ~/notes
 tmux select-window -t workbench:scratch
 
 # monitor just has htop and a blank pane
