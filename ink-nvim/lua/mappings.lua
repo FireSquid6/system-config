@@ -52,6 +52,7 @@ wk.add({
   { "<leader>uts", "<cmd>colorscheme tokyonight-storm<cr>",             desc = "Storm Theme" },
   { "<leader>w",   "<cmd>wa<cr>",                                       desc = "Write Files" },
   { "<leader>li",  "<cmd>LspInfo<cr>",                                  desc = "Lsp Info" },
+  { "<leader>r",   "<cmd>checktime<cr>",                                desc = "Refresh" },
 })
 
 vim.keymap.set("t", "<C-n>", "<C-\\><C-n>")
