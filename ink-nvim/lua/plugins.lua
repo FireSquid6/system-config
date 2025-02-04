@@ -1,3 +1,4 @@
+-- ignore
 require("lazy").setup({
   {
     "folke/which-key.nvim",
@@ -390,7 +391,7 @@ require("lazy").setup({
     "yetone/avante.nvim",
     event = "VeryLazy",
     lazy = false,
-    tag ="v0.0.14",
+    tag = "v0.0.14",
     opts = {
       -- add any opts here
     },
@@ -430,6 +431,83 @@ require("lazy").setup({
         },
         ft = { "markdown", "Avante" },
       },
+      {
+        "jakewvincent/mkdnflow.nvim",
+        config = function()
+          require("mkdnflow").setup({
+            links = {
+              style = 'markdown',
+              name_is_source = false,
+              conceal = false,
+              context = 0,
+              implicit_extension = nil,
+              transform_implicit = false,
+              transform_explicit = function(text)
+                text = text:gsub(" ", "-")
+                text = text:lower()
+                text = os.date('%Y-%m-%d_') .. text
+                return (text)
+              end,
+              create_on_follow_failure = true
+            },
+            new_file_template = {
+              use_template = false,
+              placeholders = {
+                before = {
+                  title = "link_title",
+                  date = "os_date"
+                },
+                after = {}
+              },
+              template = "# {{ title }}"
+            },
+            to_do = {
+              symbols = { ' ', '-', 'X' },
+              update_parents = true,
+              not_started = ' ',
+              in_progress = '-',
+              complete = 'X'
+            },
+            mappings = {
+              MkdnEnter = { { 'n', 'v' }, '<CR>' },
+              MkdnTab = false,
+              MkdnSTab = false,
+              MkdnNextLink = false,
+              MkdnPrevLink = false,
+              MkdnNextHeading = false,
+              MkdnPrevHeading = false,
+              MkdnGoBack = false,
+              MkdnGoForward = false,
+              MkdnCreateLink = false, -- see MkdnEnter
+              MkdnCreateLinkFromClipboard = false,
+              MkdnFollowLink = false, -- see MkdnEnter
+              MkdnDestroyLink = { 'n', '<M-CR>' },
+              MkdnTagSpan = { 'v', '<M-CR>' },
+              MkdnMoveSource = { 'n', '<F2>' },
+              MkdnYankAnchorLink = { 'n', 'yaa' },
+              MkdnYankFileAnchorLink = { 'n', 'yfa' },
+              MkdnIncreaseHeading = false,
+              MkdnDecreaseHeading = false,
+              MkdnToggleToDo = { { 'n', 'v' }, '<leader>dt' },
+              MkdnNewListItem = false,
+              MkdnNewListItemBelowInsert = { 'n', 'o' },
+              MkdnNewListItemAboveInsert = { 'n', 'O' },
+              MkdnExtendList = false,
+              MkdnUpdateNumbering = { 'n', '<leader>dn' },
+              MkdnTableNextCell = { 'i', '<Tab>' },
+              MkdnTablePrevCell = { 'i', '<S-Tab>' },
+              MkdnTableNextRow = false,
+              MkdnTablePrevRow = false,
+              MkdnTableNewRowBelow = { 'n', '<leader>dr' },
+              MkdnTableNewRowAbove = { 'n', '<leader>dR' },
+              MkdnTableNewColAfter = { 'n', '<leader>dc' },
+              MkdnTableNewColBefore = { 'n', '<leader>dC' },
+              MkdnFoldSection = { 'n', '<leader>df' },
+              MkdnUnfoldSection = { 'n', '<leader>dF' },
+            }
+          })
+        end,
+      },
     },
-  }
+  },
 })
