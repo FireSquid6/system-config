@@ -136,6 +136,8 @@
 
     rclone
     insync
+
+    ntfy-sh
   ];
 
   environment.plasma5.excludePackages = with pkgs.libsForQt5; [
