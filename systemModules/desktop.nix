@@ -126,6 +126,7 @@
     simplescreenrecorder
 
     networkmanagerapplet
+    trayscale
     pavucontrol
     pamixer
 

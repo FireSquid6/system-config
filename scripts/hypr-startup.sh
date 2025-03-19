@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 hyprpaper &
+trayscale &
 /etc/nixos/scripts/waybar.sh &
 nm-applet &
 /etc/nixos/scripts/tmux-startup.sh
