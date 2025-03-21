@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
 
+/etc/nixos/scripts/tmux-startup.sh
+
 hyprpaper &
-trayscale &
 /etc/nixos/scripts/waybar.sh &
 nm-applet &
-/etc/nixos/scripts/tmux-startup.sh
 insync start
 
 hyprctl setcursor Google-DotBlack 24
+
+trayscale &
