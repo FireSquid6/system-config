@@ -121,6 +121,7 @@
     papirus-icon-theme
 
     grim
+    kooha
     wuzz
     flameshot
     simplescreenrecorder
