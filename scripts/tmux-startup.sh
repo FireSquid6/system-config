@@ -13,3 +13,6 @@ tmux new-window -t home -n scratchpad
 tmux new-window -t home -n notes -c ~/Notes
 
 tmux select-window -t home:htop
+
+tmux new-session -d -t nixos -c /etc/nixos
+tmux rename-window -t nixos:1 editor
