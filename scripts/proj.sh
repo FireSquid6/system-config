@@ -19,6 +19,10 @@ if [ ! -d ~/source/"$PROJECT" ]; then
     mkdir ~/source/"$PROJECT"
 fi
 
-# create a new tmux session for the project
-echo "Opening ~/source/$PROJECT"
-tmux new-session -t workbench -n "$PROJECT" -c ~/source/"$PROJECT"
+tmux has-session -t "$PROJECT" 2>/dev/null
+
+if [ $? -ne 0 ]; then
+    tmux new-session -d -s "$PROJECT" -c ~/source/"$PROJECT"
+fi
+
+alacritty --command tmux attach-session -t "$PROJECT" &
