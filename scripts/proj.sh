@@ -16,7 +16,10 @@ fi
 tmux has-session -t "$PROJECT" 2>/dev/null
 
 if [ $? -ne 0 ]; then
-    tmux new-session -d -s "$PROJECT" -c ~/source/"$PROJECT"
+    tmux new-session -d -t "$PROJECT" -c ~/source/"$PROJECT"
+    tmux rename-window -t "$PROJECT":1 editor
+    tmux new-window -t "$PROJECT" terminal
+    tmux select-window -t "$PROJECT" editor
 fi
 
 alacritty --command tmux attach-session -t "$PROJECT" &
