@@ -7,12 +7,6 @@ if [ -z "$PROJECT" ]; then
     exit 1
 fi
 
-# check if project is actually "new"
-if [ "$PROJECT" == "new" ]; then
-  tmux new-window -t workbench -n new -c ~/source
-    exit 1
-fi
-
 # check if the project exists
 if [ ! -d ~/source/"$PROJECT" ]; then
     echo "Creating project directory"
