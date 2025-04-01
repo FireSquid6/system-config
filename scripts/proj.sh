@@ -14,11 +14,11 @@ if [ "$PROJECT" == "new" ]; then
 fi
 
 # check if the project exists
-if [ ! -d ~/source/$PROJECT ]; then
+if [ ! -d ~/source/"$PROJECT" ]; then
     echo "Creating project directory"
-    mkdir ~/source/$PROJECT
+    mkdir ~/source/"$PROJECT"
 fi
 
 # create a new tmux session for the project
 echo "Opening ~/source/$PROJECT"
-tmux new-window -t workbench -n $PROJECT -c ~/source/$PROJECT
+tmux new-session -t workbench -n "$PROJECT" -c ~/source/"$PROJECT"
