@@ -14,7 +14,6 @@ if status is-interactive
   direnv hook fish | source
 
   export PATH="$PATH:/etc/nixos/scripts"
-  export PATH="$PATH:/etc/nixos/bins"
   export PATH="$PATH:/home/firesquid/.bun/bin"
 
   alias e='develop.sh'

@@ -45,7 +45,6 @@
 
   hardware.keyboard.zsa.enable = true;
 
-
   services.displayManager = {
     defaultSession = "hyprland";
   };
@@ -92,20 +91,17 @@
     xdg-desktop-portal-hyprland
 
     discord
-    webcord-vencord
     chromium
     libresprite
     inkscape
     krita
     vlc
     thunderbird
-    freecad
     guvcview
     youtube-music
     obsidian
 
     alacritty
-    ghostty
 
     betterlockscreen
     waybar
@@ -117,14 +113,9 @@
     rofimoji
     dunst
 
-    gnome-icon-theme
     papirus-icon-theme
 
-    grim
     kooha
-    wuzz
-    flameshot
-    simplescreenrecorder
 
     networkmanagerapplet
     trayscale
@@ -135,9 +126,6 @@
     awscli2
 
     bun
-
-    rclone
-    insync
 
     ntfy-sh
   ];

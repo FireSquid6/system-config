@@ -31,7 +31,6 @@
         ./systemModules/std.nix
         ./systemModules/firesquid.nix
         ./systemModules/virtualization.nix
-        ./systemModules/school.nix
         ./systemModules/development.nix
         ./systemModules/boot.nix
         ./systemModules/nix-ld.nix

@@ -11,7 +11,6 @@
 
     godot_4
     vscodium
-    asciinema
     neovide
     starship
 
@@ -37,7 +36,5 @@
     python3
     python311Packages.pip
     bun
-
-
   ];
 }
