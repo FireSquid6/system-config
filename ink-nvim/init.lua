@@ -23,7 +23,6 @@ require("lsp")
 vim.cmd 'colorscheme tokyonight-night'
 
 
--- autocommand for enabling spell on markdwon files
 vim.api.nvim_create_autocmd("FileType", {
   pattern = "markdown",
   callback = function()
@@ -31,20 +30,3 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
 })
 
-
--- local cwd = vim.loop.cwd()
--- local editorFile = cwd .. "/ink-editor.json"
---
---
--- local json = require("json")
---
--- local schema_string = [[
--- {
---   "ai": false,
---   "socket": true,
--- }
--- ]]
---
--- local schema = json.decode(schema_string)
--- schema.ai = schema.ai or true
--- schema.socket = schema.socket or false

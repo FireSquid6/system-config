@@ -7,19 +7,6 @@ vim.keymap.set({ "i", "n" }, "<C-k>", "<C-w>k")
 vim.keymap.set({ "i", "n" }, "<C-l>", "<C-w>l")
 
 wk.add({
-  -- { "<leader>a",   group = "AI",                                        desc = "AI" },
-  -- { "<leader>ar",  "<cmd>PrtChatResponde<cr>",                          desc = "Respond" },
-  -- { "<leader>at",  "<cmd>PrtChatToggle<cr>",                            desc = "Toggle" },
-  -- { "<leader>an",  "<cmd>PrtChatNew<cr>",                               desc = "New" },
-  -- { "<leader>aw",  "<cmd>PrtRewrite<cr>",                               desc = "Rewrite" },
-  -- { "<leader>ac",  "<cmd>PrtContext<cr>",                               desc = "Edit Context" },
-  { "<leader>h",   group = "Hop",                                       desc = "Hop" },
-  { "<leader>hw",  "<cmd>HopWord<cr>",                                  desc = "Hop Word" },
-  { "<leader>hl",  "<cmd>HopLine<cr>",                                  desc = "Hop Line" },
-  { "<leader>ha",  "<cmd>HopAnywhereCurrentLine<cr>",                   desc = "Hop Anywhere" },
-  { "<leader>hv",  "<cmd>HopVertical<cr>",                              desc = "Hop Vertical" },
-  { "<leader>;",   "<cmd>TermSelect<cr>",                               desc = "Select Terminal" },
-  { "<leader>b",   "<cmd>bprevious<cr>",                                desc = "Back" },
   { "<leader>c",   "<cmd>bdelete<cr>",                                  desc = "Close Buffer" },
   { "<leader>l",   group = "LSP" },
   { "<leader>e",   "<cmd>Oil<cr>",                                      desc = "File Explorer" },
@@ -52,7 +39,6 @@ wk.add({
   { "<leader>uts", "<cmd>colorscheme tokyonight-storm<cr>",             desc = "Storm Theme" },
   { "<leader>w",   "<cmd>wa<cr>",                                       desc = "Write Files" },
   { "<leader>li",  "<cmd>LspInfo<cr>",                                  desc = "Lsp Info" },
-  { "<leader>r",   "<cmd>checktime<cr>",                                desc = "Refresh" },
 })
 
 vim.keymap.set("t", "<C-n>", "<C-\\><C-n>")
@@ -92,13 +78,3 @@ vim.api.nvim_create_autocmd("LspAttach", {
     })
   end,
 })
-
--- FORMAT ON SAVE
--- I turned this off because it was annoying
---
--- local augroup = vim.api.nvim_create_augroup
--- local autocmd = vim.api.nvim_create_autocmd
--- augroup("__formatter__", { clear = true })
--- autocmd("BufWritePost", {
--- 	command = ":lua vim.lsp.buf.format()",
--- })
