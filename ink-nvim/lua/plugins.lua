@@ -267,12 +267,6 @@ require("lazy").setup({
   },
   { "Bilal2453/luvit-meta", lazy = true }, -- optional `vim.uv` typings
   {
-    "hadronized/hop.nvim",
-    config = function()
-      require("hop").setup()
-    end,
-  },
-  {
     "karb94/neoscroll.nvim",
     config = function()
       require("neoscroll").setup({})
