@@ -69,8 +69,8 @@
   # need to set these
   # clone the system config to the directory specified here
   environment.sessionVariables = {
-    SYSTEM_CONFIG_DIR="/etc/nixos";
-    SCRIPTS_DIR="/etc/nixos/scripts";
+    SYSTEM_CONFIG_DIR="$HOME/system-config";
+    SCRIPTS_DIR="$HOME/system-config/scripts";
   };
 
   # Some programs need SUID wrappers, can be configured further or are
