@@ -6,4 +6,4 @@ if [ -z "$NAME" ]; then
     exit 1
 fi
 
-rofi -show script -modes "script:/etc/nixos/rofi-menus/$1.ts"
+rofi -show script -modes "script:$SCRIPTS_DIR/rofi-menus/$1.ts"

@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-/etc/nixos/scripts/tmux-startup.sh
+"$SCRIPTS_DIR"/tmux-startup.sh
 
 hyprpaper &
-/etc/nixos/scripts/waybar.sh &
+"$SCRIPTS_DIR"/waybar.sh &
 nm-applet &
 insync start
 

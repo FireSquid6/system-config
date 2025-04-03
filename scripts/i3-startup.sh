@@ -1,6 +1,6 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
-/etc/nixos/scripts/tmux-startup.sh
+"$SCRIPTS_DIR"/tmux-startup.sh
 
 setxkbmap -option caps:escape
 feh --bg-fill /home/firesquid/wallpapers/wallpaper.png

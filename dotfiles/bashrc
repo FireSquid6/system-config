@@ -1,8 +1,7 @@
 [[ $- == *i* ]] || return
 
-export PATH="$PATH:/etc/nixos/scripts"
+export PATH="$PATH:$SCRIPTS_DIR"
 
 eval "$(direnv hook bash)"
 
-alias ea='NVIM_APPNAME=astro-nvim nvim'
 alias e='NVIM_APPNAME=ink-nvim nvim'

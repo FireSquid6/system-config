@@ -2,12 +2,12 @@
 import { spawnMenu, runSilent, type MenuItem } from "."
 
 const options: Map<string, string> = new Map([
-  ["  Lock", "/etc/nixos/scripts/lock.sh"],
+  ["  Lock", "$SCRIPTS_DIR/lock.sh"],
   ["󰒲  Suspend", "systemctl suspend"],
   ["⏻  Shutdown", "shutdown -h now"],
   ["󰍃  Logout", "hyprctl dispatch exit"],
-  ["󰌙  Disconnect", "/etc/nixos/scripts/disconnect.sh"],
-  ["󰌘  Connect", "/etc/nixos/scripts/connect.sh"],
+  ["󰌙  Disconnect", "$SCRIPTS_DIR/disconnect.sh"],
+  ["󰌘  Connect", "$SCRIPTS_DIR/connect.sh"],
 ])
 
 const menus: MenuItem[] = []

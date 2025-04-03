@@ -65,7 +65,13 @@
   ];
 
   hardware.graphics.enable = true;
-
+  
+  # need to set these
+  # clone the system config to the directory specified here
+  environment.sessionVariables = {
+    SYSTEM_CONFIG_DIR="/etc/nixos";
+    SCRIPTS_DIR="/etc/nixos/scripts";
+  };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

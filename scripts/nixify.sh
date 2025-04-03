@@ -12,7 +12,7 @@ function copy_file() {
   fi
 
   # the name file should exist
-  FILEPATH="/etc/nixos/dev$(echo $TYPE)s/$NAME.nix"
+  FILEPATH="$SYSTEM_CONFIG_DIR/dev$(echo $TYPE)s/$NAME.nix"
   if [ ! -f "$FILEPATH" ]; then
     echo "File $FILEPATH does not exist"
     return 1

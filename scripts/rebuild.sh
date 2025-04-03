@@ -8,4 +8,4 @@ then
 fi
 
 echo "Rebuilding configuration for $CONFIGURATION"
-sudo nixos-rebuild switch --flake path:///etc/nixos/#"$CONFIGURATION"
+sudo nixos-rebuild switch --flake path://"$SYSTEM_CONFIG_DIR"/#"$CONFIGURATION"

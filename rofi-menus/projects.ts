@@ -13,7 +13,7 @@ for (const dir of dirs) {
   menus.push({
     name: `  ${dir}`,
     action: async () => {
-      const process = Bun.spawn(["/etc/nixos/scripts/proj.sh", dir], {
+      const process = Bun.spawn(["$SCRIPTS_DIR/proj.sh", dir], {
         stdio: ["ignore", "ignore", "ignore"]
       })
       await process.exited
