@@ -24,4 +24,4 @@ for (const dir of dirs) {
   })
 }
 
-await spawnMenu(menus)
+await spawnMenu(menus);
