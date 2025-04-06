@@ -13,6 +13,7 @@
     vscodium
     neovide
     starship
+    insync
 
     arduino
     arduino-ide
