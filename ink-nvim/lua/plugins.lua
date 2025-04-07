@@ -267,4 +267,8 @@ require("lazy").setup({
       require("neoscroll").setup({})
     end,
   },
+  {
+    "davidmh/mdx.nvim",
+    config = true,
+  }
 })
