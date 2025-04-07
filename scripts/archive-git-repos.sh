@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cd /etc/nixos/archiver || exit
+cd "$SYSTEM_CONFIG_DIR/archiver" || exit
 
 rm -rf ./temp/
 mkdir ./temp
