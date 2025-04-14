@@ -129,6 +129,7 @@
 
     ntfy-sh
 
+    rpi-imager
   ];
 
   environment.plasma5.excludePackages = with pkgs.libsForQt5; [
