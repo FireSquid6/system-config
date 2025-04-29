@@ -43,5 +43,6 @@
     android-studio
     android-tools
     android-studio-tools
+    android-studio-full
   ];
 }
