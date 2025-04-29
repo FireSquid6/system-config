@@ -1,6 +1,8 @@
 { inputs, config, pkgs, ...}:
 
 {
+  programs.adb.enable = true;
+
   environment.systemPackages = with pkgs; [
     gdb
     lazygit
@@ -37,5 +39,9 @@
     python3
     python311Packages.pip
     bun
+
+    android-studio
+    android-tools
+    android-studio-tools
   ];
 }
