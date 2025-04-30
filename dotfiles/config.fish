@@ -16,6 +16,9 @@ if status is-interactive
   export PATH="$PATH:$SCRIPTS_DIR"
   export PATH="$PATH:$HOME/.bun/bin"
 
+  export ANDROID_HOME="$HOME/Android/Sdk"
+  export PATH="$PATH:$ANDROID_HOME/platform-tools"
+
   alias e='develop.sh'
   alias ge='develop.sh -l'
 end
