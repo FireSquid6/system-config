@@ -8,4 +8,5 @@ then
 fi
 
 echo "Rebuilding configuration for $CONFIGURATION"
+export NIXPKGS_ACCEPT_ANDROID_SDK_LICENSE=1
 sudo nixos-rebuild switch --flake path://"$SYSTEM_CONFIG_DIR"/#"$CONFIGURATION"
