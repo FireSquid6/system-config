@@ -4,6 +4,9 @@
   xdg.portal.enable = true;
   xdg.portal.config.common.default = "gtk";
 
+  boot.kernelModules = [ "i2c-dev" "i2c-piix4" ];
+  services.udev.extraRules = (builtins.readFile "${pkgs.openrgb}/lib/udev/rules.d/60-openrgb.rules");
+
   xdg.mime.defaultApplications = {
     "text/html" = "firefox.desktop";
     "image/gif" = "firefox.desktop";
@@ -130,6 +133,7 @@
     ntfy-sh
 
     rpi-imager
+    openrgb
   ];
 
   environment.plasma5.excludePackages = with pkgs.libsForQt5; [
