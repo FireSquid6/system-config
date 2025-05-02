@@ -45,5 +45,6 @@
     android-tools
     android-studio-tools
     android-udev-rules
+    libpng
   ];
 }
