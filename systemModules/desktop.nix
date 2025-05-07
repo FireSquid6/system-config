@@ -100,6 +100,8 @@
     krita
     vlc
     thunderbird
+    protonmail-bridge
+    protonmail-desktop
     guvcview
     youtube-music
     obsidian
