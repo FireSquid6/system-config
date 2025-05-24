@@ -135,7 +135,7 @@
     ntfy-sh
 
     rpi-imager
-    openrgb
+    bibletime
   ];
 
   environment.plasma5.excludePackages = with pkgs.libsForQt5; [
