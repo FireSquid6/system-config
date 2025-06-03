@@ -17,7 +17,6 @@ lspconfig.elixirls.setup({
   cmd = { "elixir-ls" },
 })
 
-lspconfig.lua_ls.setup({})
 lspconfig.ccls.setup({
   root_dir = util.root_pattern(".ccls", ".git", "main.cpp", "flake.nix")
 })

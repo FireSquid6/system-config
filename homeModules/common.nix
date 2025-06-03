@@ -43,7 +43,7 @@
     ".config/waybar/style.css".source = ../dotfiles/waybar.css;
     ".config/fish/config.fish".source = ../dotfiles/config.fish;
     ".config/alacritty/alacritty.toml".source = ../dotfiles/alacritty.toml;
-    ".config/ink-nvim" = {
+    ".config/nvim" = {
       source = ../ink-nvim;
       recursive = true;
     };
@@ -58,6 +58,10 @@
     };
     ".config/hypr" = {
       source = ../dotfiles/hypr;
+      recursive = true;
+    };
+    ".config/fish/functions" = {
+      source = ../dotfiles/functions;
       recursive = true;
     };
   };

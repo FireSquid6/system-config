@@ -59,5 +59,7 @@
     xorg.libxkbfile
     xorg.libxshmfence
     zlib
+    libpng
+    libbsd
   ];
 }

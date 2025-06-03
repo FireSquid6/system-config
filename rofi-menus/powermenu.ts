@@ -2,7 +2,6 @@
 import { spawnMenu, runSilent, type MenuItem } from "."
 
 const options: Map<string, string> = new Map([
-  ["  Lock", "$SCRIPTS_DIR/lock.sh"],
   ["󰒲  Suspend", "systemctl suspend"],
   ["⏻  Shutdown", "shutdown -h now"],
   ["󰍃  Logout", "hyprctl dispatch exit"],

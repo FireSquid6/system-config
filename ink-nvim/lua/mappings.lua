@@ -6,35 +6,6 @@ vim.keymap.set({ "i", "n" }, "<C-j>", "<C-w>j")
 vim.keymap.set({ "i", "n" }, "<C-k>", "<C-w>k")
 vim.keymap.set({ "i", "n" }, "<C-l>", "<C-w>l")
 
-wk.add({
-  { "<leader>c",   "<cmd>bdelete<cr>",                                  desc = "Close Buffer" },
-  { "<leader>l",   group = "LSP" },
-  { "<leader>e",   "<cmd>Oil<cr>",                                      desc = "File Explorer" },
-  { "<leader>f",   group = "Find" },
-  { "<leader>f/",  "<cmd>Telescope current_buffer_fuzzy_find<cr>",      desc = "Search Current Buffer" },
-  { "<leader>fb",  "<cmd>Telescope buffers<cr>",                        desc = "Find Buffers" },
-  { "<leader>fc",  "<cmd>Telescope commands<cr>",                       desc = "Search Commands" },
-  { "<leader>fe",  "<cmd>Telescope diagnostics<cr>",                    desc = "Search Diagnostics" },
-  { "<leader>ff",  "<cmd>Telescope find_files<cr>",                     desc = "Find Files" },
-  { "<leader>fi",  "<cmd>Telescope lsp_incoming_calls<cr>",             desc = "Search Incoming Calls" },
-  { "<leader>fl",  "<cmd>Telescope lsp_document_symbols<cr>",           desc = "Search LSP Symbols" },
-  { "<leader>fm",  "<cmd> Telescope marks<cr>",                         desc = "Search Marks" },
-  { "<leader>fo",  "<cmd>Telescope lsp_outgoing_calls<cr>",             desc = "Search Outgoing Calls" },
-  { "<leader>fr",  "<cmd> Telescope registers<cr>",                     desc = "Search Registers" },
-  { "<leader>fs",  "<cmd>Telescope lsp_dynamic_workspace_symbols<cr>",  desc = "Search LSP Workspace Symbols" },
-  { "<leader>fw",  "<cmd>Telescope live_grep<cr>",                      desc = "Find Words" },
-  { "<leader>g",   "<cmd>LazyGit<cr>",                                  desc = "LazyGit" },
-  { "<leader>q",   "<cmd>q<cr>",                                        desc = "Quit Files" },
-  { "<leader>s",   "<cmd>Telescope spell_suggest<cr>",                  desc = "Spell Suggest" },
-  { "<leader>u",   group = "UI" },
-  { "<leader>ut",  group = "Colorscheme" },
-  { "<leader>utd", "<cmd>colorscheme tokyonight-day<cr>",               desc = "Day Theme" },
-  { "<leader>utn", "<cmd>colorscheme tokyonight-night<cr>",             desc = "Night Theme" },
-  { "<leader>uts", "<cmd>colorscheme tokyonight-storm<cr>",             desc = "Storm Theme" },
-  { "<leader>w",   "<cmd>wa<cr>",                                       desc = "Write Files" },
-  { "<leader>li",  "<cmd>LspInfo<cr>",                                  desc = "Lsp Info" },
-})
-
 vim.keymap.set("t", "<C-n>", "<C-\\><C-n>")
 vim.keymap.set("t", "<C-h>", "<C-\\><C-n><C-w>h")
 vim.keymap.set("t", "<C-j>", "<C-\\><C-n><C-w>j")

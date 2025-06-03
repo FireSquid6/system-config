@@ -46,5 +46,11 @@
     android-studio-tools
     android-udev-rules
     libpng
+
+    ngrok
+    caddy
+    claude-code
+
+    yazi
   ];
 }

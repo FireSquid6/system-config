@@ -1,7 +1,7 @@
--- ignore
 require("lazy").setup({
   {
     "folke/which-key.nvim",
+    tag = "v3.17.0",
     event = "VeryLazy",
     init = function()
       vim.o.timeout = true
@@ -13,9 +13,39 @@ require("lazy").setup({
   "nvim-lua/popup.nvim",
   "nvim-lua/plenary.nvim",
   {
+    "mhinz/vim-startify",
+  },
+  {
     "nvim-telescope/telescope.nvim",
     tag = "0.1.6",
     dependencies = { "nvim-lua/plenary.nvim" },
+    keys = {
+      { "<leader>c",   "<cmd>bdelete<cr>",                                  desc = "Close Buffer" },
+      { "<leader>l",   group = "LSP" },
+      { "<leader>f",   group = "Find" },
+      { "<leader>f/",  "<cmd>Telescope current_buffer_fuzzy_find<cr>",      desc = "Search Current Buffer" },
+      { "<leader>fb",  "<cmd>Telescope buffers<cr>",                        desc = "Find Buffers" },
+      { "<leader>fc",  "<cmd>Telescope commands<cr>",                       desc = "Search Commands" },
+      { "<leader>fe",  "<cmd>Telescope diagnostics<cr>",                    desc = "Search Diagnostics" },
+      { "<leader>ff",  "<cmd>Telescope find_files<cr>",                     desc = "Find Files" },
+      { "<leader>fi",  "<cmd>Telescope lsp_incoming_calls<cr>",             desc = "Search Incoming Calls" },
+      { "<leader>fl",  "<cmd>Telescope lsp_document_symbols<cr>",           desc = "Search LSP Symbols" },
+      { "<leader>fm",  "<cmd> Telescope marks<cr>",                         desc = "Search Marks" },
+      { "<leader>fo",  "<cmd>Telescope lsp_outgoing_calls<cr>",             desc = "Search Outgoing Calls" },
+      { "<leader>fr",  "<cmd> Telescope registers<cr>",                     desc = "Search Registers" },
+      { "<leader>fs",  "<cmd>Telescope lsp_dynamic_workspace_symbols<cr>",  desc = "Search LSP Workspace Symbols" },
+      { "<leader>fw",  "<cmd>Telescope live_grep<cr>",                      desc = "Find Words" },
+      { "<leader>g",   "<cmd>LazyGit<cr>",                                  desc = "LazyGit" },
+      { "<leader>q",   "<cmd>q<cr>",                                        desc = "Quit Files" },
+      { "<leader>s",   "<cmd>Telescope spell_suggest<cr>",                  desc = "Spell Suggest" },
+      { "<leader>u",   group = "UI" },
+      { "<leader>ut",  group = "Colorscheme" },
+      { "<leader>utd", "<cmd>colorscheme tokyonight-day<cr>",               desc = "Day Theme" },
+      { "<leader>utn", "<cmd>colorscheme tokyonight-night<cr>",             desc = "Night Theme" },
+      { "<leader>uts", "<cmd>colorscheme tokyonight-storm<cr>",             desc = "Storm Theme" },
+      { "<leader>w",   "<cmd>wa<cr>",                                       desc = "Write Files" },
+      { "<leader>li",  "<cmd>LspInfo<cr>",                                  desc = "Lsp Info" },
+    },
     config = function()
       require("telescope").setup({
         defaults = {
@@ -111,6 +141,9 @@ require("lazy").setup({
     end,
   },
   {
+    "folke/snacks.nvim",
+  },
+  {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
     config = function()
@@ -161,14 +194,52 @@ require("lazy").setup({
       require("lualine").setup()
     end,
   },
+  -- {
+  --   "stevearc/oil.nvim",
+  --   config = function()
+  --     require("oil").setup({
+  --       view_options = {
+  --         show_hidden = true,
+  --       },
+  --     })
+  --   end,
+  -- },
   {
-    "stevearc/oil.nvim",
-    config = function()
-      require("oil").setup({
-        view_options = {
-          show_hidden = true,
-        },
-      })
+    "mikavilpas/yazi.nvim",
+    event = "VeryLazy",
+    dependencies = {
+      -- check the installation instructions at
+      -- https://github.com/folke/snacks.nvim
+      -- "folke/snacks.nvim"
+    },
+    keys = {
+      -- 👇 in this section, choose your own keymappings!
+      {
+        "<leader>e",
+        mode = { "n", "v" },
+        "<cmd>Yazi<cr>",
+        desc = "Open yazi at the current file",
+      },
+      {
+        -- Open in the current working directory
+        "<leader>k",
+        "<cmd>Yazi cwd<cr>",
+        desc = "Open the file manager in nvim's working directory",
+      },
+    },
+    ---@type YaziConfig | {}
+    opts = {
+      -- if you want to open yazi instead of netrw, see below for more info
+      open_for_directories = true,
+      keymaps = {
+        show_help = "<f1>",
+      },
+    },
+    -- 👇 if you use `open_for_directories=true`, this is recommended
+    init = function()
+      -- More details: https://github.com/mikavilpas/yazi.nvim/issues/802
+      -- vim.g.loaded_netrw = 1
+      vim.g.loaded_netrwPlugin = 1
     end,
   },
   {
@@ -206,7 +277,6 @@ require("lazy").setup({
 
       null_ls.setup({
         sources = {
-          null_ls.builtins.formatting.stylua,
           -- null_ls.builtins.completion.spell,
         },
       })

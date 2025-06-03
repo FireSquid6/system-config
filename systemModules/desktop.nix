@@ -33,8 +33,6 @@
     pulse.enable = true;
   };
 
-  virtualisation.virtualbox.host.enable = true;
-
   qt = {
     enable = true;
     platformTheme = "gnome";

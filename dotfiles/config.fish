@@ -18,7 +18,4 @@ if status is-interactive
 
   export ANDROID_HOME="$HOME/Android/Sdk"
   export PATH="$PATH:$ANDROID_HOME/platform-tools"
-
-  alias e='develop.sh'
-  alias ge='develop.sh -l'
 end
