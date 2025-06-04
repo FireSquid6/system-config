@@ -26,7 +26,6 @@ lspconfig.marksman.setup({})
 lspconfig.statix.setup({})
 lspconfig.tailwindcss.setup({
   filetypes = { "html", "css", "typescriptreact" },
-  root_dir = util.root_pattern("tailwind.config.js", "tailwind.config.ts", "tailwind.config.mjs"),
 })
 
 
