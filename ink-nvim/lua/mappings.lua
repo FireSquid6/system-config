@@ -36,9 +36,9 @@ vim.api.nvim_create_autocmd("LspAttach", {
     wk.add({
       { "<leader>l",  group = "LSP" },
       { "<leader>la", vim.lsp.buf.code_action,                    desc = "Code Action" },
-      { "<leader>ld", "<cmd>lua vim.diagnostic.open_float()<cr>", desc = "Line Diagnostics" },
-      { "<leader>lf", "<cmd>lua vim.lsp.buf.format()<cr>",        desc = "Format" },
-      { "<leader>lh", vim.lsp.buf.hover,                          desc = "Hover" },
+      { "<leader>ld", vim.diagnostic.open_float,                  desc = "Line Diagnostics" },
+      { "<leader>lf", vim.lsp.buf.format,                         desc = "Format" },
+      { "<leader>lh", require("pretty_hover").hover,              desc = "Hover" },
       { "<leader>ln", vim.lsp.buf.rename,                         desc = "Rename" },
     })
   end,

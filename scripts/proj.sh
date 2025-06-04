@@ -28,7 +28,7 @@ if [ $? -ne 0 ]; then
   tmux send-keys -t "$PROJECT" "claude" Enter
 
   tmux select-window -t "$PROJECT":editor
-  tmux send-keys -t "$PROJECT" "e" Enter
+  tmux send-keys -t "$PROJECT" "nvim" Enter
 fi
 
 alacritty --command tmux attach-session -t "$PROJECT" &

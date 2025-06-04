@@ -2,7 +2,7 @@ local lspconfig = require("lspconfig")
 local util = require("lspconfig.util")
 
 lspconfig.pyright.setup({})
-lspconfig.ts_ls.setup({})
+lspconfig.vtsls.setup({})
 lspconfig.rust_analyzer.setup({
 	-- Server-specific settings. See `:help lspconfig-setup`
 	settings = {
@@ -28,7 +28,6 @@ lspconfig.tailwindcss.setup({
   filetypes = { "html", "css", "typescriptreact" },
   root_dir = util.root_pattern("tailwind.config.js", "tailwind.config.ts", "tailwind.config.mjs"),
 })
-lspconfig.htmx.setup({})
 
 
 local cmp = require("cmp")

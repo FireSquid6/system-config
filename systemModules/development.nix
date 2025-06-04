@@ -33,6 +33,7 @@
     elixir-ls
     ccls
     nodePackages.typescript-language-server
+    vtsls
     arduino-language-server
     nixfmt-classic
 

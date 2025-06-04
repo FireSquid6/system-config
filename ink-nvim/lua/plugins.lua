@@ -144,6 +144,11 @@ require("lazy").setup({
     "folke/snacks.nvim",
   },
   {
+    "Fildo7525/pretty_hover",
+    event = "LSPAttach",
+    opts = {},
+  },
+  {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
     config = function()
