@@ -64,13 +64,10 @@
       source = ../dotfiles/functions;
       recursive = true;
     };
-  };
-
-  home.sessionVariables = {
-    EDITOR = "nvim";
-    BROWSER = "firefox";
-    TERMINAL = "alacritty";
-    VISUAL = "nvim";
+    ".config/yazi" = {
+      source =  ../dotfiles/yazi;
+      recursive = true;
+    };
   };
 
   programs.git = {

@@ -71,6 +71,10 @@
   environment.sessionVariables = {
     SYSTEM_CONFIG_DIR="$HOME/system-config";
     SCRIPTS_DIR="$HOME/system-config/scripts";
+    EDITOR = "nvim";
+    BROWSER = "firefox";
+    TERMINAL = "alacritty";
+    VISUAL = "nvim";
   };
 
   # Some programs need SUID wrappers, can be configured further or are
