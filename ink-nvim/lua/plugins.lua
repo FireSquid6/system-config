@@ -345,5 +345,26 @@ require("lazy").setup({
   {
     "davidmh/mdx.nvim",
     config = true,
+  },
+  {
+    "epwalsh/obsidian.nvim",
+    version = "*",
+    lazy = true,
+    ft = "markdown",
+
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+    },
+    opts = {
+      workspaces = {
+        {
+          name = "notes",
+          path = "~/notes",
+        },
+      },
+      daily_notes = {
+        folder = "journal",
+      }
+    },
   }
 })

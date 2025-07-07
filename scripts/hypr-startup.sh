@@ -5,7 +5,6 @@
 hyprpaper &
 "$SCRIPTS_DIR"/waybar.sh &
 nm-applet &
-insync start
 
 hyprctl setcursor Google-DotBlack 24
 
