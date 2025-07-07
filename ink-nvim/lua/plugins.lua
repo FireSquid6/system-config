@@ -364,6 +364,7 @@ require("lazy").setup({
       },
       daily_notes = {
         folder = "journal",
+        default_tags = { },
       }
     },
   }
