@@ -51,6 +51,7 @@
     ngrok
     caddy
     claude-code
+    opencode
 
     yazi
   ];
