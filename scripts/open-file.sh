@@ -1,16 +1,9 @@
 #!/usr/bin/env bash
 
-project=$1
-file=$2
-pipe=""
+PROJECT=$1
+FILE=$2
+PIPE=""
 
-# iterate through the parts of $project
-for part in $(echo "$project" | tr "/" "\n"); do
-  pipe="$HOME/.pipes/$part/socket.pipe"
+PIPE="$HOME/.pipes/$PROJECT/socket.pipe"
 
-  if [ -e "$pipe" ]; then
-    break
-  fi
-done
-
-nvim --server "$pipe" --remote-send "<CMD>e $file<CR>"
+nvim --server "$PIPE" --remote-send "<CMD>e $FILE<CR>"

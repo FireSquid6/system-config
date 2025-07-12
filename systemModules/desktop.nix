@@ -101,7 +101,6 @@
     protonmail-bridge
     protonmail-desktop
     guvcview
-    youtube-music
     obsidian
 
     alacritty
@@ -136,6 +135,9 @@
     bibletime
 
     qmk
+
+    youtube-music
+    spotify
   ];
 
   environment.plasma5.excludePackages = with pkgs.libsForQt5; [
