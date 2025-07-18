@@ -138,6 +138,11 @@
 
     youtube-music
     spotify
+
+    obs-studio
+    libsForQt5.kdenlive
+
+    wmctrl
   ];
 
   environment.plasma5.excludePackages = with pkgs.libsForQt5; [
