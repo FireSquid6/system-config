@@ -143,6 +143,7 @@
     libsForQt5.kdenlive
 
     wmctrl
+    gnome-multi-writer
   ];
 
   environment.plasma5.excludePackages = with pkgs.libsForQt5; [

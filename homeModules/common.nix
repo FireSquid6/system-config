@@ -68,9 +68,6 @@
       source =  ../dotfiles/yazi;
       recursive = true;
     };
-    ".config/opencode/.opencode.json" = {
-
-    };
   };
 
   programs.git = {
