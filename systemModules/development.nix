@@ -53,5 +53,7 @@
     opencode
 
     yazi
+    prettierd
+    nodePackages_latest.prettier
   ];
 }

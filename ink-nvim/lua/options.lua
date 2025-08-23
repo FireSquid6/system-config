@@ -1,6 +1,6 @@
 vim.opt.number = true
 vim.opt.relativenumber = true
-vim.opt.conceallevel = 2
+vim.opt.conceallevel = 0
 
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
