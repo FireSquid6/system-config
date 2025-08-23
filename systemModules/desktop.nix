@@ -86,6 +86,7 @@
     wl-clipboard
 
     hyprlock
+    hyprsunset
     hyprshot
     hyprpaper
     hypridle

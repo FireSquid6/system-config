@@ -190,6 +190,16 @@ require("lazy").setup({
       require("ibl").setup()
     end,
   },
+  {
+    "OlegGulevskyy/better-ts-errors.nvim",
+    dependencies = { "MunifTanjim/nui.nvim" },
+    config = {
+      keymaps = {
+        toggle = "<leader>ud",
+        go_to_definition = "<leader>dx",
+      },
+    },
+  },
 
   "nvim-tree/nvim-web-devicons",
   {
