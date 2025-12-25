@@ -55,5 +55,7 @@
     yazi
     prettierd
     nodePackages_latest.prettier
+
+    typst
   ];
 }

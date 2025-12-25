@@ -361,6 +361,7 @@ require("lazy").setup({
     version = "*",
     lazy = true,
     ft = "markdown",
+    disable_frontmatter = true,
 
     dependencies = {
       "nvim-lua/plenary.nvim",

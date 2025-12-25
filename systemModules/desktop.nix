@@ -44,10 +44,30 @@
     xwayland.enable = true;
   };
 
+  services.udisks2.enable = true;
+
+  programs.java = {
+    enable = true;
+    package = (pkgs.jdk21.override { enableJavaFX = true; });
+  };
+
   hardware.keyboard.zsa.enable = true;
 
   services.displayManager = {
     defaultSession = "hyprland";
+  };
+
+  hardware.nvidia = {
+    open = false;
+    package = config.boot.kernelPackages.nvidiaPackages.stable;
+    modesetting.enable = true;
+
+    powerManagement = {
+      enable = false;
+      finegrained = false;
+    };
+
+    nvidiaSettings = true;
   };
 
   services.xserver = {
@@ -58,6 +78,8 @@
     };
 
     desktopManager.gnome.enable = true;
+
+    videoDrivers = [ "nvidia" ];
 
     windowManager.i3 = {
       enable = true;
@@ -70,11 +92,16 @@
     };
   };
 
+  boot.initrd.kernelModules = [ "nvidia" "nvidia_modeset" "nvidia_uvm" "nvidia_drm" ];
+
   environment.systemPackages = with pkgs; [
     (waybar.overrideAttrs (oldAttrs: {
         mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ];
       })
     )
+
+    pciutils
+    gptfdisk
 
     xclip
     xclicker
@@ -145,6 +172,7 @@
 
     wmctrl
     gnome-multi-writer
+    mcaselector
   ];
 
   environment.plasma5.excludePackages = with pkgs.libsForQt5; [

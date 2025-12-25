@@ -13,8 +13,10 @@
     prismlauncher
 
     # needed for minecraft
-    zulu
-    zulu17
-    zulu8
+    # zulu
+    # zulu17
+    # zulu8
+
+    modrinth-app
   ];
 }
